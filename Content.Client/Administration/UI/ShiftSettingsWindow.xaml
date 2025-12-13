@@ -5,8 +5,20 @@
         <!-- Shift End Time Settings -->
         <Label Text="{Loc administration-shift-settings-duration-label}" StyleClasses="LabelBig" />
 
+        <!-- Time Mode Selection -->
+        <BoxContainer Orientation="Vertical" SeparationOverride="4">
+            <BoxContainer Orientation="Horizontal" SeparationOverride="8">
+                <CheckBox Name="HoursFromNowCheckbox" ToggleMode="True" Pressed="True" />
+                <Label Text="{Loc administration-shift-settings-hours-from-now}" />
+            </BoxContainer>
+            <BoxContainer Orientation="Horizontal" SeparationOverride="8">
+                <CheckBox Name="HoursFromRoundStartCheckbox" ToggleMode="True" />
+                <Label Text="{Loc administration-shift-settings-hours-from-round-start}" />
+            </BoxContainer>
+        </BoxContainer>
+
         <BoxContainer Orientation="Horizontal" SeparationOverride="4">
-            <Label Text="{Loc administration-shift-settings-duration-label}" MinSize="150 0" />
+            <Label Text="{Loc administration-shift-settings-hours-label}" MinSize="150 0" />
             <LineEdit Name="ShiftEndTimeInput"
                       HorizontalExpand="True"
                       PlaceHolder="{Loc administration-shift-settings-duration-placeholder}" />

@@ -71,3 +71,55 @@
     - ScentLewd
   msgsDirect:
     - "%TARGET% smells really horny."
+
+
+# Primary Scents
+
+- type: scent
+  id: ScentLinen
+  parents:
+    - ScentBase
+  msgsDirect:
+    - "%TARGET% smells like fresh linen."
+  msgsClose:
+    - "You smell a trace of fresh linen."
+  msgsFar:
+    - "You catch a faint whiff of fresh linen."
+
+
+- type: scent
+  id: ScentCitrus
+  parents:
+    - ScentBase
+  msgsDirect:
+    - "%TARGET% smells like citrus."
+  msgsClose:
+    - "You smell a trace of citrus."
+  msgsFar:
+    - "You catch a faint whiff of citrus."
+
+
+- type: scent
+  id: ScentVanilla
+  parents:
+    - ScentBase
+  msgsDirect:
+    - "%TARGET% smells like smooth vanilla."
+  msgsClose:
+    - "You smell a trace of vanilla."
+  msgsFar:
+    - "You catch a faint whiff of vanilla."
+
+# Lewd Scents
+
+- type: scent
+  id: ScentLewdMusk
+  parents:
+    - ScentBase
+    - ScentLewd
+  msgsDirect:
+    - "%TARGET% has a very musky scent."
+  msgsClose:
+    - "You smell something musky."
+  msgsFar:
+    - "You catch a faint musky scent."

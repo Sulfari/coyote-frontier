@@ -12,8 +12,8 @@ namespace Content.Server.GameTicking.Commands
         [Dependency] private readonly IGameTiming _timing = default!;
 
         public string Command => "setshiftendtime";
-        public string Description => "Sets the shift end time in hours from now (uses server real time to avoid drift).";
-        public string Help => "setshiftendtime <hours> - Sets when the shift should end. Use 0 to clear.";
+        public string Description => "Sets the shift end time in hours from now or from round start.";
+        public string Help => "setshiftendtime <hours> [now|roundstart] - Sets when the shift should end. Defaults to 'now'. Use 0 to clear.";
 
         public void Execute(IConsoleShell shell, string argStr, string[] args)
         {
@@ -45,11 +45,26 @@ namespace Content.Server.GameTicking.Commands
                 return;
             }
 
-            // Use RealTime to avoid drift issues during long shifts
-            var endTime = _timing.RealTime + TimeSpan.FromHours(hours);
-            ticker.ShiftEndTime = endTime;
+            // Determine mode: "now" (default) or "roundstart"
+            var mode = args.Length > 1 ? args[1].ToLower() : "now";
+            TimeSpan endTime;
 
-            shell.WriteLine($"Shift end time set to {hours} hours from now (server real time: {endTime}).");
+            if (mode == "roundstart")
+            {
+                // Calculate from round start time
+                // Round start in real time = current real time - (current game time - round start game time)
+                var roundStartRealTime = _timing.RealTime - (_timing.CurTime - ticker.RoundStartTimeSpan);
+                endTime = roundStartRealTime + TimeSpan.FromHours(hours);
+                shell.WriteLine($"Shift end time set to {hours} hours from round start (server real time: {endTime}).");
+            }
+            else // "now" or any other value defaults to "now"
+            {
+                // Use RealTime to avoid drift issues during long shifts
+                endTime = _timing.RealTime + TimeSpan.FromHours(hours);
+                shell.WriteLine($"Shift end time set to {hours} hours from now (server real time: {endTime}).");
+            }
+
+            ticker.ShiftEndTime = endTime;
         }
     }
 }

@@ -9,6 +9,9 @@ administration-ui-round-tab-shift-settings = Shift Settings
 ## Shift Settings Window
 administration-shift-settings-window-title = Shift Settings
 administration-shift-settings-duration-label = Shift Duration (hours):
+administration-shift-settings-hours-label = Hours:
+administration-shift-settings-hours-from-now = Hours from now
+administration-shift-settings-hours-from-round-start = Hours from round start
 administration-shift-settings-duration-placeholder = 72
 administration-shift-settings-set-button = Set
 administration-shift-settings-clear-button = Clear

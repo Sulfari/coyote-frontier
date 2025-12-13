@@ -9,7 +9,6 @@
             <controls:ConfirmButton Name="EndRound" Text="{Loc administration-ui-round-tab-end-round}" />
             <controls:ConfirmButton Name="RestartRound" Text="{Loc administration-ui-round-tab-restart-round}" />
             <controls:ConfirmButton Name="RestartRoundNow" Text="{Loc administration-ui-round-tab-restart-round-now}" />
-            <Button Name="ShiftSettingsButton" Text="{Loc administration-ui-round-tab-shift-settings}" />
         </GridContainer>
     </BoxContainer>
 </Control>

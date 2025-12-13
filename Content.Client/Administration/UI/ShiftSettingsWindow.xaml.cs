@@ -5,6 +5,7 @@ using Robust.Client.UserInterface.Controls;
 using Robust.Client.UserInterface.CustomControls;
 using Robust.Client.UserInterface.XAML;
 using Robust.Shared.Timing;
+using Content.Client.GameTicking.Managers;
 
 namespace Content.Client.Administration.UI;
 
@@ -13,11 +14,21 @@ public sealed partial class ShiftSettingsWindow : DefaultWindow
 {
     [Dependency] private readonly IClientConsoleHost _console = default!;
     [Dependency] private readonly IGameTiming _gameTiming = default!;
+    [Dependency] private readonly IEntitySystemManager _entitySystem = default!;
+
+    private readonly ClientGameTicker _gameTicker;
+    private readonly ButtonGroup _timeModeButtonGroup = new();
 
     public ShiftSettingsWindow()
     {
         RobustXamlLoader.Load(this);
         IoCManager.InjectDependencies(this);
+
+        _gameTicker = _entitySystem.GetEntitySystem<ClientGameTicker>();
+
+        // Set up the button group for radio button behavior
+        HoursFromNowCheckbox.Group = _timeModeButtonGroup;
+        HoursFromRoundStartCheckbox.Group = _timeModeButtonGroup;
 
         SetShiftEndTimeButton.OnPressed += OnSetShiftEndTime;
         ClearShiftEndTimeButton.OnPressed += OnClearShiftEndTime;
@@ -37,9 +48,13 @@ public sealed partial class ShiftSettingsWindow : DefaultWindow
 
         if (double.TryParse(ShiftEndTimeInput.Text, out var hours))
         {
-            _console.ExecuteCommand($"setshiftendtime {hours}");
+            // Determine which mode is selected
+            var fromNow = HoursFromNowCheckbox.Pressed;
+            var mode = fromNow ? "now" : "roundstart";
+
+            _console.ExecuteCommand($"setshiftendtime {hours} {mode}");
             ShiftEndTimeInput.Text = string.Empty;
-            UpdateCurrentShiftEndLabel(hours);
+            UpdateCurrentShiftEndLabel(hours, fromNow);
         }
     }
 
@@ -63,9 +78,20 @@ public sealed partial class ShiftSettingsWindow : DefaultWindow
             : Loc.GetString("administration-shift-settings-auto-call-disabled");
     }
 
-    private void UpdateCurrentShiftEndLabel(double hours)
+    private void UpdateCurrentShiftEndLabel(double hours, bool fromNow)
     {
-        var endTime = _gameTiming.RealTime + TimeSpan.FromHours(hours);
+        TimeSpan endTime;
+        if (fromNow)
+        {
+            endTime = _gameTiming.RealTime + TimeSpan.FromHours(hours);
+        }
+        else
+        {
+            // Calculate from round start
+            var roundStartRealTime = _gameTiming.RealTime - (_gameTiming.CurTime - _gameTicker.RoundStartTimeSpan);
+            endTime = roundStartRealTime + TimeSpan.FromHours(hours);
+        }
+
         CurrentShiftEndLabel.Text = Loc.GetString("administration-shift-settings-shift-end-set",
             ("time", endTime.ToString(@"d\:hh\:mm\:ss")));
     }
