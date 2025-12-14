@@ -1,0 +1,7 @@
+- type: trait
+  id: BodyTypeStonk
+  name: trait-bodytype-donk-name
+  description: trait-bodytype-donk-desc
+  category: BodyType
+  cost: 1
+  bodytype: donk

@@ -37,4 +37,4 @@ horny-examine-gentle      = [color=Cyan]{CAPITALIZE(SUBJECT($target))} {CONJUGAT
 horny-examine-timid       = [color=Cyan]{CAPITALIZE(SUBJECT($target))} {CONJUGATE-BASIC($target, "seem", "seems")} to be a bit timid.[/color]
 horny-examine-calm        = [color=Cyan]{CAPITALIZE(SUBJECT($target))} {CONJUGATE-BASIC($target, "seem", "seems")} to be calm natured.[/color]
 horny-examine-modest      = [color=Cyan]{CAPITALIZE(SUBJECT($target))} {CONJUGATE-BASIC($target, "seem", "seems")} to be modest, in a way.[/color]
-horny-examine-silly      = [color=Cyan]{CAPITALIZE(SUBJECT($target))} {CONJUGATE-BASIC($target, "seem", "seems")} to be just kind of silly.[/color]
+horny-examine-silly       = [color=Cyan]{CAPITALIZE(SUBJECT($target))} {CONJUGATE-BASIC($target, "seem", "seems")} to be just kind of silly.[/color]

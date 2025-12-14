@@ -12,8 +12,22 @@ public sealed partial class HornyExamineQuirksComponent : Component
     /// <summary>
     /// Showables based on quirktags
     /// </summary>
-    [DataField("hornyShowables")]
+    [DataField]
     public List<ProtoId<HornyExaminePrototype>> HornyShowables = new();
+
+    /// <summary>
+    /// Showable physical appearances
+    /// not horny at all
+    /// </summary>
+    [DataField]
+    public HashSet<(string, string)> HornyAppearances = new();
+
+    public void AddHornyAppearance(string keye)
+    {
+        var descriptive = $"horny-bodytype-{keye}-descriptive";
+        var brief = $"horny-bodytype-{keye}-brief";
+        HornyAppearances.Add((descriptive, brief));
+    }
 
     public void AddHornyExamineTrait(HornyExaminePrototype hornyProto, IPrototypeManager prototypeManager)
     {

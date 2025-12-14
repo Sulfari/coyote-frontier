@@ -63,6 +63,11 @@ public sealed class TraitSystem : EntitySystem
                 }
             }
 
+            if (traitPrototype.Bodytype is not null)
+            {
+                EnsureComp<HornyExamineQuirksComponent>(args.Mob).AddHornyAppearance(traitPrototype.Bodytype);
+            }
+
             // Add item required by the trait
             if (traitPrototype.TraitGear == null)
                 continue;
