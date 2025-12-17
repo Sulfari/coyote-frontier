@@ -473,6 +473,17 @@
 
 - type: entity
   parent: PosterBase
+  id: ShuttleMapStringer
+  name: "NC Stringer"
+  description: "Detailed map of a Stringer shuttle."
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Sprite
+    sprite: _NF/Guidebook/shuttle_maps/128x96.rsi
+    state: stringer
+
+- type: entity
+  parent: PosterBase
   id: ShuttleMapSurveyor
   name: "FSB Surveyor"
   description: "Detailed map of a Surveyor shuttle."

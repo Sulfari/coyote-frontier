@@ -104,6 +104,7 @@
     - Construct
     - Adder
     - Loader
+    - Stringer
     - Legman
     - Liquidator
     - Honker

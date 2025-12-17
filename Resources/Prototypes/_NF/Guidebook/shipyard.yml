@@ -59,6 +59,7 @@
   - ShipyardSkipper
   - ShipyardSpirit
   - ShipyardStasis
+  - ShipyardStringer
   - ShipyardSurveyor
   - ShipyardTide
   - ShipyardVagabond
@@ -343,6 +344,11 @@
   id: ShipyardStasis
   name: guide-entry-shipyard-stasis
   text: "/ServerInfo/_NF/Guidebook/Shipyard/Stasis.xml"
+
+- type: guideEntry
+  id: ShipyardStringer
+  name: guide-entry-shipyard-stringer
+  text: "/ServerInfo/_NF/Guidebook/Shipyard/Stringer.xml"
 
 - type: guideEntry
   id: ShipyardSurveyor
