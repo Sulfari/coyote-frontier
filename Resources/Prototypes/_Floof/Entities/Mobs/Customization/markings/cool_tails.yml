@@ -1,0 +1,270 @@
+- type: marking
+  id: CoyoteTailDatashark
+  bodyPart: Tail
+  markingCategory: Tail
+  speciesRestriction: [Vulpkanin, Rodentia, SlimePerson, Human, Harpy, IPC, Arachne, Felinid, Oni, Kitsune]
+  kindAllowance: [BasicHumanlike, BasicFurry]
+  layering:
+    m_tail_datashark_BEHIND_A: TailBehind
+    m_tail_datashark_BEHIND_C: TailBehind
+    m_tail_datashark_FRONT_A: TailOversuit
+    m_tail_datashark_FRONT_C: TailOversuit
+  colorLinks:
+    m_tail_datashark_BEHIND_A: m_tail_datashark_FRONT_A
+    m_tail_datashark_BEHIND_C: m_tail_datashark_FRONT_C
+  sprites:
+  - sprite: _CS/cb_tails_batch_a.rsi
+    state: m_tail_datashark_BEHIND_A
+  - sprite: _CS/cb_tails_batch_a.rsi
+    state: m_tail_datashark_BEHIND_C
+  - sprite: _CS/cb_tails_batch_a.rsi
+    state: m_tail_datashark_FRONT_A
+  - sprite: _CS/cb_tails_batch_a.rsi
+    state: m_tail_datashark_FRONT_C
+
+- type: marking
+  id: CoyoteTailDownhusky
+  bodyPart: Tail
+  markingCategory: Tail
+  speciesRestriction: [Vulpkanin, Rodentia, SlimePerson, Human, Harpy, IPC, Arachne, Felinid, Oni, Kitsune]
+  kindAllowance: [BasicHumanlike, BasicFurry]
+  layering:
+    m_tail_downhusky_BEHIND_B: TailBehind
+    m_tail_downhusky_BEHIND_C: TailBehind
+    m_tail_downhusky_FRONT_B: TailOversuit
+    m_tail_downhusky_FRONT_C: TailOversuit
+  colorLinks:
+    m_tail_downhusky_BEHIND_B: m_tail_downhusky_FRONT_B
+    m_tail_downhusky_BEHIND_C: m_tail_downhusky_FRONT_C
+  sprites:
+  - sprite: _CS/cb_tails_batch_a.rsi
+    state: m_tail_downhusky_BEHIND_B
+  - sprite: _CS/cb_tails_batch_a.rsi
+    state: m_tail_downhusky_BEHIND_C
+  - sprite: _CS/cb_tails_batch_a.rsi
+    state: m_tail_downhusky_FRONT_B
+  - sprite: _CS/cb_tails_batch_a.rsi
+    state: m_tail_downhusky_FRONT_C
+
+- type: marking
+  id: CoyoteTailEasternd
+  bodyPart: Tail
+  markingCategory: Tail
+  speciesRestriction: [Vulpkanin, Rodentia, SlimePerson, Human, Harpy, IPC, Arachne, Felinid, Oni, Kitsune]
+  kindAllowance: [BasicHumanlike, BasicFurry]
+  layering:
+    m_tail_easternd_BEHIND_B: TailBehind
+    m_tail_easternd_BEHIND_C: TailBehind
+    m_tail_easternd_FRONT_B: TailOversuit
+    m_tail_easternd_FRONT_C: TailOversuit
+  colorLinks:
+    m_tail_easternd_BEHIND_B: m_tail_easternd_FRONT_B
+    m_tail_easternd_BEHIND_C: m_tail_easternd_FRONT_C
+  sprites:
+  - sprite: _CS/cb_tails_batch_a.rsi
+    state: m_tail_easternd_BEHIND_B
+  - sprite: _CS/cb_tails_batch_a.rsi
+    state: m_tail_easternd_BEHIND_C
+  - sprite: _CS/cb_tails_batch_a.rsi
+    state: m_tail_easternd_FRONT_B
+  - sprite: _CS/cb_tails_batch_a.rsi
+    state: m_tail_easternd_FRONT_C
+
+- type: marking
+  id: CoyoteTailPorkupine
+  bodyPart: Tail
+  markingCategory: Tail
+  speciesRestriction: [Vulpkanin, Rodentia, SlimePerson, Human, Harpy, IPC, Arachne, Felinid, Oni, Kitsune]
+  kindAllowance: [BasicHumanlike, BasicFurry]
+  layering:
+    m_tail_porkupine_BEHIND_A: TailBehind
+    m_tail_porkupine_BEHIND_B: TailBehind
+    m_tail_porkupine_BEHIND_C: TailBehind
+    m_tail_porkupine_FRONT_A: TailOversuit
+    m_tail_porkupine_FRONT_B: TailOversuit
+    m_tail_porkupine_FRONT_C: TailOversuit
+  colorLinks:
+    m_tail_porkupine_BEHIND_A: m_tail_porkupine_FRONT_A
+    m_tail_porkupine_BEHIND_B: m_tail_porkupine_FRONT_B
+    m_tail_porkupine_BEHIND_C: m_tail_porkupine_FRONT_C
+  sprites:
+  - sprite: _CS/cb_tails_batch_a.rsi
+    state: m_tail_porkupine_BEHIND_A
+  - sprite: _CS/cb_tails_batch_a.rsi
+    state: m_tail_porkupine_BEHIND_B
+  - sprite: _CS/cb_tails_batch_a.rsi
+    state: m_tail_porkupine_BEHIND_C
+  - sprite: _CS/cb_tails_batch_a.rsi
+    state: m_tail_porkupine_FRONT_A
+  - sprite: _CS/cb_tails_batch_a.rsi
+    state: m_tail_porkupine_FRONT_B
+  - sprite: _CS/cb_tails_batch_a.rsi
+    state: m_tail_porkupine_FRONT_C
+
+- type: marking
+  id: CoyoteTailSam
+  bodyPart: Tail
+  markingCategory: Tail
+  speciesRestriction: [Vulpkanin, Rodentia, SlimePerson, Human, Harpy, IPC, Arachne, Felinid, Oni, Kitsune]
+  kindAllowance: [BasicHumanlike, BasicFurry]
+  layering:
+    m_tail_sam_BEHIND_B: TailBehind
+    m_tail_sam_BEHIND_C: TailBehind
+    m_tail_sam_FRONT_B: TailOversuit
+    m_tail_sam_FRONT_C: TailOversuit
+  colorLinks:
+    m_tail_sam_BEHIND_B: m_tail_sam_FRONT_B
+    m_tail_sam_BEHIND_C: m_tail_sam_FRONT_C
+  sprites:
+  - sprite: _CS/cb_tails_batch_a.rsi
+    state: m_tail_sam_BEHIND_B
+  - sprite: _CS/cb_tails_batch_a.rsi
+    state: m_tail_sam_BEHIND_C
+  - sprite: _CS/cb_tails_batch_a.rsi
+    state: m_tail_sam_FRONT_B
+  - sprite: _CS/cb_tails_batch_a.rsi
+    state: m_tail_sam_FRONT_C
+
+- type: marking
+  id: CoyoteTailWah
+  bodyPart: Tail
+  markingCategory: Tail
+  speciesRestriction: [Vulpkanin, Rodentia, SlimePerson, Human, Harpy, IPC, Arachne, Felinid, Oni, Kitsune]
+  kindAllowance: [BasicHumanlike, BasicFurry]
+  layering:
+    m_tail_wah_BEHIND_B: TailBehind
+    m_tail_wah_BEHIND_C: TailBehind
+    m_tail_wah_FRONT_B: TailOversuit
+    m_tail_wah_FRONT_C: TailOversuit
+  colorLinks:
+    m_tail_wah_BEHIND_B: m_tail_wah_FRONT_B
+    m_tail_wah_BEHIND_C: m_tail_wah_FRONT_C
+  sprites:
+  - sprite: _CS/cb_tails_batch_a.rsi
+    state: m_tail_wah_BEHIND_B
+  - sprite: _CS/cb_tails_batch_a.rsi
+    state: m_tail_wah_BEHIND_C
+  - sprite: _CS/cb_tails_batch_a.rsi
+    state: m_tail_wah_FRONT_B
+  - sprite: _CS/cb_tails_batch_a.rsi
+    state: m_tail_wah_FRONT_C
+
+- type: marking
+  id: CoyoteTailwagDatashark
+  bodyPart: Tail
+  markingCategory: Tail
+  speciesRestriction: [Vulpkanin, Rodentia, SlimePerson, Human, Harpy, IPC, Arachne, Felinid, Oni, Kitsune]
+  kindAllowance: [BasicHumanlike, BasicFurry]
+  layering:
+    m_tailwag_datashark_BEHIND_A: TailBehind
+    m_tailwag_datashark_BEHIND_C: TailBehind
+    m_tailwag_datashark_FRONT_A: TailOversuit
+    m_tailwag_datashark_FRONT_C: TailOversuit
+  colorLinks:
+    m_tailwag_datashark_BEHIND_A: m_tailwag_datashark_FRONT_A
+    m_tailwag_datashark_BEHIND_C: m_tailwag_datashark_FRONT_C
+  sprites:
+  - sprite: _CS/cb_tails_batch_a.rsi
+    state: m_tailwag_datashark_BEHIND_A
+  - sprite: _CS/cb_tails_batch_a.rsi
+    state: m_tailwag_datashark_BEHIND_C
+  - sprite: _CS/cb_tails_batch_a.rsi
+    state: m_tailwag_datashark_FRONT_A
+  - sprite: _CS/cb_tails_batch_a.rsi
+    state: m_tailwag_datashark_FRONT_C
+
+- type: marking
+  id: CoyoteTailwagDownhusky
+  bodyPart: Tail
+  markingCategory: Tail
+  speciesRestriction: [Vulpkanin, Rodentia, SlimePerson, Human, Harpy, IPC, Arachne, Felinid, Oni, Kitsune]
+  kindAllowance: [BasicHumanlike, BasicFurry]
+  layering:
+    m_tailwag_downhusky_BEHIND_B: TailBehind
+    m_tailwag_downhusky_BEHIND_C: TailBehind
+    m_tailwag_downhusky_FRONT_B: TailOversuit
+    m_tailwag_downhusky_FRONT_C: TailOversuit
+  colorLinks:
+    m_tailwag_downhusky_BEHIND_B: m_tailwag_downhusky_FRONT_B
+    m_tailwag_downhusky_BEHIND_C: m_tailwag_downhusky_FRONT_C
+  sprites:
+  - sprite: _CS/cb_tails_batch_a.rsi
+    state: m_tailwag_downhusky_BEHIND_B
+  - sprite: _CS/cb_tails_batch_a.rsi
+    state: m_tailwag_downhusky_BEHIND_C
+  - sprite: _CS/cb_tails_batch_a.rsi
+    state: m_tailwag_downhusky_FRONT_B
+  - sprite: _CS/cb_tails_batch_a.rsi
+    state: m_tailwag_downhusky_FRONT_C
+
+- type: marking
+  id: CoyoteTailwagEasternd
+  bodyPart: Tail
+  markingCategory: Tail
+  speciesRestriction: [Vulpkanin, Rodentia, SlimePerson, Human, Harpy, IPC, Arachne, Felinid, Oni, Kitsune]
+  kindAllowance: [BasicHumanlike, BasicFurry]
+  layering:
+    m_tailwag_easternd_BEHIND_B: TailBehind
+    m_tailwag_easternd_BEHIND_C: TailBehind
+    m_tailwag_easternd_FRONT_B: TailOversuit
+    m_tailwag_easternd_FRONT_C: TailOversuit
+  colorLinks:
+    m_tailwag_easternd_BEHIND_B: m_tailwag_easternd_FRONT_B
+    m_tailwag_easternd_BEHIND_C: m_tailwag_easternd_FRONT_C
+  sprites:
+  - sprite: _CS/cb_tails_batch_a.rsi
+    state: m_tailwag_easternd_BEHIND_B
+  - sprite: _CS/cb_tails_batch_a.rsi
+    state: m_tailwag_easternd_BEHIND_C
+  - sprite: _CS/cb_tails_batch_a.rsi
+    state: m_tailwag_easternd_FRONT_B
+  - sprite: _CS/cb_tails_batch_a.rsi
+    state: m_tailwag_easternd_FRONT_C
+
+- type: marking
+  id: CoyoteTailwagSam
+  bodyPart: Tail
+  markingCategory: Tail
+  speciesRestriction: [Vulpkanin, Rodentia, SlimePerson, Human, Harpy, IPC, Arachne, Felinid, Oni, Kitsune]
+  kindAllowance: [BasicHumanlike, BasicFurry]
+  layering:
+    m_tailwag_sam_BEHIND_B: TailBehind
+    m_tailwag_sam_BEHIND_C: TailBehind
+    m_tailwag_sam_FRONT_B: TailOversuit
+    m_tailwag_sam_FRONT_C: TailOversuit
+  colorLinks:
+    m_tailwag_sam_BEHIND_B: m_tailwag_sam_FRONT_B
+    m_tailwag_sam_BEHIND_C: m_tailwag_sam_FRONT_C
+  sprites:
+  - sprite: _CS/cb_tails_batch_a.rsi
+    state: m_tailwag_sam_BEHIND_B
+  - sprite: _CS/cb_tails_batch_a.rsi
+    state: m_tailwag_sam_BEHIND_C
+  - sprite: _CS/cb_tails_batch_a.rsi
+    state: m_tailwag_sam_FRONT_B
+  - sprite: _CS/cb_tails_batch_a.rsi
+    state: m_tailwag_sam_FRONT_C
+
+- type: marking
+  id: CoyoteTailwagWah
+  bodyPart: Tail
+  markingCategory: Tail
+  speciesRestriction: [Vulpkanin, Rodentia, SlimePerson, Human, Harpy, IPC, Arachne, Felinid, Oni, Kitsune]
+  kindAllowance: [BasicHumanlike, BasicFurry]
+  layering:
+    m_tailwag_wah_BEHIND_B: TailBehind
+    m_tailwag_wah_BEHIND_C: TailBehind
+    m_tailwag_wah_FRONT_B: TailOversuit
+    m_tailwag_wah_FRONT_C: TailOversuit
+  colorLinks:
+    m_tailwag_wah_BEHIND_B: m_tailwag_wah_FRONT_B
+    m_tailwag_wah_BEHIND_C: m_tailwag_wah_FRONT_C
+  sprites:
+  - sprite: _CS/cb_tails_batch_a.rsi
+    state: m_tailwag_wah_BEHIND_B
+  - sprite: _CS/cb_tails_batch_a.rsi
+    state: m_tailwag_wah_BEHIND_C
+  - sprite: _CS/cb_tails_batch_a.rsi
+    state: m_tailwag_wah_FRONT_B
+  - sprite: _CS/cb_tails_batch_a.rsi
+    state: m_tailwag_wah_FRONT_C

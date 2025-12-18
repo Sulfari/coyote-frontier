@@ -1347,4 +1347,74 @@ marking-CoyoteWingsSuccubus-m_insect_wings_succubus_BEHIND_B  = Succubus
 marking-CoyoteWingsSuccubus-m_insect_wings_succubus_FRONT_B   = Succubus
 marking-CoyoteWingsSuccubus = Succubus
 
+# tailgus
+marking-CoyoteTailDatashark-m_tail_datashark_BEHIND_A = Datashark (Primary)
+marking-CoyoteTailDatashark-m_tail_datashark_BEHIND_C = Datashark (Secondary)
+marking-CoyoteTailDatashark-m_tail_datashark_FRONT_A = Datashark (Primary)
+marking-CoyoteTailDatashark-m_tail_datashark_FRONT_C = Datashark (Secondary)
+marking-CoyoteTailDatashark = Datashark
+
+marking-CoyoteTailDownhusky-m_tail_downhusky_BEHIND_B = Husky, downward (Primary)
+marking-CoyoteTailDownhusky-m_tail_downhusky_BEHIND_C = Husky, downward (Secondary)
+marking-CoyoteTailDownhusky-m_tail_downhusky_FRONT_B = Husky, downward (Primary)
+marking-CoyoteTailDownhusky-m_tail_downhusky_FRONT_C = Husky, downward (Secondary)
+marking-CoyoteTailDownhusky = Husky, downward
+
+marking-CoyoteTailEasternd-m_tail_easternd_BEHIND_B = Eastern Dragon Pro (Primary)
+marking-CoyoteTailEasternd-m_tail_easternd_BEHIND_C = Eastern Dragon Pro (Secondary)
+marking-CoyoteTailEasternd-m_tail_easternd_FRONT_B = Eastern Dragon Pro (Primary)
+marking-CoyoteTailEasternd-m_tail_easternd_FRONT_C = Eastern Dragon Pro (Secondary)
+marking-CoyoteTailEasternd = Eastern Dragon Pro
+
+marking-CoyoteTailPorkupine-m_tail_porkupine_BEHIND_A = Porkupine (Primary)
+marking-CoyoteTailPorkupine-m_tail_porkupine_BEHIND_B = Porkupine (Secondary)
+marking-CoyoteTailPorkupine-m_tail_porkupine_BEHIND_C = Porkupine (Tertiary)
+marking-CoyoteTailPorkupine-m_tail_porkupine_FRONT_A = Porkupine (Primary)
+marking-CoyoteTailPorkupine-m_tail_porkupine_FRONT_B = Porkupine (Secondary)
+marking-CoyoteTailPorkupine-m_tail_porkupine_FRONT_C = Porkupine (Tertiary)
+marking-CoyoteTailPorkupine = Porkupine
+
+marking-CoyoteTailSam-m_tail_sam_BEHIND_B = Squirrelfox (Primary)
+marking-CoyoteTailSam-m_tail_sam_BEHIND_C = Squirrelfox (Secondary)
+marking-CoyoteTailSam-m_tail_sam_FRONT_B = Squirrelfox (Primary)
+marking-CoyoteTailSam-m_tail_sam_FRONT_C = Squirrelfox (Secondary)
+marking-CoyoteTailSam = Squirrelfox
+
+marking-CoyoteTailWah-m_tail_wah_BEHIND_B = Red Panda Wah (Primary)
+marking-CoyoteTailWah-m_tail_wah_BEHIND_C = Red Panda Wah (Secondary)
+marking-CoyoteTailWah-m_tail_wah_FRONT_B = Red Panda Wah (Primary)
+marking-CoyoteTailWah-m_tail_wah_FRONT_C = Red Panda Wah (Secondary)
+marking-CoyoteTailWah = Red Panda Wah
+
+marking-CoyoteTailwagDatashark-m_tailwag_datashark_BEHIND_A = Datashark, Wagging (Primary)
+marking-CoyoteTailwagDatashark-m_tailwag_datashark_BEHIND_C = Datashark, Wagging (Secondary)
+marking-CoyoteTailwagDatashark-m_tailwag_datashark_FRONT_A = Datashark, Wagging (Primary)
+marking-CoyoteTailwagDatashark-m_tailwag_datashark_FRONT_C = Datashark, Wagging (Secondary)
+marking-CoyoteTailwagDatashark = Datashark, Wagging
+
+marking-CoyoteTailwagDownhusky-m_tailwag_downhusky_BEHIND_B = Husky, Downward, Wagging (Primary)
+marking-CoyoteTailwagDownhusky-m_tailwag_downhusky_BEHIND_C = Husky, Downward, Wagging (Secondary)
+marking-CoyoteTailwagDownhusky-m_tailwag_downhusky_FRONT_B = Husky, Downward, Wagging (Primary)
+marking-CoyoteTailwagDownhusky-m_tailwag_downhusky_FRONT_C = Husky, Downward, Wagging (Secondary)
+marking-CoyoteTailwagDownhusky = Husky, Downward, Wagging
+
+marking-CoyoteTailwagEasternd-m_tailwag_easternd_BEHIND_B = Eastern Dragon Pro, Wagging (Primary)
+marking-CoyoteTailwagEasternd-m_tailwag_easternd_BEHIND_C = Eastern Dragon Pro, Wagging (Secondary)
+marking-CoyoteTailwagEasternd-m_tailwag_easternd_FRONT_B = Eastern Dragon Pro, Wagging (Primary)
+marking-CoyoteTailwagEasternd-m_tailwag_easternd_FRONT_C = Eastern Dragon Pro, Wagging (Secondary)
+marking-CoyoteTailwagEasternd = Eastern Dragon Pro, Wagging
+
+marking-CoyoteTailwagSam-m_tailwag_sam_BEHIND_B = Squirrelfox, Wagging (Primary)
+marking-CoyoteTailwagSam-m_tailwag_sam_BEHIND_C = Squirrelfox, Wagging (Secondary)
+marking-CoyoteTailwagSam-m_tailwag_sam_FRONT_B = Squirrelfox, Wagging (Primary)
+marking-CoyoteTailwagSam-m_tailwag_sam_FRONT_C = Squirrelfox, Wagging (Secondary)
+marking-CoyoteTailwagSam = Squirrelfox, Wagging
+
+marking-CoyoteTailwagWah-m_tailwag_wah_BEHIND_B = Red Panda Wah, Wagging (Primary)
+marking-CoyoteTailwagWah-m_tailwag_wah_BEHIND_C = Red Panda Wah, Wagging (Secondary)
+marking-CoyoteTailwagWah-m_tailwag_wah_FRONT_B = Red Panda Wah, Wagging (Primary)
+marking-CoyoteTailwagWah-m_tailwag_wah_FRONT_C = Red Panda Wah, Wagging (Secondary)
+marking-CoyoteTailwagWah = Red Panda Wah, Wagging
+
+
 
