@@ -116,6 +116,8 @@ namespace Content.Client.Lobby.UI
 
         private ISawmill _sawmill;
 
+        private ProfilePreviewSettings _ppSettings = new();
+
         public HumanoidProfileEditor(
             IClientPreferencesManager preferencesManager,
             IConfigurationManager configurationManager,
@@ -542,6 +544,16 @@ namespace Content.Client.Lobby.UI
                 ReloadPreview();
             };
 
+            ShowUndies.OnToggled += args =>
+            {
+                ReloadPreview();
+            };
+
+            ShowGenitals.OnToggled += args =>
+            {
+                ReloadPreview();
+            };
+
             SpeciesInfoButton.OnPressed += OnSpeciesInfoButtonPressed;
 
 
@@ -905,7 +917,12 @@ namespace Content.Client.Lobby.UI
             if (Profile == null || !_prototypeManager.HasIndex(Profile.Species))
                 return;
 
-            PreviewDummy = _controller.LoadProfileEntity(Profile, JobOverride, ShowClothes.Pressed);
+            _controller.ShowUndies = ShowUndies.Pressed;
+            _controller.ShowGenitals = ShowGenitals.Pressed;
+            PreviewDummy = _controller.LoadProfileEntity(
+                Profile,
+                JobOverride,
+                ShowClothes.Pressed);
             SpriteView.SetEntity(PreviewDummy);
             _entManager.System<MetaDataSystem>().SetEntityName(PreviewDummy, Profile.Name);
 
@@ -975,7 +992,14 @@ namespace Content.Client.Lobby.UI
             if (Profile == null || !_entManager.EntityExists(PreviewDummy))
                 return;
 
-            _entManager.System<HumanoidAppearanceSystem>().LoadProfile(PreviewDummy, Profile);
+            _ppSettings.ShowUndies = ShowUndies.Pressed;
+            _ppSettings.ShowGenitals = ShowGenitals.Pressed;
+            _entManager.System<HumanoidAppearanceSystem>().ProfilePreviewSettings = _ppSettings;
+            _entManager.System<HumanoidAppearanceSystem>().LoadProfile(
+                PreviewDummy,
+                Profile);
+            _entManager.System<HumanoidAppearanceSystem>().ProfilePreviewSettings = null;
+            // 'using' me like a thigh-highed femboy in a furry convention
 
             // Check and set the dirty flag to enable the save/reset buttons as appropriate.
             SetDirty();

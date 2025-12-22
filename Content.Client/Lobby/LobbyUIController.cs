@@ -46,6 +46,8 @@ public sealed class LobbyUIController : UIController, IOnStateEntered<LobbyState
     private CharacterSetupGui? _characterSetup;
     private HumanoidProfileEditor? _profileEditor;
     private CharacterSetupGuiSavePanel? _savePanel;
+    public bool ShowUndies = true;
+    public bool ShowGenitals = true;
 
     /// <summary>
     /// This is the characher preview panel in the chat. This should only update if their character updates.
@@ -465,7 +467,10 @@ public sealed class LobbyUIController : UIController, IOnStateEntered<LobbyState
     /// <summary>
     /// Loads the profile onto a dummy entity.
     /// </summary>
-    public EntityUid LoadProfileEntity(HumanoidCharacterProfile? humanoid, JobPrototype? job, bool jobClothes)
+    public EntityUid LoadProfileEntity(
+        HumanoidCharacterProfile? humanoid,
+        JobPrototype? job,
+        bool jobClothes)
     {
         EntityUid dummyEnt;
 
@@ -506,6 +511,16 @@ public sealed class LobbyUIController : UIController, IOnStateEntered<LobbyState
                 var loadout = humanoid.GetLoadoutOrDefault(LoadoutSystem.GetJobPrototype(job.ID), _playerManager.LocalSession, humanoid.Species, EntityManager, _prototypeManager);
                 GiveDummyLoadout(dummyEnt, loadout);
             }
+        }
+
+        if (!ShowUndies)
+        {
+            _humanoid.HideUndies(dummyEnt);
+        }
+
+        if (!ShowGenitals)
+        {
+            _humanoid.HideGenitals(dummyEnt);
         }
 
         return dummyEnt;

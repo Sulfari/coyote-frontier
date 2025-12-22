@@ -20,6 +20,8 @@ public sealed class HumanoidAppearanceSystem : SharedHumanoidAppearanceSystem
     [Dependency] private readonly IConfigurationManager _configurationManager = default!;
     [Dependency] private readonly DisplacementMapSystem _displacement = default!;
 
+    public ProfilePreviewSettings? ProfilePreviewSettings = null;
+
     public override void Initialize()
     {
         base.Initialize();
@@ -200,7 +202,11 @@ public sealed class HumanoidAppearanceSystem : SharedHumanoidAppearanceSystem
     ///     This should not be used if the entity is owned by the server. The server will otherwise
     ///     override this with the appearance data it sends over.
     /// </remarks>
-    public override void LoadProfile(EntityUid uid, HumanoidCharacterProfile? profile, HumanoidAppearanceComponent? humanoid = null)
+    public override void LoadProfile(
+        EntityUid uid,
+        HumanoidCharacterProfile? profile,
+        HumanoidAppearanceComponent? humanoid = null
+        )
     {
         if (profile == null)
             return;
@@ -304,6 +310,20 @@ public sealed class HumanoidAppearanceSystem : SharedHumanoidAppearanceSystem
         humanoid.EyeColor = profile.Appearance.EyeColor;
         humanoid.Height = profile.Height;
         humanoid.Width = profile.Width;
+
+        // Apply profile preview settings if they exist
+        if (ProfilePreviewSettings != null)
+        {
+            if (!ProfilePreviewSettings.ShowUndies)
+            {
+                humanoid.PermanentlyHidden.Add(HumanoidVisualLayers.UndergarmentBottom);
+                humanoid.PermanentlyHidden.Add(HumanoidVisualLayers.UndergarmentTop);
+            }
+            if (!ProfilePreviewSettings.ShowGenitals)
+            {
+                humanoid.PermanentlyHidden.Add(HumanoidVisualLayers.Genital);
+            }
+        }
 
         UpdateSprite(humanoid, Comp<SpriteComponent>(uid));
     }
@@ -606,4 +626,32 @@ public sealed class HumanoidAppearanceSystem : SharedHumanoidAppearanceSystem
             }
         }
     }
+
+    public override void HideUndies(EntityUid ent, HumanoidAppearanceComponent? humanoid = null)
+    {
+        if (!Resolve(ent, ref humanoid))
+            return;
+        humanoid.PermanentlyHidden.Add(HumanoidVisualLayers.UndergarmentBottom);
+        humanoid.PermanentlyHidden.Add(HumanoidVisualLayers.UndergarmentTop);
+        base.HideUndies(ent, humanoid);
+        UpdateSprite(humanoid, Comp<SpriteComponent>(ent));
+    }
+
+    public override void HideGenitals(EntityUid ent, HumanoidAppearanceComponent? humanoid = null)
+    {
+        if (!Resolve(ent, ref humanoid))
+            return;
+        humanoid.PermanentlyHidden.Add(HumanoidVisualLayers.Genital);
+        base.HideGenitals(ent, humanoid);
+        UpdateSprite(humanoid, Comp<SpriteComponent>(ent));
+    }
+}
+
+public sealed class ProfilePreviewSettings(
+    bool showUndies = true,
+    bool showGenitals = true
+    )
+{
+    public bool ShowUndies = showUndies;
+    public bool ShowGenitals = showGenitals;
 }

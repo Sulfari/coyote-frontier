@@ -132,6 +132,28 @@
                                     Text="{Loc 'humanoid-profile-editor-clothing-show'}"
                                     ToggleMode="True" />
                             </BoxContainer>
+                            <!--  Show undies  -->
+                            <BoxContainer HorizontalExpand="True">
+                                <Label Text="{Loc 'humanoid-profile-editor-undies'}" />
+                                <Control HorizontalExpand="True" />
+                                <Button
+                                    HorizontalAlignment="Right"
+                                    Name="ShowUndies"
+                                    Pressed="True"
+                                    Text="{Loc 'humanoid-profile-editor-undies-show'}"
+                                    ToggleMode="True" />
+                            </BoxContainer>
+                            <!--  Show genitals  -->
+                            <BoxContainer HorizontalExpand="True">
+                                <Label Text="{Loc 'humanoid-profile-editor-genitals'}" />
+                                <Control HorizontalExpand="True" />
+                                <Button
+                                    HorizontalAlignment="Right"
+                                    Name="ShowGenitals"
+                                    Pressed="True"
+                                    Text="{Loc 'humanoid-profile-editor-genitals-show'}"
+                                    ToggleMode="True" />
+                            </BoxContainer>
                             <!--  Spawn Priority  -->
                             <BoxContainer HorizontalExpand="True">
                                 <Label Text="{Loc 'humanoid-profile-editor-spawn-priority-label'}" />
