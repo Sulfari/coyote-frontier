@@ -52,5 +52,5 @@
   - type: IncreaseDamageOnWield
     damage:
       types:
-        Blunt: 38 # coyote: buffed most melee's damage by ~2.7x
+        Blunt: 19 # coyote: buffed most melee's damage by ~2.7x
         Structural: 10 # coyote: replace shock damage with structure damage
