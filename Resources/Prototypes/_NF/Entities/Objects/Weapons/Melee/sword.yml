@@ -13,7 +13,7 @@
     attackRate: 1.5
     damage:
       types:
-        Slash: 40.5 # coyote: buffed most melee's damage by ~2.7x
+        Slash: 22 # buffed most melee's damage by ~1.5x
     soundHit:
         path: /Audio/Weapons/bladeslice.ogg
   - type: Reflect

@@ -41,10 +41,10 @@
     angle: 60
     animation: WeaponArcThrust
   - type: StaminaDamageOnHit
-    damage: 95
+    damage: 105 # okay, okay, just hear me out, just, just hear me out okay just hear me out
     sound: /Audio/Weapons/egloves.ogg
   - type: StaminaDamageOnCollide
-    damage: 35
+    damage: 55 # what if, hear me out, what if stun batons were just OP and made guns pointles??
     sound: /Audio/Weapons/egloves.ogg
   - type: LandAtCursor # it deals stamina damage when thrown
   - type: Battery

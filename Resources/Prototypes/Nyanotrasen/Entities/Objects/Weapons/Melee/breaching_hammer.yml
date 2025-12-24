@@ -14,12 +14,12 @@
     range: 1.70
     damage:
       types:
-        Blunt: 27 # coyote: buffed most melee's damage by ~2.7x
-        Piercing: 9 # coyote: buffed most melee's damage by ~2.7x
-        Structural: 27 # coyote: see above. typically I wouldn't buff this but it's a BREACHING hammer.
+        Blunt: 15 # buffed most melee's damage by ~1.5x
+        Piercing: 3 # buffed most melee's damage by ~1.5x
+        Structural: 15 # coyote: see above. typically I wouldn't buff this but it's a BREACHING hammer.
     soundHit:
       path: /Audio/Nyanotrasen/Weapons/club.ogg
-    bluntStaminaDamageFactor: 1.50 # 15 stamina damage
+    bluntStaminaDamageFactor: 2 # 60 stamina damage
 #  - type: MeleeStaminaCost
 #    swing: 10
 #    wieldCoefficient: 0.5 #if wielded you will only consume 5
@@ -27,9 +27,9 @@
   - type: IncreaseDamageOnWield
     damage:
       types:
-        Blunt: 54 # coyote: buffed most melee's damage by ~2.7x
-        Piercing: 5.5 # coyote: buffed most melee's damage by ~2.7x
-        Structural: 54 # coyote: buffed most melee's damage by ~2.7x
+        Blunt: 30 # buffed most melee's damage by ~1.5x
+        Piercing: 2 # buffed most melee's damage by ~1.5x
+        Structural: 85 # buffed most melee's damage by ~1.5x
   - type: Tool
     qualities:
       - Prying

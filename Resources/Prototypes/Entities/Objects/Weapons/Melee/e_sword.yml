@@ -41,8 +41,8 @@
         variation: 0.125
     activatedDamage:
       types:
-        Slash: 40.5
-        Heat: 40.5
+        Slash: 22
+        Heat: 22
         Structural: 20
   - type: MeleeWeapon
     wideAnimationRotation: -135
@@ -115,8 +115,8 @@
         variation: 0.250
     activatedDamage:
         types:
-            Slash: 27 # coyote: buffed most melee's damage by ~2.7x
-            Heat: 27 # coyote: buffed most melee's damage by ~2.7x
+            Slash: 15 # buffed most melee's damage by ~1.5x
+            Heat: 15 # buffed most melee's damage by ~1.5x
     deactivatedSecret: true
   - type: ItemToggleActiveSound
     activeSound:
@@ -185,8 +185,8 @@
         variation: 0.250
     activatedDamage:
       types:
-        Slash: 27 # coyote: buffed most melee's damage by ~2.7x
-        Heat: 27 # coyote: buffed most melee's damage by ~2.7x
+        Slash: 15 # buffed most melee's damage by ~1.5x
+        Heat: 15 # buffed most melee's damage by ~1.5x
   - type: ComponentToggler
     components:
     - type: Sharp
@@ -254,8 +254,8 @@
   - type: ItemToggleMeleeWeapon
     activatedDamage:
         types:
-            Slash: 27 # coyote: buffed most melee's damage by ~2.7x
-            Heat: 33 # coyote: buffed most melee's damage by ~2.7x
+            Slash: 15 # buffed most melee's damage by ~1.5x
+            Heat: 18 # buffed most melee's damage by ~1.5x
     deactivatedSecret: true
   - type: Sprite
     sprite: Objects/Weapons/Melee/e_cutlass.rsi
@@ -294,9 +294,9 @@
         variation: 0.250
     activatedDamage:
         types:
-            Slash: 33 # coyote: buffed most melee's damage by ~2.7x
-            Heat: 33 # coyote: buffed most melee's damage by ~2.7x
-            Structural: 15 # coyote: buffed most melee's damage by ~2.7x
+            Slash: 18 # buffed most melee's damage by ~1.5x
+            Heat: 18 # buffed most melee's damage by ~1.5x
+            Structural: 15 # buffed most melee's damage by ~1.5x
   - type: ItemToggleActiveSound
     activeSound:
       path: /Audio/Weapons/ebladehum.ogg
@@ -357,9 +357,9 @@
         variation: 0.250
     activatedDamage:
       types:
-        Slash: 54 # coyote: buffed most melee's damage by ~2.7x
-        Heat: 54 # coyote: buffed most melee's damage by ~2.7x
-        Structural: 20
+        Slash: 30 # buffed most melee's damage by ~1.5x
+        Heat: 30 # buffed most melee's damage by ~1.5x
+        Structural: 25
   - type: MeleeRequiresWield
   - type: HeldSpeedModifier #slowdown is what balances this compared to a dsword
     walkModifier: 0.6

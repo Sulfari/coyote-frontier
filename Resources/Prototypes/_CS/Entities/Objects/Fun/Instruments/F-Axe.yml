@@ -19,10 +19,10 @@
     range: 1.85
     damage:
       types:
-        Blunt: 19 # coyote: buffed most melee's damage by ~2.7x
+        Blunt: 19 # buffed most melee's damage by ~1.5x
   - type: Wieldable
   - type: IncreaseDamageOnWield
     damage:
       types:
-        Blunt: 19 # coyote: buffed most melee's damage by ~2.7x
+        Blunt: 19 # buffed most melee's damage by ~1.5x
         Structural: 10 # coyote: replace shock damage with structure damage

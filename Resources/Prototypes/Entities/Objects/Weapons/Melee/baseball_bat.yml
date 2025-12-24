@@ -11,7 +11,7 @@
     wideAnimationRotation: -135
     damage:
       types:
-        Blunt: 27 # coyote: buffed most melee's damage by ~2.7x
+        Blunt: 15 # buffed most melee's damage by ~1.5x
         Structural: 5
     soundHit:
       collection: MetalThud
@@ -19,7 +19,7 @@
   - type: IncreaseDamageOnWield
     damage:
       types:
-        Blunt: 13 # coyote: buffed most melee's damage by ~2.7x
+        Blunt: 10 # buffed most melee's damage by ~1.5x
         Structural: 10
   - type: Item
     size: Normal
