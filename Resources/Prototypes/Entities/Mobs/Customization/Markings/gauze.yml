@@ -243,7 +243,7 @@
   bodyPart: Head
   markingCategory: Overlay
   kindAllowance: [BasicHumanlike, BasicFurry]
-  speciesRestriction: [Dwarf, Human, Reptilian, Arachnid, Moth, Goblin, Sheleg, Felinid, Oni, Vulpkanin, Rodentia] # Frontier - added Goblin and afterwards
+  speciesRestriction: [Dwarf, Human, Reptilian, Arachnid, Moth, Goblin, Sheleg, Felinid, Oni, Vulpkanin, Rodentia, Chitinid] # Frontier - added Goblin and afterwards
   coloring:
     default:
       type:
@@ -335,7 +335,7 @@
   bodyPart: Eyes
   markingCategory: Overlay
   kindAllowance: [BasicHumanlike, BasicFurry]
-  speciesRestriction: [Moth]
+  speciesRestriction: [Moth, Chitinid] # Delta V - Chitinid
   coloring:
     default:
       type:
@@ -350,7 +350,7 @@
   bodyPart: Chest
   markingCategory: Overlay
   kindAllowance: [BasicHumanlike, BasicFurry]
-  speciesRestriction: [Moth]
+  speciesRestriction: [Moth, Chitinid] # Delta V - Chitinid
   coloring:
     default:
       type:
@@ -365,7 +365,7 @@
   bodyPart: Chest
   markingCategory: Overlay
   kindAllowance: [BasicHumanlike, BasicFurry]
-  speciesRestriction: [Moth]
+  speciesRestriction: [Moth, Chitinid] # Delta V - Chitinid
   coloring:
     default:
       type:
@@ -380,7 +380,7 @@
   bodyPart: Eyes
   markingCategory: Overlay
   kindAllowance: [BasicHumanlike, BasicFurry]
-  speciesRestriction: [Moth]
+  speciesRestriction: [Moth, Chitinid] # Delta V - Chitinid
   coloring:
     default:
       type:
@@ -395,7 +395,7 @@
   bodyPart: Eyes
   markingCategory: Overlay
   kindAllowance: [BasicHumanlike, BasicFurry]
-  speciesRestriction: [Moth]
+  speciesRestriction: [Moth, Chitinid] # Delta V - Chitinid
   coloring:
     default:
       type:
@@ -410,7 +410,7 @@
   bodyPart: Eyes
   markingCategory: Overlay
   kindAllowance: [BasicHumanlike, BasicFurry]
-  speciesRestriction: [Moth]
+  speciesRestriction: [Moth, Chitinid] # Delta V - Chitinid
   coloring:
     default:
       type:
@@ -425,7 +425,7 @@
   bodyPart: Eyes
   markingCategory: Overlay
   kindAllowance: [BasicHumanlike, BasicFurry]
-  speciesRestriction: [Moth]
+  speciesRestriction: [Moth, Chitinid] # Delta V - Chitinid
   coloring:
     default:
       type:
@@ -440,7 +440,7 @@
   bodyPart: RArm
   markingCategory: Overlay
   kindAllowance: [BasicHumanlike, BasicFurry]
-  speciesRestriction: [Moth]
+  speciesRestriction: [Moth, Chitinid] # Delta V - Chitinid
   coloring:
     default:
       type:
@@ -455,7 +455,7 @@
   bodyPart: LArm
   markingCategory: Overlay
   kindAllowance: [BasicHumanlike, BasicFurry]
-  speciesRestriction: [Moth]
+  speciesRestriction: [Moth, Chitinid] # Delta V - Chitinid
   coloring:
     default:
       type:
@@ -470,7 +470,7 @@
   bodyPart: RLeg
   markingCategory: Overlay
   kindAllowance: [BasicHumanlike, BasicFurry]
-  speciesRestriction: [Moth]
+  speciesRestriction: [Moth, Chitinid] # Delta V - Chitinid
   coloring:
     default:
       type:
@@ -485,7 +485,7 @@
   bodyPart: LLeg
   markingCategory: Overlay
   kindAllowance: [BasicHumanlike, BasicFurry]
-  speciesRestriction: [Moth]
+  speciesRestriction: [Moth, Chitinid] # Delta V - Chitinid
   coloring:
     default:
       type:
@@ -500,7 +500,7 @@
   bodyPart: RFoot
   markingCategory: Overlay
   kindAllowance: [BasicHumanlike, BasicFurry]
-  speciesRestriction: [Moth]
+  speciesRestriction: [Moth, Chitinid] # Delta V - Chitinid
   coloring:
     default:
       type:
@@ -515,7 +515,7 @@
   bodyPart: LFoot
   markingCategory: Overlay
   kindAllowance: [BasicHumanlike, BasicFurry]
-  speciesRestriction: [Moth]
+  speciesRestriction: [Moth, Chitinid] # Delta V - Chitinid
   coloring:
     default:
       type:

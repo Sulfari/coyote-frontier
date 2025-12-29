@@ -39,5 +39,6 @@
   <GuideEntityEmbed Entity="MobFeroxi" Caption="Feroxi"/>
   <GuideEntityEmbed Entity="MobRodentia" Caption="Rodentia"/>
   <GuideEntityEmbed Entity="MobOvinia" Caption="Ovinia"/>
+  <GuideEntityEmbed Entity="MobChitinid" Caption="Chitinid"/>
   </Box>
 </Document>
