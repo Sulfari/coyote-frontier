@@ -42,6 +42,8 @@
         - type: StationJobs
           availableJobs:
             DirectorOfCare: [ 1, 1 ]
+            MedicalNurse: [ -1, -1]
+            Therapist: [ -1, -1]
             Pilot: [ -1, -1 ]
             Mercenary: [ -1, -1 ]
           tags:
