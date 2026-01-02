@@ -338,7 +338,7 @@ public abstract class SharedInteractionVerbsSystem : EntitySystem
             _ => VerbCategory.Interaction
         };
         // ensure the categories stay in order
-        verb.Priority = proto.Priority 
+        verb.Priority = proto.Priority
             + proto.CategoryKey switch
                 {
                     "interact-sfw" => 500,
@@ -410,7 +410,7 @@ public abstract class SharedInteractionVerbsSystem : EntitySystem
             specifier.Popup,
             target,
             specifier);
-        var makeSoundObvious = 
+        var makeSoundObvious =
             specifier.SoundPerceivedByOthers
             || (specifier.ObviousIfTargetIsNonPlayer
                && prePlopup is not null
