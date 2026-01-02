@@ -39,11 +39,6 @@
     coefficient: 0.1
   - type: Flammable
     fireStackIncreaseMultiplier: 1.35 # until you light it up, cuz it's oily too
-  - type: BlackAndWhiteOverlay
-  - type: Flashable
-    eyeDamageChance: 0.3
-    eyeDamage: 1
-    durationMultiplier: 1.5
   - type: MeleeWeapon
     soundHit:
       collection: Punch
@@ -77,13 +72,11 @@
       Unsexed: MaleFelinid
   - type: Felinid # real
   - type: NoShoesSilentFootsteps
-  - type: PreventableStepTriggerComponent
   - type: Tag
     tags:
     - CanPilot
     - FootstepSound
     - DoorBumpOpener
-    - FelinidEmotes
   - type: Temperature
     coldDamageThreshold: 230 # -25 degrees centigrade, like 12 degrees below normal
     currentTemperature: 312  # Body temperature of cat
@@ -92,6 +85,14 @@
         Cold: 0.65 # in line with cold resist
   - type: ThermalRegulator
     normalBodyTemperature: 311.76
+  # CS - tweaks and edits
+  - type: ItemCougher
+    item: Hairball
+    action: ActionHairball
+    coughPopup: hairball-cough
+  - type: TallWhitelist # felinid parity
+    scale: 1
+  # CS - end
 
 
 - type: entity

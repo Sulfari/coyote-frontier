@@ -16,7 +16,11 @@
   maleFirstNames: names_tajaran_first
   femaleFirstNames: names_tajaran_first
   lastNames: names_tajaran_last
-  
+  # CS - Integrate marking system
+  kind:
+  - BasicHumanlike
+  - BasicFurry
+  # CS - end
 
 - type: markingPoints
   id: MobTajaranMarkingLimits
@@ -35,31 +39,31 @@
       points: 1
       required: true
       defaultMarkings: [ TajaranEarsBasic ]
-    Chest:
+    BaseChest:
       points: 1
       required: false
-    RightLeg:
+    BaseRLeg:
       points: 2
       required: false
-    RightFoot:
+    BaseRFoot:
       points: 2
       required: false
-    LeftLeg:
+    BaseLLeg:
       points: 2
       required: false
-    LeftFoot:
+    BaseLFoot:
       points: 2
       required: false
-    RightArm:
+    BaseRArm:
       points: 2
       required: false
-    RightHand:
+    BaseRHand:
       points: 3
       required: false
-    LeftArm:
+    BaseLArm:
       points: 2
       required: false
-    LeftHand:
+    BaseLHand:
       points: 3
       required: false
 
