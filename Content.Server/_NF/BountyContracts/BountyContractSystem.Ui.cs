@@ -98,7 +98,7 @@ public sealed partial class BountyContractSystem
                         if (session.AttachedEntity == owner &&
                             !(session.Status is SessionStatus.Disconnected or SessionStatus.Zombie))
                         {
-                            // Session was active 
+                            // Session was active
                             bounty.AuthorIsActive = true;
                         }
                     }
