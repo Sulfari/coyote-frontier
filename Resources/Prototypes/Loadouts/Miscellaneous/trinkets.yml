@@ -41,6 +41,12 @@
     back:
     - PlushieSpaceLizard
 
+- type: loadout # Coyote: Add Expie plushie to loadout
+  id: PlushieExperiment
+  storage:
+    back:
+    - PlushieExperiment
+
 - type: loadout
   id: ThreeCandles
   dummyEntity: LoadoutDummyCandles
