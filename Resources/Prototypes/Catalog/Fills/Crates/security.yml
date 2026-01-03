@@ -30,7 +30,7 @@
     contents:
       - id: NFWeaponEnergyPistolDisabler # Frontier: WeaponDisabler<NFWeaponEnergyPistolDisabler
         amount: 3 # Frontier
-      - id: Stunbaton
+      - id: SecStunbaton
         amount: 3
       - id: BoxFlashbang
       - id: Flash
