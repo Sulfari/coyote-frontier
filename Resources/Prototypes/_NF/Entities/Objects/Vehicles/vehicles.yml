@@ -643,6 +643,7 @@
         whitelist:
           components:
             - Stunbaton
+            - SecStunbaton
         priority: 2
 
 # Pirate
