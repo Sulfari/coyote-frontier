@@ -9,10 +9,12 @@
     NFWeaponShotgunKammerer: 6
   # Magazines
     NFMagazinePistol35Empty: 6
+    CSMagazinePistol40Empty: 6 # Coyote: Add .40 pistol mag
     NFMagazineLowCapacityRifle30Empty: 6
     NFMagazineClipRifle20Empty: 6
   # Ammo boxes
     NFAmmunitionBoxPistol35: 6
+    CSAmmunitionBoxPistol40: 6 # Coyote: Add .40 pistol ammobox
     NFAmmunitionBoxRifle20: 6
     NFAmmunitionBoxRifle30: 6
     NFAmmunitionBoxShellShotgunBuckshot: 6
@@ -29,10 +31,12 @@
     NFWeaponShotgunKammerer: 4294967295
   # Magazines
     NFMagazinePistol35Empty: 4294967295
+    CSMagazinePistol40Empty: 4294967295 # Coyote: Add .40 pistol mag
     NFMagazineClipRifle20Empty: 4294967295
     NFMagazineLowCapacityRifle30Empty: 4294967295
   # Ammo boxes
     NFAmmunitionBoxPistol35: 4294967295
+    CSAmmunitionBoxPistol40: 4294967295 # Coyote: Add .40 pistol ammobox
     NFAmmunitionBoxRifle20: 4294967295
     NFAmmunitionBoxRifle30: 4294967295
     NFAmmunitionBoxShellShotgunBuckshot: 4294967295

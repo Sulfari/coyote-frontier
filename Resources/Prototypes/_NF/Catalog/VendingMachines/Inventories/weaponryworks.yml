@@ -14,6 +14,7 @@
     NFSpeedLoaderPistol45Empty: 1
   # Ammo boxes
     NFAmmunitionBoxPistol35: 2
+    CSAmmunitionBoxPistol40: 2 # Coyote: Add .40 pistol ammobox
     NFAmmunitionBoxPistol45: 2
     NFAmmunitionBoxRifle20: 2
   emaggedInventory:
@@ -35,6 +36,7 @@
     NFSpeedLoaderPistol45Empty: 4294967295
   # Ammo boxes
     NFAmmunitionBoxPistol35: 4294967295
+    CSAmmunitionBoxPistol40: 4294967295 # Coyote: Add .40 pistol ammobox
     NFAmmunitionBoxPistol45: 4294967295
     NFAmmunitionBoxRifle20: 4294967295
     NFAmmunitionBoxShellShotgunBuckshot: 4294967295
