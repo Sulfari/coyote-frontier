@@ -65,7 +65,7 @@
   description: A Donk 'n Go box for holding all manner of donk pocket flavours
   components:
   - type: Sprite
-    sprite: _CS/Objects/Consumable/Food/Baked/donpocket.rsi
+    sprite: _CS/Objects/Consumable/Food/Baked/donkpocket.rsi
     state: box
     layers:
     - state: box
