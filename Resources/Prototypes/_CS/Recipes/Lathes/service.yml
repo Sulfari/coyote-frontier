@@ -1,37 +1,28 @@
 # Donk co Service Fab
 
 - type: latheRecipe
-  parent: BaseToolRecipe
+  parent: DrinkDisposableCup
   id: DrinkDonkcoCup
   result: DrinkDonkcoCup
-  materials:
-    Cardboard: 25
+  name: Donk co Disposable Cup
 
 - type: latheRecipe
-  parent: BaseToolRecipe
+  parent: NFBaseBoxRecipe
   id: FoodBoxDonkngo
   result: FoodBoxDonkngo
-  materials:
-    Cardboard: 25
+  name: Donk n Go Box
 
     - type: latheRecipe
-      parent: BaseToolRecipe
+      parent: NFBaseJumpsuitRecipe
       id: ClothingUniformJumpsuitDonkcoChef
       result: ClothingUniformJumpsuitDonkcoChef
-      materials:
-        Cloth: 10
-        Durathread: 5
 
     - type: latheRecipe
-      parent: BaseToolRecipe
+      parent: NFBaseCoatRecipe
       id: ClothingOuterDonkcoApron
       result: ClothingOuterDonkcoApron
-      materials:
-        Cloth: 10
 
     - type: latheRecipe
-      parent: BaseToolRecipe
+      parent: NFBaseHatRecipe
       id: ClothingHeadHatDonkcoHat
       result: ClothingHeadHatDonkcoHat
-      materials:
-        Cloth: 5
