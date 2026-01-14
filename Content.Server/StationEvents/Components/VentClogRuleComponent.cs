@@ -15,8 +15,8 @@ public sealed partial class VentClogRuleComponent : Component
     [DataField(customTypeSerializer: typeof(PrototypeIdListSerializer<ReagentPrototype>))]
     public IReadOnlyList<string> SafeishVentChemicals = new[]
     {
-        "Water", "Blood", "Slime", "SpaceDrugs", "SpaceCleaner", "Nutriment", "Sugar", "SpaceLube", "Ephedrine", "Ale", "Beer", "SpaceGlue"
-    };
+        "Water", "Blood", "Slime", "SpaceDrugs", "SpaceCleaner", "Nutriment", "Sugar", "SpaceLube", "Ale", "Beer", "SpaceGlue"
+    }; // Coyote: Removed Ephedrine from list of VentClog reagents
 
     /// <summary>
     /// Sound played when foam is being created.
