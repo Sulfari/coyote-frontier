@@ -1,0 +1,48 @@
+# Author Info
+# GitHub: YumiGumi (https://github.com/YumiGumi)
+# Discord: MintyMoo
+
+# Maintainer Info
+# GitHub: ???
+# Discord: ???
+
+# Shuttle Notes:
+# Archetypes = Salvage/Mercenary/Research
+# Halftypes = Service
+# Domestic Areas = Full
+- type: vessel
+  id: gourd
+  parent: BaseVessel
+  name: SLI Gourd
+  description: The flagship of the Salami Lid Exploration and Science Initiative. Featuring it's state of the art blast chamber, large research and salvage bays, bar and lounge, and fully expedition ready!
+  price: 1450000 #13600, +50%(exped) + LL3(120%) = 1435830
+  category: Large
+  group: Expedition
+  shuttlePath: /Maps/_CS/Shuttles/Expedition/gourd.yml
+  guidebookPage: Null
+  class:
+  - Expedition
+  - Salvage
+  - Science
+  engine:
+  - AME
+
+- type: gameMap
+  id: gourd
+  mapName: 'gourd'
+  mapPath: /Maps/_CS/Shuttles/Expedition/gourd.yml
+  minPlayers: 0
+  stations:
+    gourd:
+      stationProto: StandardFrontierExpeditionVessel
+      components:
+        - type: StationNameSetup
+          mapNameTemplate: 'SLI Gourd {1}'
+          nameGenerator:
+            !type:NanotrasenNameGenerator
+            prefixCreator: '14'
+        - type: StationJobs
+          availableJobs:
+            ContractorInterview: [ 0, 0 ]
+            PilotInterview: [ 0, 0 ]
+            MercenaryInterview: [ 0, 0 ]
