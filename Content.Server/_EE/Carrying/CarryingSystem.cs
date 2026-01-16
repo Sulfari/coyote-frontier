@@ -32,6 +32,7 @@ using Content.Shared.Storage;
 using Robust.Shared.Map.Components;
 using Robust.Shared.Physics.Components;
 using Robust.Server.GameObjects;
+using Robust.Shared.Player;
 
 namespace Content.Server.Carrying
 {
@@ -76,6 +77,11 @@ namespace Content.Server.Carrying
             SubscribeLocalEvent<BeingCarriedComponent, StrappedEvent>(OnBuckleChange);
             SubscribeLocalEvent<BeingCarriedComponent, UnstrappedEvent>(OnBuckleChange);
             SubscribeLocalEvent<CarriableComponent, CarryDoAfterEvent>(OnDoAfter);
+        }
+
+        private void OnPlayerConnect(EntityUid uid, ActorComponent component, ComponentStartup args)
+        {
+            EnsureComp<CarriableComponent>(uid);
         }
 
         private void AddCarryVerb(EntityUid uid, CarriableComponent component, GetVerbsEvent<AlternativeVerb> args)
@@ -309,10 +315,10 @@ namespace Content.Server.Carrying
             if (!Resolve(toCarry, ref carriedComp, false)
                 || !CanCarry(carrier, toCarry, carriedComp)
                 || HasComp<BeingCarriedComponent>(carrier)
-                || HasComp<ItemComponent>(carrier)
-                || TryComp<PhysicsComponent>(carrier, out var carrierPhysics)
-                && TryComp<PhysicsComponent>(toCarry, out var toCarryPhysics)
-                && carrierPhysics.Mass < toCarryPhysics.Mass * 2f)
+                || HasComp<ItemComponent>(carrier))
+                // || TryComp<PhysicsComponent>(carrier, out var carrierPhysics)
+                // && TryComp<PhysicsComponent>(toCarry, out var toCarryPhysics)
+                // && carrierPhysics.Mass < toCarryPhysics.Mass * 2f)
                 return false;
 
             Carry(carrier, toCarry);

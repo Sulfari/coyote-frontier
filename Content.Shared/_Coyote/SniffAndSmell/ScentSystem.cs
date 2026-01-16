@@ -37,7 +37,7 @@ public sealed class ScentSystem : EntitySystem
         SubscribeLocalEvent<ScentComponent, ComponentStartup>(OnScentStartup);
         SubscribeLocalEvent<ScentComponent, GetVerbsEvent<InteractionVerb>>(GetSmellVerbs);
         SubscribeLocalEvent<ScentComponent, ExaminedEvent>(OnExamined);
-        SubscribeLocalEvent<ActorComponent, ComponentStartup>(AddSmeller);
+        // SubscribeLocalEvent<ActorComponent, ComponentStartup>(AddSmeller);
     }
 
     private void OnScentStartup(EntityUid uid, ScentComponent component, ComponentStartup args)
@@ -262,13 +262,13 @@ public sealed class ScentSystem : EntitySystem
         }
     }
 
-    /// <summary>
-    /// Adds a smeller component to actors.
-    /// </summary>
-    private void AddSmeller(EntityUid uid, ActorComponent component, ComponentStartup args)
-    {
-        EnsureComp<SmellerComponent>(uid);
-    }
+    // /// <summary>
+    // /// Adds a smeller component to actors.
+    // /// </summary>
+    // private void AddSmeller(EntityUid uid, ActorComponent component, ComponentStartup args)
+    // {
+    //     EnsureComp<SmellerComponent>(uid);
+    // }
 
     /// <summary>
     /// Adds a scent prototype to a scent component!
