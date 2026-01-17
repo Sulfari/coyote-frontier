@@ -324,7 +324,7 @@ public sealed class RadioSystem : EntitySystem
         {
             gridDiameter += Math.Max(senderGrid.LocalAABB.Width, senderGrid.LocalAABB.Height);
         }
-        optiRange += gridDiameter;
+        optiRange += Math.Min(gridDiameter * 0.5f, optiRange * 0.2f); // max 20% increase to optimal range from grids
         if (distance <= optiRange)
             return args.ChatMsg;
         // okay time to degrade
