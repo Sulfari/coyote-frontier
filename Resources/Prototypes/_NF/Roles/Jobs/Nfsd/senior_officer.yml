@@ -11,21 +11,19 @@
     - !type:DepartmentTimeRequirement
       department: Security
       time: 86400 # 24 hours
-  alternateRequirementSets:
-    longerPlaytimeLessSec:
-    - !type:OverallPlaytimeRequirement
-      time: 540000 # 150 hours
-    - !type:RoleTimeRequirement
-      role: JobSecurityOfficer
-      time: 21600 # 6 hours
   startingGear: SeniorOfficerGear
   icon: JobIconSergeant
   supervisors: job-supervisors-bailiff
   weight: 140
   displayWeight: 50
   canBeAntag: false
-  access:
+  access: # Access was editted by Coyote
+  - HeadOfSecurity
+  - Command
+  - Armory
   - Sergeant
+  - Bailiff
+  - Brigmedic
   accessGroups:
   - GeneralNfsdAccess
   special:

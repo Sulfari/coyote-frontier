@@ -3,29 +3,27 @@
   name: job-name-pal
   description: job-description-public-affairs-liaison
   playTimeTracker: JobPublicAffairsLiaison
-  requirements: # Coyote editted the playtime of the PAL to reflect their access
-    - !type:OverallPlaytimeRequirement
-      time: 129600 # 36 hours
-    - !type:DepartmentTimeRequirement
-      department: Security
-      time: 21600 # 6 hours
-  alternateRequirementSets:
-    longerPlaytimeLessSec:
-    - !type:OverallPlaytimeRequirement
-      time: 360000 # 100 hours
-    - !type:DepartmentTimeRequirement # CS - require at least some security time so the whitelist intent functions
-      department: Security
-      time: 3600 # 1 hour
+  requirements: # Coyote editted the playtime required for Sergeant
+  - !type:OverallPlaytimeRequirement
+    time: 108000 # 30 hours
+  - !type:DepartmentTimeRequirement
+    department: Security
+    time: 86400 # 24 hours
   startingGear: PublicAffairGear
   icon: "JobIconPublicAffairsLiaison"
   supervisors: job-supervisors-cadet
   canBeAntag: false
   weight: 105
   displayWeight: 16
-  access: # Coyote editted the access of the PAL to better suit their role
+  access: # Access was editted by Coyote
   - HeadOfSecurity
+  - Command
+  - Armory
+  - Sergeant
+  - Bailiff
+  - Brigmedic
   accessGroups:
-  - CadetNfsdAccess
+  - GeneralNfsdAccess
   special:
   - !type:AddImplantSpecial
     implants: [ MindShieldImplant, TrackingImplant ]

@@ -3,15 +3,12 @@
   name: job-name-bailiff
   description: job-description-bailiff
   playTimeTracker: JobWarden
-  requirements:
-    - !type:OverallPlaytimeRequirement
-      time: 108000 # 30 hours
-    - !type:DepartmentTimeRequirement
-      department: Security
-      time: 64800 # 18 hours
-    - !type:RoleTimeRequirement
-      role: JobSeniorOfficer
-      time: 21600 # 6 hours
+  requirements: # Coyote editted the playtime required for Sergeant
+  - !type:OverallPlaytimeRequirement
+    time: 108000 # 30 hours
+  - !type:DepartmentTimeRequirement
+    department: Security
+    time: 86400 # 24 hours
   startingGear: BailiffGear
   icon: JobIconBailiff
   supervisors: job-supervisors-sheriff
@@ -20,6 +17,7 @@
   canBeAntag: false
   access: # Access was editted by Coyote
   - HeadOfSecurity
+  - Command
   - Armory
   - Sergeant
   - Bailiff
