@@ -98,8 +98,8 @@
     containers:
       key_slots:
       - EncryptionKeySecurity
-      - EncryptionKeyCommand
       - EncryptionKeyCommon
+      - EncryptionKeyNfsd
   - type: Sprite
     sprite: Clothing/Ears/Headsets/security.rsi
   - type: Clothing

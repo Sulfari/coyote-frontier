@@ -6,6 +6,8 @@
   - CombatGloves
   - ColorBlackGloves
   - FingerlessGloves
+  - NfsdClothingHandsGlovesCombatNfsdBrown
+  - NfsdClothingHandsGlovesCombatNfsdCream
   fallbacks:
   - CombatGloves
 
@@ -18,6 +20,7 @@
   - SecurityGuardSecurityHat
   - SecurityGuardSecurityBeret
   - SecurityGuardTrooperHat
+  - DeputyClothingHeadHatDeputy
 
 - type: loadoutGroup
   id: SecurityGuardJumpsuit
@@ -26,9 +29,13 @@
   loadouts:
   - SecurityGuardJumpsuit
   - SecurityGuardJumpskirt
+  - DeputyClothingUniformJumpsuitDeputy
+  - DeputyClothingUniformJumpskirtDeputy
   fallbacks:
   - SecurityGuardJumpsuit
   - SecurityGuardJumpskirt
+  - DeputyClothingUniformJumpsuitDeputy
+  - DeputyClothingUniformJumpskirtDeputy
   subgroups:
   - CoyoteJumpsuit
 
@@ -41,6 +48,14 @@
   - SecurityGuardSatchel
   - SecurityGuardDuffel
   - SecurityGuardMessenger
+  - NfsdClothingBackpackNfsdBrown
+  - NfsdClothingBackpackSatchelNfsdBrown
+  - NfsdClothingBackpackDuffelNfsdBrown
+  - NfsdClothingBackpackMessengerNfsdBrown
+  - NfsdClothingBackpackNfsdCream
+  - NfsdClothingBackpackSatchelNfsdCream
+  - NfsdClothingBackpackDuffelNfsdCream
+  - NfsdClothingBackpackMessengerNfsdCream
   fallbacks:
   - SecurityGuardBackpack
 
@@ -51,6 +66,7 @@
   loadouts:
   - SecurityGuardArmorVest
   - SecurityGuardArmorVestSlim
+  - NfsdOuterClothing
   fallbacks:
   - SecurityGuardArmorVest
 
@@ -62,6 +78,8 @@
   - LeatherShoes
   - CombatBoots
   - SecurityWinterBoots
+  - NfsdClothingShoesBootsBrown
+  - NfsdClothingShoesBootsCream
   fallbacks:
   - LeatherShoes
 
@@ -90,8 +108,10 @@
   hidden: true # No point in showing this, it gets auto-selected.
   loadouts:
   - SecurityGuardSecurityGuardPDA
+  - DeputyDeputyPDA
   fallbacks:
   - SecurityGuardSecurityGuardPDA
+  - DeputyDeputyPDA
 
 - type: loadoutGroup
   id: SecurityGuardFace
@@ -101,3 +121,19 @@
   - SecurityClothingMaskGasSecurity
   fallbacks:
   - SecurityClothingMaskGasSecurity
+
+
+#  - DeputyHead
+#  - DeputyNeck
+#  - DeputyJumpsuit
+#  - NfsdGlovesBrown
+#  - NfsdBackpackBrown
+#  - DeputyOuterClothing
+#  - NfsdForcedOuterClothing
+#  - NfsdShoesBrown
+#  - NfsdFace
+#  - NfsdGlasses
+#  - NfsdBelt
+#  - NfsdEarsBrown
+#  - NfsdBoxSurvival
+#  - DeputyPDA

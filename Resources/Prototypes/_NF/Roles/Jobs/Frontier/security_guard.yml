@@ -4,15 +4,20 @@
   description: job-description-security-guard
   playTimeTracker: JobSecurityGuard
   requirements:
-    - !type:OverallPlaytimeRequirement
-      time: 36000 # Frontier - 10 hrs
+  - !type:OverallPlaytimeRequirement
+    time: 43200 # 12 hours
+  - !type:DepartmentTimeRequirement
+    department: Security
+    time: 3600 # frontier: 6 hours | CS: 1 hour
   startingGear: SecurityGuardGear
   alwaysUseSpawner: true
   icon: "JobIconSecurityGuard"
-  supervisors: job-supervisors-sr
+  supervisors: job-supervisors-guard
   weight: 80
   displayWeight: 20 # Second from the bottom
   canBeAntag: false
+  accessGroups:
+  - GeneralNfsdAccess
   access:
   - Security
   - Brig
@@ -39,6 +44,7 @@
     back:
     - EncryptionKeyService
     - EncryptionKeySecurity
+    - EncryptionKeyNfsd
     - Flash
     - CSMagazinePistol40 # Coyote NFMagazineHighCapacityPistol35 < CSMagazinePistol40
     - CSMagazinePistol40Rubber # Coyote NFMagazineHighCapacityPistol35Rubber < CSMagazinePistol40Rubber

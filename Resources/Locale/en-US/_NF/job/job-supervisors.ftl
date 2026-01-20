@@ -1,4 +1,5 @@
 job-supervisors-sr = the Station Representative
+job-supervisors-guard = NFSD, and the Nash Station administration
 job-supervisors-bailiff = the Bailiff
 job-supervisors-cadet = all higher ranking NFSD personnel
 job-supervisors-freebooters-union = the Freebooters' Union
