@@ -30,7 +30,7 @@
   special:
   - !type:AddComponentSpecial
     components:
-    - type: AutoPirate
+#    - type: AutoPirate
     - type: SpecialSectorStationRecord # must be given on spawn
       recordGeneration: FalseRecord
     - type: DisableSuitSensors
@@ -52,7 +52,35 @@
   storage:
     back:
     - AppraisalTool
+    - ComputerIFFFlatpack
 
 - type: chameleonOutfit
   id: NFPirateChameleonOutfit
   job: NFPirate
+
+- type: roleLoadout
+  id: JobNFPirate
+  groups:
+  - NFPirateHead
+#  - NFPirateNeck
+  - ContractorNeck #Coyote: Pirate Loadout Expansion
+  - NFPirateJumpsuit
+#  - NFPirateGloves
+  - MercenaryGloves #Coyote: Pirate Loadout Expansion
+  - ContractorBackpack
+  - NFPirateForcedOuterClothing
+  - MercenaryOuterClothing #Coyote: Pirate Loadout Expansion
+  - NFPirateShoes
+  - NFPirateFace
+  - MercenaryGlasses #Coyote: Pirate Loadout Expansion
+  - MercenaryBelt #Coyote: Pirate Loadout Expansion
+  - NFPirateEars
+  - PirateEncryptionKey # Coyote: Pirates get comm keys
+  - ContractorBoxSurvival
+  - SmugglerPDA
+  - ContractorWallet
+  - PirateBackpackItems
+  - ContractorHandItems
+  - ContractorInstruments # Coyote
+  - NFSpeciesSpecific
+  canCustomizeName: true # pseudonym?

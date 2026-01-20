@@ -31,7 +31,7 @@
   special:
   - !type:AddComponentSpecial
     components:
-    - type: AutoPirate
+#    - type: AutoPirate
     - type: SpecialSectorStationRecord # must be given on spawn
       recordGeneration: FalseRecord
     - type: DisableSuitSensors
@@ -75,6 +75,7 @@
     back:
     - EncryptionKeyFreelance
     - ShipVoucherCoyoteEscort
+    - ComputerIFFFlatpack
 
 - type: chameleonOutfit
   id: EscortChameleonOutfit
@@ -107,7 +108,7 @@
   - PilotEars
   - ContractorEncryptionKey
   - ContractorBoxSurvival
-  - NFPiratePDA
+  - SmugglerPDA
   - ContractorWallet
   - ContractorCartridge
   - ContractorBackpackItems

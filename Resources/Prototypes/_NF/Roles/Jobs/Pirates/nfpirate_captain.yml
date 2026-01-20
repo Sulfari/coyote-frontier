@@ -28,7 +28,7 @@
   special:
   - !type:AddComponentSpecial
     components:
-    - type: AutoPirateCaptain
+#    - type: AutoPirateCaptain
     - type: SpecialSectorStationRecord # must be given on spawn
       recordGeneration: FalseRecord
     - type: DisableSuitSensors

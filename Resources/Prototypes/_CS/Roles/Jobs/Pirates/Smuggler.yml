@@ -30,7 +30,7 @@
   special:
   - !type:AddComponentSpecial
     components:
-    - type: AutoPirate
+#    - type: AutoPirate
     - type: SpecialSectorStationRecord # must be given on spawn
       recordGeneration: FalseRecord
     - type: DisableSuitSensors
@@ -72,6 +72,7 @@
     back:
     - EncryptionKeyFreelance
     - AppraisalTool
+    - ComputerIFFFlatpack
 
 - type: chameleonOutfit
   id: SmugglerChameleonOutfit
