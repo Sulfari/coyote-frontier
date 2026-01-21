@@ -14,5 +14,7 @@
     AmmoTechFabFlatpack: 4294967295 # Infinite
     ProtolatheFlatpack: 4294967295 # Infinite
     SalvageTechfabNFFlatpack: 4294967295 # Infinite
+    CargoTechfabNFFlatpack: 4294967295 # Infinite, CS - Add CargoTech fab to the others
+
   contrabandInventory:
     ComputerIFFFlatpack: 3
