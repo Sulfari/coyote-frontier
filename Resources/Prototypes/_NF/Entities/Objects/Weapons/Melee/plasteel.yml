@@ -13,7 +13,7 @@
     attackRate: 2
     damage:
       types:
-        Blunt: 15
+        Blunt: 22 # CS - Increase melee weapon damage by 1.5x
   - type: Clothing
     sprite: _NF/Objects/Weapons/Melee/plasteel_mace.rsi
     slots:
@@ -36,7 +36,7 @@
     wideAnimationRotation: -135
     damage:
       types:
-        Piercing: 15
+        Piercing: 22 # CS - Increase melee weapon damage by 1.5x
     angle: 0
     animation: WeaponArcThrust
     soundHit:
@@ -63,7 +63,7 @@
     attackRate: 2
     damage:
       types:
-        Slash: 15
+        Slash: 22 # CS - Increase melee weapon damage by 1.5x
   - type: Clothing
     sprite: _NF/Objects/Weapons/Melee/plasteel_axe.rsi
     slots:
@@ -82,5 +82,13 @@
     state: spear
   - type: MeleeWeapon
     autoAttack: true
+    wideAnimationRotation: -135
+    damage:
+      types:
+        Piercing: 22 # CS - Increase melee weapon damage by 1.5x
+  - type: DamageOtherOnHit
+    damage:
+      types:
+        Piercing: 27 # CS - Increase melee weapon damage by 1.5x
   - type: Clothing
     sprite: _NF/Objects/Weapons/Melee/plasteel_spear.rsi
