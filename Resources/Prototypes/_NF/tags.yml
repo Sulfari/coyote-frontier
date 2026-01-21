@@ -163,6 +163,9 @@
 
 # region Blueprints
 - type: Tag
+  id: NFBlueprintAdvanced
+
+- type: Tag
   id: NFBlueprintMedicalTechfab
 
 - type: Tag

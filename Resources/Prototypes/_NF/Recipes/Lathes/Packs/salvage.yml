@@ -29,8 +29,10 @@
 - type: latheRecipePack
   id: NFSalvage
   recipes:
-  - BluespaceAirTank
-  - SmallBluespaceAirTank
+  - MiningDrill
+  - NFWeaponPka
+  - NFWeaponPkaCannon
+  - WeaponGrapplingGun
 
 - type: latheRecipePack
   id: NFSalvageTechfabEmag
