@@ -45,6 +45,7 @@
     - BaseSecurityUplinkRadioOfficer
     - FrontierUplinkCoin5 # Coyote added 5 FUCs to Sergeants
     - ShipVoucherNfsdSergeant
+    - RubberStampSergeant
     - EncryptionKeyCommand
 
 - type: chameleonOutfit

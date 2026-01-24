@@ -109,6 +109,20 @@
     state: stamp-bailiff
 
 - type: entity
+  name: sergeant's rubber stamp
+  parent: RubberStampBase
+  id: RubberStampSergeant
+  categories: [ DoNotMap ]
+  components:
+  - type: Stamp
+    stampedName: stamp-component-stamped-name-sergeant
+    stampedColor: "#51703b"
+    stampState: "paper_stamp-nf-bailiff"
+  - type: Sprite
+    sprite: _NF/Objects/Misc/stamps.rsi
+    state: stamp-bailiff
+
+- type: entity
   name: plant manager's rubber stamp
   parent: [RubberStampBase, BaseC4Contraband]
   id: RubberStampPlantManager
