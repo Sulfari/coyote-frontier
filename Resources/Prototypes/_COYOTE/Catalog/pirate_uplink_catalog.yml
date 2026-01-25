@@ -1068,7 +1068,26 @@
   id: UplinkMicrowave
   name:  uplink-microwave-name
   description: uplink-microwave-desc
-  productEntity: SyndicateElectricRangeFlatpack
+  productEntity: SyndicateMicrowaveFlatpack
+  cost:
+    Doubloon: 4
+  categories:
+  - UplinkPirateMachines
+  conditions:
+  - !type:StoreWhitelistCondition
+    whitelist:
+      tags:
+      - PirateUplink
+  - !type:BuyerJobCondition
+    whitelist:
+    - Smuggler
+    - Escort
+
+- type: listing #Coyote
+  id: UplinkAssembler
+  name:  uplink-assembler-name
+  description: uplink-assembler-desc
+  productEntity: DonkCoAssemblerFlatpack
   cost:
     Doubloon: 4
   categories:

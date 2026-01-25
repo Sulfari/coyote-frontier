@@ -72,6 +72,9 @@ uplink-electric-range-desc = A flatpack used for deploying a Donk Co. electric r
 uplink-microwave-name = Donk Co. Microwave
 uplink-microwave-desc = A flatpack used for deploying a Donk Co. microwave
 
+uplink-assembler-name = Donk Co. Kitchen Assembler
+uplink-assembler-desc = A flatpack used for deploying a Donk Co. Kitchen Assembler
+
 uplink-iff-name = IFF Console
 uplink-iff-desc = A flatpack used for deploying an IFF Console
 
