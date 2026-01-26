@@ -15,8 +15,8 @@
   parent: BaseVessel
   name: LL2 Seraphim
   description: The winged savior of the SLI corpration! Featuring an expansive medbay, large mercenary armory, and fully expedition capable!
-  price: 285000 #97000, 48500(50%(exped) + 29100(LL2(30%) + 112500(price per tile) = 287100
-  category: Large
+  price: 325000 #97000, 50000(50% or 50k(exped) + 67900(LL2(70%) + 112500(price per tile) = 327400(rounded down to 325k for accuracy in console.)
+  category: Medium
   group: Expedition
   shuttlePath: /Maps/_CS/Shuttles/Expedition/seraphim.yml
   guidebookPage: Null
