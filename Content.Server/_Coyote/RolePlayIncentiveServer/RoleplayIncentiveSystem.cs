@@ -133,10 +133,11 @@ public sealed class RoleplayIncentiveSystem : EntitySystem
     private void OnComponentInit(EntityUid uid, RoleplayIncentiveComponent component, ComponentInit args)
     {
         // set the next payward time
-        component.NextPayward = _timing.CurTime + component.PaywardInterval;
-        component.NextProxyCheck = _timing.CurTime + component.ProxyCheckInterval;
-        component.NextProxySync = _timing.CurTime + component.ProxySyncInterval;
-        component.NextAuraCheck = _timing.CurTime + component.AuraCheckInterval;
+        component.NextPayward                    = _timing.CurTime + component.PaywardInterval;
+        component.NextProxyCheck                 = _timing.CurTime + component.ProxyCheckInterval;
+        component.NextProxySync                  = _timing.CurTime + component.ProxySyncInterval;
+        component.NextAuraCheck                  = _timing.CurTime + component.AuraCheckInterval;
+        component.FlarpiDatacore.LastFlarpiCheck = _timing.CurTime + component.FlarpiDatacore.FlarpiCheckInterval;
     }
 
     /// <summary>
