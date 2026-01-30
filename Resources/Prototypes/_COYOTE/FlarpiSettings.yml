@@ -18,7 +18,7 @@
   nearbyRadius: 25
   freelancerCalcMode: Linear
   freelancerCountMode: Online
-  freelancerMaxCount: 7
+  freelancerMaxCount: 5
   nfsdCalcMode: Linear
   nfsdCountMode: Online
 
