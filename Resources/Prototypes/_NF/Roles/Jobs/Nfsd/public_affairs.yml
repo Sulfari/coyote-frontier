@@ -31,7 +31,7 @@
     components:
     - type: CommandStaff
     - type: IsNfsd
-      worth: 3
+      worth: 2
   - !type:GiveItemOnHolidaySpecial
     holiday: FrontierBirthday
     prototype: FrontierBirthdayGift
