@@ -59,7 +59,7 @@
 # Narpi
 
 - type: entity
-  id: MobCatNarpi
+  id: MobCatNarpy
   parent: [NFMobPet, MobCatGhost, ShowSecurityIcons]
   name: Narpy
   description: It's Narpi, the accountant brother of Cappy! He's NFSD's answer to all your tax-related questions, and is always ready to help you maximize your deductions! He's a bean counter with the cutest little beans!
