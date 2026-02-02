@@ -155,7 +155,7 @@ public sealed class NFCCVars
     /// The minimum number of FUCs to spawn for anti-smuggling work.
     /// </summary>
     public static readonly CVarDef<int> SmugglingMinFucPayout =
-        CVarDef.Create("nf14.smuggling.min_fuc_payout", 1, CVar.REPLICATED);
+        CVarDef.Create("nf14.smuggling.min_fuc_payout", 20, CVar.REPLICATED);
     /// <summary>
     /// The shortest time to wait before a dead drop spawns a new smuggling note.
     /// </summary>

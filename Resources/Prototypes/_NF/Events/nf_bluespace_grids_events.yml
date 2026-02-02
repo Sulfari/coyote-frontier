@@ -53,7 +53,7 @@
     weight: 5
     duration: 1020
     maxDuration: 1350
-    reoccurrenceDelay: 180 # 3 hours
+    reoccurrenceDelay: 720 # 9 hours
     requiredJobs:
       Sheriff: 1
       Deputy: 1
@@ -62,7 +62,6 @@
       NFDetective: 1
       PublicAffairsLiaison: 1
       SeniorOfficer: 1
-      Cadet: 1
   - type: BluespaceErrorRule
     groups:
       grid: !type:GridSpawnGroup
@@ -84,7 +83,7 @@
         paths:
         - /Maps/_NF/Bluespace/vault.yml
     rewardAccounts:
-      Nfsd: 1.0
+      Nfsd: 4.0
 
 - type: entity
   id: BluespaceVaultSmallError
@@ -101,7 +100,7 @@
     weight: 5
     duration: 590
     maxDuration: 780
-    reoccurrenceDelay: 180 # 3 hours
+    reoccurrenceDelay: 720 # 3 hours
     requiredJobs:
       Sheriff: 1
       Deputy: 1
@@ -110,7 +109,6 @@
       NFDetective: 1
       PublicAffairsLiaison: 1
       SeniorOfficer: 1
-      Cadet: 1
   - type: BluespaceErrorRule
     groups:
       grid: !type:GridSpawnGroup
@@ -132,7 +130,7 @@
         paths:
         - /Maps/_NF/Bluespace/vaultsmall.yml
     rewardAccounts:
-      Nfsd: 1.0
+      Nfsd: 4.0
 
 - type: entity
   id: BluespaceSyndicateFTLInterception

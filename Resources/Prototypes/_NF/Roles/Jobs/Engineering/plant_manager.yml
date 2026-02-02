@@ -8,7 +8,7 @@
       time: 72000 # Frontier - 20 hrs (the real condition here is the whitelist)
     - !type:RoleTimeRequirement
       role: JobSecretary
-      time: 72000
+      time: 28800
   overrideRequirement:
   - !type:RoleTimeRequirement
     role: JobPlantManager

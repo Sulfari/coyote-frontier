@@ -8,7 +8,7 @@
       time: 43200 # 12 hours
     - !type:DepartmentTimeRequirement
       department: Security
-      time: 43200 # 12 hours
+      time: 14400 # 4 hours
   startingGear: DeputyGear
   icon: JobIconDeputy
   supervisors: job-supervisors-sergeant
