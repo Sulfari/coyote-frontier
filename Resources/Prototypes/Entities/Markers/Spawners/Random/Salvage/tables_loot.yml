@@ -265,6 +265,7 @@
       - id: ClothingHeadHatWeldingMaskPainted
         weight: 0.1
     - id: ClothingBeltQuiverCrossbowFilledBolt # Frontier
+    - id: NFGlowshroom # Frontier
 
 - type: entityTable
   id: SalvageEquipmentRare
