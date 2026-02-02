@@ -82,7 +82,7 @@ public sealed class RadioSystem : EntitySystem
 
     private void OnIntrinsicReceive(EntityUid uid, IntrinsicRadioReceiverComponent component, ref RadioReceiveEvent args)
     {
-        if (!TryComp(Transform(uid).ParentUid, out ActorComponent? actor))
+        if (!TryComp(uid, out ActorComponent? actor))
             return;
 
         MsgChatMessage chatMess = MangleRadioMessage(
