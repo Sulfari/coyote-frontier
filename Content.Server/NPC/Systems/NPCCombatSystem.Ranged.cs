@@ -17,7 +17,7 @@ using Content.Shared.Weapons.Ranged.Components;
 using Content.Shared.Weapons.Ranged.Events;
 using Robust.Shared.Map;
 using Robust.Shared.Physics.Components;
-using Robust.Shared.Random; //Frontier
+using Robust.Shared.Random; // Frontier
 
 namespace Content.Server.NPC.Systems;
 
