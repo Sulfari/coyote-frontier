@@ -3,7 +3,7 @@
   parent: BaseStationEventShortDelay
   components:
   - type: StationEvent
-    
+
     startAnnouncement: station-event-bluespace-cache-start-announcement
     startAudio:
       path: /Audio/_NF/Announcements/PocketSizedAndy/andy2_bluespace_cache_arrival.ogg
