@@ -64,6 +64,7 @@
   - MercenaryShoes
   - ContractorShoes
   - PilotShoes
+  - CoyoteShoes
   fallbacks:
   - NFPirateClothingShoesBootsLaceup
 

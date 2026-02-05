@@ -826,7 +826,7 @@ public sealed class RoleplayIncentiveSystem : EntitySystem
             {
                 if (!ValidForRPI(uid))
                 {
-                    HousekeepFlarpi(uid, rpic, frameTime);
+                    TickEverythingAnyway(rpic);
                     continue; // not valid for RPI
                 }
             }
@@ -836,6 +836,21 @@ public sealed class RoleplayIncentiveSystem : EntitySystem
                 rpic,
                 false);
         }
+    }
+
+    /// <summary>
+    /// Sets all the Last Checked times to Now
+    /// </summary>
+    /// <param name="uid"></param>
+    /// <param name="rpic"></param>
+    private void TickEverythingAnyway(RoleplayIncentiveComponent rpic)
+    {
+        TimeSpan now = _timing.CurTime;
+        rpic.LastCheck                      = now;
+        rpic.NextPayward                    = now + rpic.PaywardInterval;
+        rpic.NextProxyCheck                 = now + rpic.ProxyCheckInterval;
+        rpic.NextAuraCheck                  = now + rpic.AuraCheckInterval;
+        rpic.FlarpiDatacore.LastFlarpiCheck = now;
     }
 
     public RpiPaywardDetails HandleEverything(
@@ -1490,10 +1505,10 @@ public sealed class RoleplayIncentiveSystem : EntitySystem
         )
     {
         if (!CanFlarpi(uid, rpic))
-            return; // only pirates care about flarpies
+            return;
         ConditionFlarpi(uid, rpic);
         FlarpiDatacore myFlarpy = rpic.FlarpiDatacore;
-        if (!_prototype.TryIndex(myFlarpy.DatacoreType, out var flarpiProto))
+        if (!_prototype.TryIndex(myFlarpy.DatacoreType, out FlarpiSettingsPrototype? flarpiProto))
         {
             Log.Warning($"FlarpiDatacoreProto {myFlarpy.DatacoreType} not found!");
             return;
@@ -1731,24 +1746,6 @@ public sealed class RoleplayIncentiveSystem : EntitySystem
             uid,
             uid,
             PopupType.LargeLingering);
-    }
-
-    /// <summary>
-    /// If someone is offline or dead, scoot their last check forward so it doesnt
-    /// give them a million flarpies after they come back.
-    /// </summary>
-    public void HousekeepFlarpi(
-        EntityUid uid,
-        RoleplayIncentiveComponent rpic,
-        float frameTime
-        )
-    {
-        if (!CanFlarpi(uid, rpic))
-            return; // only pirates care about flarpies
-        FlarpiDatacore myFlarpy = rpic.FlarpiDatacore;
-        if (_timing.CurTime < myFlarpy.LastFlarpiCheck + myFlarpy.FlarpiCheckInterval)
-            return; // too soon to check again
-        myFlarpy.LastFlarpiCheck = _timing.CurTime;
     }
 
     public bool CanFlarpi(

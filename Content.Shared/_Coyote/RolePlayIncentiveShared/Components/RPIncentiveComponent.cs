@@ -39,7 +39,7 @@ public sealed partial class RoleplayIncentiveComponent : Component
     /// The last time the system checked for actions, for paywards.
     /// </summary>
     [DataField]
-    public DateTime LastCheck = DateTime.MinValue;
+    public TimeSpan LastCheck = TimeSpan.Zero;
 
     /// <summary>
     /// The next time the system will check for actions, for paywards.

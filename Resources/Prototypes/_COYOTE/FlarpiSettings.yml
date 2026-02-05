@@ -6,8 +6,8 @@
   baseFlarpi: 5
   nearbyRadius: 25
   freelancerCountMode: Nearby
-  freelancerCalcMode: Doubling
-  maxFreelancersConsidered: 4
+  freelancerCalcMode: Linear
+  maxFreelancersConsidered: 10
   nfsdCountMode: Nope
   nfsdCalcMode: Nope
 

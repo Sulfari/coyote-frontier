@@ -1,0 +1,8 @@
+- type: loadout
+  id: LoadoutFootProtectors
+  hideEffects:
+  - !type:GroupLoadoutEffect
+    proto: ShoesCapableNF
+  price: 50
+  equipment:
+    shoes: ClothingShoesFootProtectors

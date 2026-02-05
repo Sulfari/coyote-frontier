@@ -19,6 +19,7 @@
   id: MobMothSprites
   sprites:
     Head: MobMothHead
+    Hair: MobHumanoidAnyMarking
     Snout: MobHumanoidAnyMarking
     NeckFluff: MobHumanoidAnyMarking
     UndergarmentTop: MobHumanoidAnyMarking
@@ -54,7 +55,6 @@
 
 - type: markingPoints
   id: MobMothMarkingLimits
-  onlyWhitelisted: true
   points:
     Hair:
       points: 35
