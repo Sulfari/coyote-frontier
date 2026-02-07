@@ -859,13 +859,14 @@
       - !type:HealthChange # Coyote: OD.
         conditions:
         - !type:ReagentThreshold
-          min: 30
+          min: 40
         damage:
           groups:
             Burn: 1
-            Toxin: 1
             Airloss: 1
             Brute: 1
+          types:
+            Poison: 1
 
 - type: reagent
   id: Ultravasculine
