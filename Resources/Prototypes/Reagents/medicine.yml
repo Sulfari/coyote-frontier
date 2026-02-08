@@ -146,7 +146,7 @@
       - !type:HealthChange
         damage:
           groups:
-            Brute: -2
+            Brute: -3
       - !type:HealthChange
         conditions:
         - !type:ReagentThreshold
@@ -466,13 +466,14 @@
   color: "#bf3d19"
   metabolisms:
     Medicine:
+      metabolismRate: 0.2
       effects:
       - !type:HealthChange
         damage: # Coyote: Buffs its healing by a small amount.
           types:
-            Heat: -0.5
-            Shock: -0.5
-            Cold: -0.5
+            Heat: -0.75
+            Shock: -0.75
+            Cold: -0.75
       - !type:SatiateThirst
         factor: -10
         conditions:
