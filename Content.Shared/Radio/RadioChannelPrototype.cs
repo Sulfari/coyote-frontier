@@ -193,4 +193,12 @@ public sealed class RadioMessageDataHolder(
     /// The channel the radio message was sent on.
     /// </summary>
     public RadioChannelPrototype Channel = channel;
+
+    /// <summary>
+    /// ImpStation port, if a channel is read-only, radio cannot be sent through it
+    /// Intercomms still can
+    /// Supermatter throws errors without this
+    /// </summary>
+    [DataField("intercomOnly")]
+    public bool IntercomOnly = false;
 }
