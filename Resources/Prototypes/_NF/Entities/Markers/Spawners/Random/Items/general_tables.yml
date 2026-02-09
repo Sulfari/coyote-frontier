@@ -60,15 +60,15 @@
     - !type:GroupSelector
       children:
       - id: Matchstick
-        weight: 1
-      #- id: GorlexMatchstick # Coyote: Not yet implemented, changing above weight from 0.6 to 1
-        #weight: 0.4
+        weight: 0.6
+      - id: GorlexMatchstick
+        weight: 0.4
     - !type:GroupSelector
       children:
       - id: Matchbox
-        weight: 1
-      #- id: GorlexMatchbox
-        #weight: 0.1 # Coyote: Not yet implemented, changing above weight from 0.9 to 1
+        weight: 0.9
+      - id: GorlexMatchbox
+        weight: 0.1
     - id: CheapLighter
     - id: Lighter
     - id: FlippoLighter

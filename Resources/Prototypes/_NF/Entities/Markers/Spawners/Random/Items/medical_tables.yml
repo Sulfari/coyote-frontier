@@ -503,7 +503,7 @@
       - id: PunctAutoInjector
       - id: LacerAutoInjector
       - id: PyraAutoInjector
-      #- id: EphedrineAutoInjector # Coyote: Not yet implemented
+      - id: EphedrineAutoInjector
       - id: PolyAutoInjector
     # Rare (either good or undesirable)
     - !type:GroupSelector

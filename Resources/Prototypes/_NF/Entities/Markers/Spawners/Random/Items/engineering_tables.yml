@@ -123,9 +123,9 @@
   table: !type:GroupSelector
     children:
     - id: SprayPainter
-      weight: 1
-    #- id: SprayPainterMagic # Coyote: Not yet implemented, changing above weight from 0.95 to 1
-      #weight: 0.05
+      weight: 0.95
+    - id: SprayPainterMagic
+      weight: 0.05
 
 # region Holoprojector
 - type: entityTable
