@@ -552,6 +552,7 @@
       - id: BlockGameArcade
       - id: VendingMachineBooze
       - id: VendingMachineCigs
+      - id: VendingMachineBarista # Coyote: Added the monolith baristavend to the table.
       - id: VendingMachineCoffee
       - id: VendingMachineCola
       - id: VendingMachineColaBlack
