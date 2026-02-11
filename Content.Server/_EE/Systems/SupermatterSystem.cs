@@ -85,7 +85,7 @@ public sealed partial class SupermatterSystem : EntitySystem
         SubscribeLocalEvent<SupermatterComponent, InteractHandEvent>(OnHandInteract);
         SubscribeLocalEvent<SupermatterComponent, InteractUsingEvent>(OnItemInteract);
         SubscribeLocalEvent<SupermatterComponent, ExaminedEvent>(OnExamine);
-        SubscribeLocalEvent<SupermatterComponent, SupermatterDoAfterEvent>(OnGetSliver);
+        //SubscribeLocalEvent<SupermatterComponent, SupermatterDoAfterEvent>(OnGetSliver); #Coyote: No sliver
         SubscribeLocalEvent<SupermatterComponent, GravPulseEvent>(OnGravPulse);
     }
 
@@ -250,7 +250,7 @@ public sealed partial class SupermatterSystem : EntitySystem
 
         args.Handled = true;
     }
-
+    /* //Coyote: No Sliver
     private void OnGetSliver(EntityUid uid, SupermatterComponent sm, ref SupermatterDoAfterEvent args)
     {
         if (args.Cancelled)
@@ -267,7 +267,7 @@ public sealed partial class SupermatterSystem : EntitySystem
 
         sm.DelamTimer /= 2;
     }
-
+    */ //End of coyote change
     private void OnGravPulse(Entity<SupermatterComponent> ent, ref GravPulseEvent args)
     {
         if (!TryComp<GravityWellComponent>(ent, out var gravityWell))

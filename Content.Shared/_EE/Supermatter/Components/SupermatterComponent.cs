@@ -57,8 +57,8 @@ public sealed partial class SupermatterComponent : Component
         "SupermatterLightningSupercharged"
     };
 
-    [DataField]
-    public EntProtoId SliverPrototype = "SupermatterSliver";
+    //[DataField] # Coyote: No sliver
+    //public EntProtoId SliverPrototype = "SupermatterSliver"; # Coyote: No sliver
 
     [DataField]
     public EntProtoId SingularitySpawnPrototype = "Singularity";
