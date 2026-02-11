@@ -104,7 +104,7 @@
     gravPulsePeriod: 15
   - type: SinguloFood #Frontier SM, Stops a newly made singularity from being level 6 when spawned by the crystal
     energy: 900
-    EnergyFactor: 50 #Frontier SM, Should ensure that any other singularity hits level 6 when eating the crystal
+    energyFactor: 50 #Frontier SM, Should ensure that any other singularity hits level 6 when eating the crystal
   - type: Appearance
   - type: Supermatter
   - type: AtmosDevice
