@@ -340,7 +340,7 @@
 - type: entity
   name: NTCS-104 experimental hypospray
   parent: [ BaseItem, BaseC1Contraband ]
-  description: A commercial hypospray, presumably designed by Nanotrasen Chemical Supply, although the sticker underneath the label seem to suggest otherwise. It has two built in safety features for the consumer market, featuring a slightly bigger chemical reservoir and a shorter injection delay.
+  description: A commercial hypospray, presumably designed by Nanotrasen Chemical Supply, featuring a slightly bigger chemical reservoir and a modified rapid injection mechanism.
   id: HypoExperimental
   components:
   - type: Sprite

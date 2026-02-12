@@ -68,7 +68,7 @@ public sealed partial class SiliconComponent : Component
     ///     How much power is drained by this Silicon every second by default.
     /// </summary>
     [DataField]
-    public float DrainPerSecond = 50f;
+    public float DrainPerSecond = 5f; //Coyote: Making them drain slower until we can come with a different system.
 
 
     /// <summary>

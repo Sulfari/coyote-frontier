@@ -1,0 +1,72 @@
+#region hardsuits
+- type: listing
+  id: UplinkSecurityHardsuitTsfMarineBronze
+  name:  uplink-security-marine-bronze-name
+  description: uplink-security-marine-bronze-desc
+  productEntity: ClothingOuterHardsuitTsfMarineBronze
+  icon: { sprite: _Mono/Clothing/OuterClothing/Hardsuits/m82c_bronze.rsi, state: icon }
+  cost:
+    FrontierUplinkCoin: 2
+  categories:
+    - UplinkSecurityHardsuits
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - SecurityUplink
+
+- type: listing
+  id: UplinkSecurityHardsuitTsfMarineSilver
+  name:  uplink-security-marine-silver-name
+  description: uplink-security-marine-silver-desc
+  productEntity: ClothingOuterHardsuitTsfMarineSilver
+  icon: { sprite: _Mono/Clothing/OuterClothing/Hardsuits/m82c_silver.rsi, state: icon }
+  cost:
+    FrontierUplinkCoin: 2
+  categories:
+    - UplinkSecurityHardsuits
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - SecurityUplink
+
+- type: listing
+  id: UplinkSecurityHardsuitTsfMarineGold
+  name:  uplink-security-marine-gold-name
+  description: uplink-security-marine-gold-desc
+  productEntity: ClothingOuterHardsuitTsfMarineGold
+  icon: { sprite: _Mono/Clothing/OuterClothing/Hardsuits/m82c_gold.rsi, state: icon }
+  cost:
+    FrontierUplinkCoin: 2
+  categories:
+    - UplinkSecurityHardsuits
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - SecurityUplink
+    - !type:BuyerJobCondition
+      whitelist:
+        - Bailiff
+        - SeniorOfficer
+        - Sheriff
+
+- type: listing
+  id: UplinkSecurityHardsuitTsfMarineMedic
+  name:  uplink-security-marine-medic-name
+  description: uplink-security-marine-medic-desc
+  productEntity: ClothingOuterHardsuitTsfMarineMedic
+  icon: { sprite: _Mono/Clothing/OuterClothing/Hardsuits/m82b.rsi, state: icon }
+  cost:
+    FrontierUplinkCoin: 2
+  categories:
+    - UplinkSecurityHardsuits
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - SecurityUplink
+    - !type:BuyerJobCondition
+      whitelist:
+        - Brigmedic

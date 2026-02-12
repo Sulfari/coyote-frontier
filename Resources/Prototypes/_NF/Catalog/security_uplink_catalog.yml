@@ -57,7 +57,7 @@
   productEntity: ClothingOuterHardsuitNfsdGold
   icon: { sprite: _NF/Clothing/OuterClothing/Hardsuits/nfsd_gold.rsi, state: icon }
   cost:
-    FrontierUplinkCoin: 3
+    FrontierUplinkCoin: 2
   categories:
     - UplinkSecurityHardsuits
   conditions:
