@@ -10,6 +10,8 @@
   weight: 40
   displayWeight: 3
   canBeAntag: false
+  access:
+  - Medical
   accessGroups:
   - GeneralAccess
   special:
@@ -63,7 +65,7 @@
   - ContractorCartridge
   - ContractorImplanter
   - ContractorBackpackItems
-  - ContractorHandItems
+  - NurseInHand # Coyote ContractorHandItems < NurseInHand (Inherits ContractorHandItems)
   - ContractorInstruments
   - NFSpeciesSpecific
 

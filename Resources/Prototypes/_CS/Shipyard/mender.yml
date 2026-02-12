@@ -1,0 +1,48 @@
+# Author Info
+# GitHub: RefertomeasMatt (https://github.com/RefertomeasMatt)
+# Discord: RefertomeasMatt
+
+# Maintainer Info
+# GitHub: ???
+# Discord: ???
+
+# Shuttle Notes:
+# Archetypes = Medical/Cargo
+# Halftypes =
+# Domestic Areas = Full
+- type: vessel
+  id: mender
+  parent: BaseVessel
+  name: LL2 Mender
+  description: An older model made by LVHI, which had far outlived it's usefulness as a cargo ship, now finds new life as a cheap medical vessel that retains some transport capabilities.
+  price: 145000 #40000 + 18000 (LL2(45%) + 80000(price per tile(322)) = 138000
+  category: Medium
+  group: Medical
+  shuttlePath: /Maps/_CS/Shuttles/mender.yml
+  guidebookPage: Null
+  class:
+  - Medical
+  - Cargo
+  engine:
+  - Uranium
+
+- type: gameMap
+  id: mender
+  mapName: 'mender'
+  mapPath: /Maps/_CS/Shuttles/mender.yml
+  minPlayers: 0
+  stations:
+    mender:
+      stationProto: StandardFrontierVessel
+      components:
+        - type: StationNameSetup
+          mapNameTemplate: 'LVHI Mender {1}'
+          nameGenerator:
+            !type:NanotrasenNameGenerator
+            prefixCreator: '14'
+        - type: StationJobs
+          availableJobs:
+            ContractorInterview: [ 2, 2 ]
+            CompanionInterview: [ 2, 2 ]
+            PilotInterview: [ 2, 2 ]
+            MercenaryInterview: [ 2, 2 ]

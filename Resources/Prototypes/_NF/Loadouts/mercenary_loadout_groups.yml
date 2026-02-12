@@ -70,6 +70,7 @@
   subgroups:
   - PilotShoes
   - ContractorShoes
+  - CoyoteShoes
   fallbacks:
   - MercenaryClothingShoesBootsMercenary
 

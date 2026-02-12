@@ -30,7 +30,7 @@ coyote-rpi-flarpi-has-banked-freelancer = You also have { $amount }DB banked wit
 coyote-rpi-flarpi-has-banked-nfsd = You also have { $amount }FUC banked with NARPI! Use the verb "Withdraw FUC" to get it out!
 
 coyote-rpi-flarpi-got-more-freelancer = [color=green]+{ $amount }DB[/color] for being such a good baddie, bringing your total FLARPI bank to [color=green]{ $totalAmount }DB[/color]! Use the verb "Withdraw DB" to get it out!
-coyote-rpi-flarpi-got-more-nfsd = [color=green]+{ $amount }FUC[/color] for being such a lovely critter, bringing your total NARPI bank to [color=green]{ $totalAmount }DB[/color]! Use the verb "Withdraw FUC" to get it out!
+coyote-rpi-flarpi-got-more-nfsd = [color=green]+{ $amount }FUC[/color] for being such a lovely critter, bringing your total NARPI bank to [color=green]{ $totalAmount }FUC[/color]! Use the verb "Withdraw FUC" to get it out!
 
 coyote-rpi-flarpi-withdrawverb-freelancer = Withdraw DB - { $amount }
 coyote-rpi-flarpi-withdrawverb-nfsd = Withdraw FUC - { $amount }

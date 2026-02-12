@@ -84,6 +84,11 @@ public sealed class RadioSystem : EntitySystem
     {
         if (!TryComp(uid, out ActorComponent? actor))
             return;
+        if (HasComp<GhostHearingComponent>(uid))
+        {
+            _netMan.ServerSendMessage(args.ChatMsg, actor.PlayerSession.Channel);
+            return;
+        }
 
         MsgChatMessage chatMess = MangleRadioMessage(
             uid,

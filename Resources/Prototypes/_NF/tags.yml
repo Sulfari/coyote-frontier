@@ -164,6 +164,9 @@
 - type: Tag
   id: NFGlowshroomSpores
 
+- type: Tag
+  id: NFHotdog
+
 # region Blueprints
 - type: Tag
   id: NFBlueprintAdvanced
