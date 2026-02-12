@@ -1,8 +1,8 @@
-# TFS tactical suit
+# TSF tactical suit
 - type: entity
   parent: ClothingOuterHardsuitNfsdBronze
   id: ClothingOuterHardsuitTsfMarineBronze
-  name: TFS bronze tactical suit
+  name: TSF bronze tactical suit
   description: A surplus marine hardsuit, issued for patrol duty. This bronze variant has cadet rank markings.
   components:
   - type: Sprite
@@ -15,7 +15,7 @@
 - type: entity
   parent: ClothingOuterHardsuitNfsdBronze
   id: ClothingOuterHardsuitTsfMarineSilver
-  name: TFS silver tactical suit
+  name: TSF silver tactical suit
   description: A surplus marine hardsuit, issued for patrol duty. This silver variant has officer rank markings.
   components:
   - type: Sprite
@@ -28,7 +28,7 @@
 - type: entity
   parent: ClothingOuterHardsuitNfsdBronze
   id: ClothingOuterHardsuitTsfMarineGold
-  name: TFS gold tactical suit
+  name: TSF gold tactical suit
   description: A surplus marine hardsuit, issued for patrol duty. This gold variant has supervisor rank markings.
   components:
   - type: Sprite
@@ -41,7 +41,7 @@
 - type: entity
   parent: ClothingOuterHardsuitNfsdBronze
   id: ClothingOuterHardsuitTsfMarineMedic
-  name: TFS corpsman tactical suit
+  name: TSF corpsman tactical suit
   description: A surplus marine hardsuit, issued for patrol duty. This brighter variant has brigmedic rank markings.
   components:
   - type: Sprite
