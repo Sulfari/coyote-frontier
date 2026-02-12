@@ -14,7 +14,7 @@ namespace Content.Shared.Light.Components;
 public sealed partial class RgbLightControllerComponent : Component
 {
     [DataField("cycleRate")]
-    public float CycleRate { get; set; } = 0.1f;
+    public float CycleRate { get; set; } = 0.01f;
 
     /// <summary>
     ///     What layers of the sprite to modulate? If null, will affect only unshaded layers.
