@@ -99,9 +99,9 @@
   maxLimit: 1
   loadouts:
   - MercenaryClothingHeadsetAltMercenaryCommon
-  - MercenaryClothingHeadsetSecurityCommon
-  - MercenaryClothingHeadsetBrigmedicCommon
-  - MercenaryClothingHeadsetAltSecurityCommon
+#  - MercenaryClothingHeadsetSecurityCommon
+#  - MercenaryClothingHeadsetBrigmedicCommon
+#  - MercenaryClothingHeadsetAltSecurityCommon
   subgroups:
   - PilotEars
   - ContractorEars

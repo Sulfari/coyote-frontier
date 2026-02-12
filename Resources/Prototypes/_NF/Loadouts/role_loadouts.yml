@@ -65,7 +65,7 @@
   - MercenaryFace
   - MercenaryGlasses
   - MercenaryBelt
-  - MercenaryEars
+#  - MercenaryEars
   - ContractorEncryptionKey
   - ContractorBoxSurvival
   - MercenaryPDA
