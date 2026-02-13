@@ -1,4 +1,4 @@
-  - type: entity
+- type: entity
   parent: BaseCrowbar
   id: CrowbarPocket
   name: pocket crowbar
