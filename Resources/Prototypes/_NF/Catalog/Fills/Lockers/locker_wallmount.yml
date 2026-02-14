@@ -390,8 +390,8 @@
     stateBaseClosed: base
     stateDoorOpen: open
     stateDoorClosed: door
-    - type: entity
 
+- type: entity
   parent: LockerWallColorPilot
   id: LockerWallColorPilotFilled
   suffix: Filled, Frontier
