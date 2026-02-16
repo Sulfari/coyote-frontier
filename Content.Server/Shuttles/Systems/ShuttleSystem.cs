@@ -21,6 +21,7 @@ using Content.Shared.Shuttles.Events;
 using Content.Shared.Shuttles.Systems;
 using Content.Shared.Tag;
 using Content.Shared.Throwing;
+using Content.Shared.Warps;
 using JetBrains.Annotations;
 using Robust.Server.GameObjects;
 using Robust.Server.GameStates;
@@ -305,9 +306,14 @@ public sealed partial class ShuttleSystem : SharedShuttleSystem
         component.Beacons.Clear();
 
         // Refresh beacons
-        var query = _entityManager.EntityQueryEnumerator<LatheComponent, TransformComponent>();
         foreach (var entity in entities)
         {
+            // Remove warp points to prevent them from being ghost accessible
+            if (TryComp<WarpPointComponent>(entity, out var point))
+            {
+                RemComp<WarpPointComponent>(entity);
+            }
+
             _entityManager.TryGetComponent<MetaDataComponent>(entity, out var meta);
 
             string? name = null;

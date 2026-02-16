@@ -82,6 +82,7 @@ public sealed partial class VesselRow : PanelContainer
     {
         if (response.Map != null && response.ShuttleResPath == Vessel?.ShuttlePath)
         {
+            _shuttleSystem.ShuttleDataRecieved -= OnVesselData;
             if (response.Map.HasValue)
             {
                 _detailWindow.ShowDetails(new VesselDetails() { Valid = true, map = _entityManager.GetEntity(response.Map.Value) });
