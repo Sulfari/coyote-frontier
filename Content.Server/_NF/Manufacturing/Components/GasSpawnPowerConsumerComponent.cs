@@ -69,7 +69,7 @@ public sealed partial class GasSpawnPowerConsumerComponent : Component
     /// The maximum value (inclusive) of the linear mode per deposit, in watts
     ///</summary>
     [DataField]
-    public float LinearMaxValue = 1_000_000; // 1 MW (5 mol/s)
+    public float LinearMaxValue = 2_500_000; // 1 MW (5 mol/s)
     #endregion Linear Rates
 
     // Logarithmic fields: at very high levels of power generation, incremental gains decrease logarithmically to prevent runaway cash generation
@@ -79,14 +79,14 @@ public sealed partial class GasSpawnPowerConsumerComponent : Component
     /// The base on power the logarithmic mode: a in Tk*a^(log10(x/T)-R)
     ///</summary>
     [DataField]
-    public float LogarithmRateBase = 2.5f;
+    public float LogarithmRateBase = 3.5f;
 
     ///<summary>
     /// The coefficient of the logarithmic mode: k in Tk*a^(log10(x/T)-R)
     /// Note: should be set to LinearRate*LinearMaxValue for a continuous function.
     ///</summary>
     [DataField]
-    public float LogarithmCoefficient = 1_000_000f;
+    public float LogarithmCoefficient = 2_500_000f;
 
     ///<summary>
     /// The exponential subtrahend of the logarithmic mode: R in Tk*a^(log10(x/T)-R)
