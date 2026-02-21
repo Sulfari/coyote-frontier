@@ -482,3 +482,4 @@
     - !type:NestedSelector
       weight: 0.15
       tableId: TableDungeonLootWeaponsExplosives
+
