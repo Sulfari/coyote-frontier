@@ -382,7 +382,7 @@
   - type: PointLight
     enabled: true
     color: "#A60000"
-    soft: true
+    energy: 5
     castShadows: false
   - type: Armor
     modifiers:
