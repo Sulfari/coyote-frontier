@@ -12,8 +12,8 @@
   id: Medical
   parent: BasePOI
   name: 'St. Micheals Hospital'
-  minimumDistance: 1650
-  maximumDistance: 3400
+  minimumDistance: 750
+  maximumDistance: 1000
   spawnGroup: Required
   gridPath: /Maps/_NF/POI/medical.yml
   addComponents:

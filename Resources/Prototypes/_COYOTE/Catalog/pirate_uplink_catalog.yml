@@ -175,7 +175,7 @@
   productEntity: CrateChemistryD
   icon: { sprite: Structures/Storage/Crates/medicalcrate_secure.rsi, state: base }
   cost:
-    Doubloon: 4
+    Doubloon: 5
   categories:
   - UplinkPirateMedical
   conditions:
@@ -194,7 +194,7 @@
   productEntity: CrateChemistryP
   icon: { sprite: Structures/Storage/Crates/medicalcrate_secure.rsi, state: base }
   cost:
-    Doubloon: 4
+    Doubloon: 5
   categories:
   - UplinkPirateMedical
   conditions:
@@ -213,7 +213,7 @@
   productEntity: CrateChemistryS
   icon: { sprite: Structures/Storage/Crates/medicalcrate_secure.rsi, state: base }
   cost:
-    Doubloon: 4
+    Doubloon: 5
   categories:
   - UplinkPirateMedical
   conditions:

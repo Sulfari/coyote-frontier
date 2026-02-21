@@ -2,7 +2,19 @@
   id: CrateChemistryP
   parent: CrateChemistrySecure
   name: chemicals crate (P)
-  description: Contains chemicals from the P-Block of elements. Requires Chemistry access to open.
+  description: |
+    Contains...
+    - Aluminium
+    - Carbon
+    - Chlorine
+    - Fluorine
+    - Iodine
+    - Phosphorus
+    - Sulfur
+    - Silicon
+    - Oxygen
+    - Nitrogen
+    Requires Chemistry access to open.
   components:
     - type: StorageFill
       contents:
@@ -31,7 +43,16 @@
   id: CrateChemistryS
   parent: CrateChemistrySecure
   name: chemicals crate (S)
-  description: Contains chemicals from the S-Block of elements. Requires Chemistry access to open.
+  description: |
+    Contains...
+    - Hydrogen
+    - Lithium
+    - Sodium
+    - Potassium
+    - Radium
+    - Sugar
+    - Ethanol
+    Requires Chemistry access to open.
   components:
     - type: StorageFill
       contents:
@@ -54,7 +75,14 @@
   id: CrateChemistryD
   parent: CrateChemistrySecure
   name: chemicals crate (D)
-  description: Contains chemicals from the D-Block of elements. Requires Chemistry access to open.
+  description: |
+    Contains...
+    - Iron
+    - Copper
+    - Gold
+    - Mercury
+    - Silver
+    Requires Chemistry access to open.
   components:
     - type: StorageFill
       contents:
