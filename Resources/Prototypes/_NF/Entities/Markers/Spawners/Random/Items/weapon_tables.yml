@@ -154,7 +154,7 @@
     - id: ClothingHandsKnuckleBoneCrushers
     - id: ArmBlade
     - id: Kanabou
-    
+
 # region ranged
 - type: entityTable
   id: TableDungeonLootWeaponsRanged
