@@ -15,7 +15,7 @@
     - !type:GroupSelector
       weight: 15
       children:
-      - id: SpellScrollRolledFireball
+      #- id: SpellScrollRolledFireball Coyote
       - id: SpellScrollRolledLightningball
     # movement spells
     - !type:GroupSelector
@@ -37,7 +37,7 @@
       - id: SpellScrollRolledSmoke
       - id: SpellScrollRolledWall
       - id: SpellScrollRolledRepulse
-      - id: SpellScrollRolledKnock
+      #- id: SpellScrollRolledKnock Coyote
       #- id: SpellScrollRolledRecall
     # not spell scrolls
     - !type:GroupSelector
@@ -84,7 +84,7 @@
     - !type:GroupSelector
       weight: 15
       children:
-      - id: SpellScrollRolledFireball
+      #- id: SpellScrollRolledFireball Coyote
       - id: SpellScrollRolledLightningball
     # movement spells
     - !type:GroupSelector
@@ -108,7 +108,7 @@
       - id: SpellScrollRolledSmoke
       - id: SpellScrollRolledWall
       - id: SpellScrollRolledRepulse
-      - id: SpellScrollRolledKnock
+      #- id: SpellScrollRolledKnock Coyote
       #- id: SpellScrollRolledRecall
     # not spell scrolls
     - !type:GroupSelector
