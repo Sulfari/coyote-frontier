@@ -57,6 +57,28 @@
   - type: StorageFillVisualizer
     fillBaseName: blue-icon
 
+#Coyote adding of the bluespace trashbag
+- type: entity
+  name: trash bag
+  id: BluespaceTrashBag
+  parent: TrashBag
+  components:
+  - type: Sprite #Coyote currently just using the same sprite as the regular blue trash bag, If we want a unique sprite for this, we can add it later.
+    layers:
+      - state: blue-icon-0
+        map: ["enum.StorageFillLayers.Fill"]
+  - type: Item
+    heldPrefix: blue
+  - type: Storage
+    maxItemSize: Huge
+    grid:
+    - 0,0,19,9
+    quickInsert: true
+    areaInsert: true
+    areaInsertRadius: 5
+  - type: StorageFillVisualizer
+    fillBaseName: blue-icon
+
 - type: entity
   name: spell of all-consuming cleanliness
   id: BagOfSummoningGarbage
