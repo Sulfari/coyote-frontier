@@ -9,7 +9,7 @@
       children:
       - id: DrinkTeapotEndless
       - id: DrinkShakerShaking
-      #- id: NFRavenbar Coyote
+      #- id: NFRavenbar # Coyote: Probably too powerful to be on this list.
       - id: ClothingNeckScarfWizardWarmth
       - id: SmokingPipeWizardNicotine
       - id: NFClothingNeckTieMetronome
