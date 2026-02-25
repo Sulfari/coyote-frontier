@@ -1056,7 +1056,7 @@
 
 - type: technology
   id: NFAdvancedHydroponicsStorge
-  name: nf-research-technology-advanced-service-bluespace-storage
+  name: nf-research-technology-advanced-botanical-storage
   entityIcon: PlantBagOfHolding
   discipline: NFService
   tier: 1
