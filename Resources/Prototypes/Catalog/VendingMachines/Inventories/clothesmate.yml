@@ -115,6 +115,7 @@
     ClothingUniformloinclothWhite: 2
     ClothingOuterBeltedWear: 2
     ClothingOuterTransparentOuterwear: 2
+    ClothingShoesHighheelShoes: 6 # Coyote
   contrabandInventory:
     ClothingMaskNeckGaiter: 2
     ClothingUniformJumpsuitTacticool: 1
@@ -124,5 +125,4 @@
     ToyFigurineGreytider: 1
     # ClothingBackpackSatchelSmugglerUnanchored: 1 # Frontier
     ClothingHeadHatSolidHeadband: 2
-    ClothingShoesHighheelShoes: 6 # Coyote
   # DO NOT ADD MORE, USE UNIFORM DYING
