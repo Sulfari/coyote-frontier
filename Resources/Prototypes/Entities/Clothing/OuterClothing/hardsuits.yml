@@ -792,8 +792,8 @@
         Heat: 0.4
         Caustic: 0.75
   - type: ClothingSpeedModifier
-    walkModifier: 0.8
-    sprintModifier: 0.8
+    walkModifier: 1.0 # COYOTE: 0.8 -> 1.0
+    sprintModifier: 1.0 # COYOTE: 0.8 -> 1.0
   - type: HeldSpeedModifier
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadHelmetHardsuitPirateCap
