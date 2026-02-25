@@ -236,7 +236,7 @@
 
 #Brigmedic Hardsuit
 - type: entity
-  parent: [ClothingOuterHardsuitBase, BaseC2ContrabandUnredeemable] # Removed BaseSecurityContraband<BaseC2ContrabandUnredeemable
+  parent: [ClothingOuterHardsuitBase, BaseC4ContrabandUnredeemable] # Removed BaseSecurityContraband<BaseC2ContrabandUnredeemable # Coyote: BaseC2ContrabandUnredeemable < BaseC4ContrabandUnredeemable
   id: ClothingOuterHardsuitBrigmedic
   name: brigmedic hardsuit
   description: Special hardsuit of the guardian angel of the brig. It is the medical version of the security hardsuit.
@@ -514,7 +514,7 @@
     lowPressureMultiplier: 1000
   - type: ExplosionResistance
     damageCoefficient: 0.5
-  #- type: StaminaResistance # do not add these to other equipment or mobs, we don't want to microbalance these everywhere
+  #- type: StaminaResistance # do not add these to other equipment or mobs, we don't want to microbalance these everywhere # Coyote: we removed stam resistance from most hardsuits.
   #  damageCoefficient: 0.75
   - type: Armor
     modifiers:
@@ -578,7 +578,7 @@
     damageCoefficient: 0.2
   - type: FireProtection
     reduction: 0.8
-  #- type: StaminaResistance # do not add these to other equipment or mobs, we don't want to microbalance these everywhere
+  #- type: StaminaResistance # do not add these to other equipment or mobs, we don't want to microbalance these everywhere # Coyote: we removed stam resistance from most hardsuits.
   #  damageCoefficient: 0.6
   - type: Armor
     modifiers:
@@ -614,7 +614,7 @@
     lowPressureMultiplier: 1000
   - type: ExplosionResistance
     damageCoefficient: 0.5
-  #- type: StaminaResistance # do not add these to other equipment or mobs, we don't want to microbalance these everywhere
+  #- type: StaminaResistance # do not add these to other equipment or mobs, we don't want to microbalance these everywhere # Coyote: we removed stam resistance from most hardsuits.
   #  damageCoefficient: 0.6
   - type: Armor
     modifiers:
