@@ -88,6 +88,12 @@
   abstract: true
   id: WeaponMasterStaffBase
   components:
+  - type: Gun
+    projectileSpeed: 30
+    fireRate: 1.5
+  - type: BatterySelfRecharger
+    autoRecharge: true
+    autoRechargeRate: 2
   - type: MeleeThrowOnHit
     unanchorOnHit: true
     whitelist:
@@ -104,7 +110,7 @@
 
 #region blue curacao staff
 - type: entity
-  parent: [ BaseC3WizardContraband, WeaponInertStaffBase ]
+  parent: [ BaseC2WizardContraband, WeaponInertStaffBase ] # Coyote: C3 to C2
   id: WeaponInertStaffWizardElementalAdept
   name: inert adept-wizard blue curacao elemental staff
   components:
@@ -152,7 +158,7 @@
 
 #region ice staff
 - type: entity
-  parent: [ BaseC3WizardContraband, WeaponInertStaffBase ]
+  parent: [ BaseC2WizardContraband, WeaponInertStaffBase ] # Coyote: C3 to C2
   id: WeaponInertStaffWizardIceAdept
   name: inert adept-wizard ice staff
   components:
@@ -209,7 +215,7 @@
 
 #region lightning staff
 - type: entity
-  parent: [ BaseC3WizardContraband, WeaponInertStaffBase ]
+  parent: [ BaseC2WizardContraband, WeaponInertStaffBase ] # Coyote: C3 to C2
   id: WeaponInertStaffWizardLightningAdept
   name: inert adept-wizard lightning staff
   components:
@@ -242,7 +248,7 @@
     deconstructionTarget: null
 
 - type: entity
-  parent: WeaponChargedStaffWizardLightningAdept
+  parent: [ WeaponMasterStaffBase, WeaponChargedStaffWizardLightningAdept ]
   id: WeaponChargedStaffWizardLightningMaster
   name: master-wizard lightning staff
   components:
@@ -256,7 +262,7 @@
 
 #region soap staff
 - type: entity
-  parent: [ BaseC3WizardContraband, WeaponInertStaffBase ]
+  parent: [ BaseC2WizardContraband, WeaponInertStaffBase ] # Coyote: C3 to C2
   id: WeaponInertStaffWizardSoapAdept
   name: inert adept-wizard soap staff
   components:
@@ -290,7 +296,7 @@
     deconstructionTarget: null
 
 - type: entity
-  parent: WeaponChargedStaffWizardSoapAdept
+  parent: [ WeaponMasterStaffBase, WeaponChargedStaffWizardSoapAdept ]
   id: WeaponChargedStaffWizardSoapMaster
   name: master-wizard soap staff
   components:
@@ -304,7 +310,7 @@
 
 #region magic bolt staff
 - type: entity
-  parent: [ BaseC3WizardContraband, WeaponInertStaffBase ]
+  parent: [ BaseC2WizardContraband, WeaponInertStaffBase ] # Coyote: C3 to C2
   id: WeaponInertStaffWizardBoltMagicAdept
   name: inert adept-wizard magic bolt staff
   components:
@@ -338,7 +344,7 @@
     deconstructionTarget: null
 
 - type: entity
-  parent: WeaponChargedStaffWizardBoltMagicAdept
+  parent: [ WeaponMasterStaffBase, WeaponChargedStaffWizardBoltMagicAdept ]
   id: WeaponChargedStaffWizardBoltMagicMaster
   name: master-wizard magic bolt staff
   components:
@@ -352,7 +358,7 @@
 
 #region fire bolt staff
 - type: entity
-  parent: [ BaseC3WizardContraband, WeaponInertStaffBase ]
+  parent: [ BaseC2WizardContraband, WeaponInertStaffBase ] # Coyote: C3 to C2
   id: WeaponInertStaffWizardBoltFireAdept
   name: inert adept-wizard fire bolt staff
   components:
@@ -395,7 +401,7 @@
     deconstructionTarget: null
 
 - type: entity
-  parent: WeaponChargedStaffWizardBoltFireAdept
+  parent: [ WeaponMasterStaffBase, WeaponChargedStaffWizardBoltFireAdept ]
   id: WeaponChargedStaffWizardBoltFireMaster
   name: master-wizard fire bolt staff
   components:
@@ -409,7 +415,7 @@
 
 #region caustic beam staff
 - type: entity
-  parent: [ BaseC3WizardContraband, WeaponInertStaffBase ]
+  parent: [ BaseC2WizardContraband, WeaponInertStaffBase ] # Coyote: C3 to C2
   id: WeaponInertStaffWizardCausticAdept
   name: inert adept-wizard caustic beam staff
   components:
@@ -452,7 +458,7 @@
     deconstructionTarget: null
 
 - type: entity
-  parent: WeaponChargedStaffWizardCausticAdept
+  parent: [ WeaponMasterStaffBase, WeaponChargedStaffWizardCausticAdept ]
   id: WeaponChargedStaffWizardCausticMaster
   name: master-wizard caustic beam staff
   components:
@@ -466,7 +472,7 @@
 
 #region brick staff
 - type: entity
-  parent: [ BaseC3WizardContraband, WeaponInertStaffBase ]
+  parent: [ BaseC2WizardContraband, WeaponInertStaffBase ] # Coyote: C3 to C2
   id: WeaponInertStaffWizardBrickAdept
   name: inert brick wizard staff
   components:
@@ -506,7 +512,7 @@
     deconstructionTarget: null
 
 - type: entity
-  parent: WeaponChargedStaffWizardBrickAdept
+  parent: [ WeaponMasterStaffBase, WeaponChargedStaffWizardBrickAdept ]
   id: WeaponChargedStaffWizardBrickMaster
   name: master-wizard brick staff
   components:
@@ -554,9 +560,9 @@
     deconstructionTarget: null
 
 - type: entity
-  parent: [ WeaponChargedStaffCultistBoltDarkAdept, WeaponMasterStaffBase ]
+  parent: [ WeaponMasterStaffBase, WeaponChargedStaffCultistBoltDarkAdept ]
   id: WeaponChargedStaffCultistBoltDarkMaster
-  name: blood cult staff of crimson bolt
+  name: master blood cult staff of crimson bolt
   components:
   - type: ProjectileBatteryAmmoProvider
     proto: BulletBloodCultDarkBolt
@@ -602,9 +608,9 @@
     deconstructionTarget: null
 
 - type: entity
-  parent: [ WeaponChargedStaffCultistHandAdept, WeaponMasterStaffBase ]
+  parent: [ WeaponMasterStaffBase, WeaponChargedStaffCultistHandAdept ]
   id: WeaponChargedStaffCultistHandMaster
-  name: blood cult staff of malicious touch
+  name: master blood cult staff of malicious touch
   components:
   - type: ProjectileBatteryAmmoProvider
     proto: BulletBloodCultHand
@@ -650,9 +656,9 @@
     deconstructionTarget: null
 
 - type: entity
-  parent: [ WeaponChargedStaffCultistLightningAdept, WeaponMasterStaffBase ]
+  parent: [ WeaponMasterStaffBase, WeaponChargedStaffCultistLightningAdept ]
   id: WeaponChargedStaffCultistLightningMaster
-  name: blood cult staff of crimson lightning
+  name: master blood cult staff of crimson lightning
   components:
   - type: HitscanBatteryAmmoProvider
     proto: BloodCultLaser
@@ -698,9 +704,9 @@
     deconstructionTarget: null
 
 - type: entity
-  parent: [ WeaponChargedStaffCultistSoapAdept, WeaponMasterStaffBase ]
+  parent: [ WeaponMasterStaffBase, WeaponChargedStaffCultistSoapAdept ]
   id: WeaponChargedStaffCultistSoapMaster
-  name: blood cult staff of shredding soap
+  name: master blood cult staff of shredding soap
   components:
   - type: ProjectileBatteryAmmoProvider
     proto: ShellSoapConjuredBloodCultCluster

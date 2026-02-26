@@ -230,6 +230,7 @@
   - ContractorClothingBackpack
   - ContractorClothingBackpackDuffel
   - ContractorClothingBackpackSatchel
+  - ContractorClothingBackpackSatchelLeather # Coyote
   - ContractorClothingBackpackMessenger
   - ContractorClothingBackpackCaptain
   - ContractorClothingBackpackDuffelCaptain
@@ -827,6 +828,7 @@
   - ContractorHoloGraffitiProjector # Punkish (might be annoying)
   - ContractorCrayonMagic
   - ContractorSprayPainterMagic
+  - ContractorAccessConfigurator # Coyote: Add Civilian Access Configurator
     # Bureaucracy
   - ContractorBoxFolderMedicalDoctor
   - ContractorBrbSign

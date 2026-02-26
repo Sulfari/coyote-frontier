@@ -154,6 +154,10 @@
       collection: VulpkaninSnarls
     Bark:
       collection: VulpkaninBarks
+    Whimper:
+      collection: VulpkaninWhimpers
+    Yip:
+      collection: VulpkaninYips
     Whine:
       collection: VulpkaninWhines
     Howl:

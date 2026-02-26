@@ -1,6 +1,6 @@
 #region fireball scroll
 - type: entity
-  parent: SpellScrollRolled
+  parent: [BaseC3WizardContraband, SpellScrollRolled] # Coyote: From nothing to C3
   id: SpellScrollRolledFireball
   name: scroll of fireball
   description: |-
@@ -67,6 +67,8 @@
   - type: Spellbook
     spellActions:
       ActionFireball: 1
+  - type: HeldItemOrbiter
+    spritePrototype: AuraOrbiterPyro
 
 #region lightningball scroll
 - type: entity
@@ -137,3 +139,5 @@
   - type: Spellbook
     spellActions:
       NFActionTeslaball: 1
+  - type: HeldItemOrbiter
+    spritePrototype: AuraOrbiterLightning

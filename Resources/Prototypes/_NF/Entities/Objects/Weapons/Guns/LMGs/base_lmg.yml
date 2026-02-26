@@ -31,7 +31,7 @@
 #region manufacturer
 - type: entity
   id: NFBaseWeaponFrameLightMachineGunGorlex
-  parent: [ BaseC4Contraband, NFBaseWeaponFrameLightMachineGun ]
+  parent: [ BaseC4Contraband, NFBaseWeaponFrameLightMachineGun ] # Coyote: BaseC3SyndicateContraband < BaseC4Contraband
   abstract: true
   components:
   - type: Gun

@@ -2,3 +2,15 @@
 - type: contrabandSeverity
   id: Class3Meta
   examineText: contraband-examine-text-Class3Meta
+
+- type: contrabandSeverity
+  id: Class1Wizard
+  examineText: contraband-examine-text-Class1Wizard
+
+- type: contrabandSeverity
+  id: Class2Wizard
+  examineText: contraband-examine-text-Class2Wizard
+
+- type: contrabandSeverity
+  id: Class4Wizard
+  examineText: contraband-examine-text-Class4Wizard

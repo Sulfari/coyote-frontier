@@ -123,10 +123,10 @@
         Blunt: 9 # 12 hits to crit unarmored target
   - type: StaminaDamageOnCollide
     damage: 10 # 6 hits to slow, 10 hits to stun
-  - type: PointLight
-    color: MediumPurple
-    radius: 1.5
-    softness: 1
+  #- type: PointLight # Coyote: Removed over performance concerns
+  #  color: MediumPurple
+  #  radius: 1.5
+  #  softness: 1
 
 # Blood Cult Soaps
 - type: entity
@@ -168,10 +168,10 @@
         Slash: 1
   - type: StaminaDamageOnCollide
     damage: 1
-  - type: PointLight
-    color: red
-    radius: 1.2
-    softness: 1
+  #- type: PointLight # Coyote: Performance concerns.
+  #  color: red
+  #  radius: 1.2
+  #  softness: 1
 
 - type: entity
   name: soap
@@ -225,10 +225,10 @@
     damage:
       types:
         Slash: 5
-  - type: PointLight
-    color: red
-    radius: 1.2
-    softness: 1
+  #- type: PointLight # Coyote: Performance concerns.
+  #  color: red
+  #  radius: 1.2
+  #  softness: 1
 
 - type: entity
   id: ShellSoapConjuredBloodCultCluster

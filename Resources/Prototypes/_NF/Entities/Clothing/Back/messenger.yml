@@ -794,10 +794,8 @@
         color: "#1f1f1f"
 
 - type: entity
-  parent:
-  - BaseC3WizardContrabandUnredeemable
+  parent: # Coyote: C3 to nothing. Not contraband clothing. It's just a bag.
   - ClothingBackpackMessengerContractor
-  - ContrabandClothing
   id: ClothingBackpackMessengerWizardBlue
   name: blue wizard messenger bag
   description: A stylish messenger bag fit for a blue wizard.

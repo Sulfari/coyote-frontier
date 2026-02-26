@@ -28,13 +28,8 @@
 
 - type: startingGear
   id: ChaplainGear
-  equipment:
-    shoes: ClothingShoesColorBlack
-    id: ChaplainPDA
-    ears: ClothingHeadsetService
   storage:
     back:
-    - Bible
     - RubberStampChaplain
     - EncryptionKeyService
     - ShipVoucherCoyoteChaplain
@@ -48,6 +43,7 @@
   - ContractorGloves
   - ContractorBackpack
   - ContractorOuterClothing
+  - ChaplainBible
   - ContractorForcedOuterClothing
   - ContractorShoes
   - ContractorFace

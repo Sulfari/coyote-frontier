@@ -1,19 +1,21 @@
 <controls:FancyWindow xmlns="https://spacestation14.io"
                            xmlns:gfx="clr-namespace:Robust.Client.Graphics;assembly=Robust.Client"
                            xmlns:controls="clr-namespace:Content.Client.UserInterface.Controls"
-                           xmlns:ui="clr-namespace:Content.Client.Pinpointer.UI"
-                           SetSize="868 748"
-                           MinSize="868 748">
+                           SetSize="500 260"
+                           MinSize="500 260">
     <BoxContainer Orientation="Vertical">
-        <ui:NavMapControl Name="NavMapScreen"/>
         <ScrollContainer HorizontalExpand="True"
                          HScrollEnabled="False"
                          VerticalExpand="True"
                          SizeFlagsStretchRatio="6">
+            <RichTextLabel Name="ShipRules"
+                        Access="Public"
+                        VerticalExpand="True"
+                        SetWidth="500"/>
         </ScrollContainer>
-        <Button Name="GuidebookButton"
+        <Button Name="AcceptButton"
                 Access="Public"
-                Text="{Loc 'open-guidebook'}"
+                Text="{Loc 'accept'}"
                 TextAlign="Center" />
     </BoxContainer>
 </controls:FancyWindow>
