@@ -245,11 +245,21 @@ public sealed class AlertLevelSystem : EntitySystem
             }
         }
 
-        if (announce && Resolve(station, ref dataComponent)) // Frontier: add Resolve for dataComponent
+        if (announce)
         {
-            var stationName = dataComponent.EntityName; // Frontier: moved down
-            _chatSystem.DispatchStationAnnouncement(station, announcementFull, playDefaultSound: playDefault,
-                colorOverride: detail.Color, sender: stationName);
+            // Wayfarer: sector-wide alert announcements
+            var filter = Filter.Empty();
+            filter.AddInMap(_ticker.DefaultMap, EntityManager);
+
+            string? senderName = null;
+            if (Resolve(station, ref dataComponent, false))
+            {
+                senderName = dataComponent.EntityName;
+            }
+
+            _chatSystem.DispatchFilteredAnnouncement(filter, announcementFull, station,
+                sender: senderName, playSound: playDefault, colorOverride: detail.Color);
+            // End Wayfarer
         }
 
         RaiseLocalEvent(new AlertLevelChangedEvent(EntityUid.Invalid, level)); // Frontier: pass invalid, we have no station

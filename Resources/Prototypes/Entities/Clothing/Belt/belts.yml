@@ -727,3 +727,14 @@
     # whitelist: # Frontier: commented out whitelist
       # tags:
       # - WizardWand
+
+- type: entity
+  parent: ClothingBeltSuspendersRed
+  id: ClothingPirateBaddieSuspenders
+  name: Pirate Baddie Suspenders
+  description: Those suspenders help to keep pants up on your precious booty. Even during most intense fights.
+  components:
+  - type: Sprite
+    sprite: Clothing/Belt/piratebaddiesuspenders.rsi
+  - type: Clothing
+    sprite: Clothing/Belt/piratebaddiesuspenders.rsi

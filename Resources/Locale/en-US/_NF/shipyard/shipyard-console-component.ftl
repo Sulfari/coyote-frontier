@@ -33,12 +33,7 @@ shipyard-console-menu-class-label = Class:{" "}
 shipyard-console-menu-engine-label = Engine:{" "}
 
 shipyard-console-purchase-available = Purchase
-shipyard-console-guidebook = Details
-open-guidebook = View Owner's Manual
-
-# Components
-shipyard-preview-comp-thruster = Thruster
-shipyard-preview-comp-mini-thruster = Mini Thruster
+shipyard-console-guidebook = Manual
 
 # Keep these in enum order for ease of validation.
 shipyard-console-category-All = All

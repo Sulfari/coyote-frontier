@@ -25,3 +25,57 @@
   components:
   - type: Contraband
     allowedDepartments: [ Antag ]
+
+- type: entity
+  parent: BaseC1ContrabandUnredeemable
+  id: BaseC1WizardContrabandUnredeemable
+  abstract: true
+  components:
+  - type: Contraband
+    severity: Class1Wizard
+
+- type: entity
+  parent: BaseC1ContrabandUnredeemable
+  id: BaseC1WizardContraband
+  abstract: true
+  components:
+  - type: Contraband
+    severity: Class1Wizard
+
+- type: entity
+  parent: BaseC2ContrabandUnredeemable
+  id: BaseC2WizardContrabandUnredeemable
+  abstract: true
+  components:
+  - type: Contraband
+    severity: Class2Wizard
+
+- type: entity
+  parent: BaseC2ContrabandUnredeemable
+  id: BaseC2WizardContraband
+  abstract: true
+  components:
+  - type: Contraband
+    severity: Class2Wizard
+    turnInValues:
+      FrontierUplinkCoin: 1
+      Doubloon: 1
+
+- type: entity
+  parent: BaseC4ContrabandUnredeemable
+  id: BaseC4WizardContrabandUnredeemable
+  abstract: true
+  components:
+  - type: Contraband
+    severity: Class4Wizard
+
+- type: entity
+  parent: BaseC4ContrabandUnredeemable
+  id: BaseC4WizardContraband
+  abstract: true
+  components:
+  - type: Contraband
+    severity: Class4Wizard
+    turnInValues:
+      FrontierUplinkCoin: 2
+      Doubloon: 2

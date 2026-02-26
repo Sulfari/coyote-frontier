@@ -190,6 +190,12 @@
       weight: 0.25 # Frontier
     - id: ScrapGenericMachineAncient # Frontier
       weight: 0.1 # Frontier
+    - id: CrateChemistryP # Frontier
+      weight: 0.1 # Frontier
+    - id: CrateChemistryD # Frontier
+      weight: 0.1 # Frontier
+    - id: CrateChemistryS # Frontier
+      weight: 0.1 # Frontier
 
 - type: entityTable
   id: SalvageTreasureLegendary

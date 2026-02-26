@@ -1,7 +1,7 @@
 #region WizDen
 - type: entity
   id: NFWeaponLauncherChinaLake
-  parent: [ BaseC3Contraband, NFBaseWeaponLauncherChamber40mmGrenades, NFBaseWeaponFrameLauncherGorlex ]
+  parent: [ NFBaseWeaponLauncherChamber40mmGrenades, NFBaseWeaponFrameLauncherGorlex ]
   name: GP-40 grenade launcher
   description: PLOOP.
   components:
@@ -22,7 +22,7 @@
 
 - type: entity
   id: NFWeaponLauncherRocket
-  parent: [ BaseC3Contraband, NFBaseWeaponLauncherChamberRockets, NFBaseWeaponFrameLauncherGorlex ]
+  parent: [ NFBaseWeaponLauncherChamberRockets, NFBaseWeaponFrameLauncherGorlex ]
   name: GSW rocket launcher mk4
   description: A modified ancient rocket-propelled grenade launcher.
   components:

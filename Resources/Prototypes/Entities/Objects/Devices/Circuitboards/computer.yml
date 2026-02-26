@@ -472,7 +472,7 @@
     prototype: ComputerWallmountRadar # Frontier
 
 - type: entity
-  parent: BaseComputerCircuitboard
+  parent: [BaseComputerCircuitboard, BaseC2ContrabandUnredeemable] # Coyote: Add BaseC2ContrabandUnredeemable
   id: AdvancedRadarConsoleCircuitboard # Frontier
   name: advanced radar console computer board
   components:

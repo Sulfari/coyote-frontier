@@ -107,6 +107,8 @@
     sprite: _NF/Clothing/Head/Hardsuits/nfsd.rsi
   - type: PointLight
     color: "#ffeead"
+    radius: 5
+    energy: 3
   - type: Armor
     modifiers:
       coefficients:
@@ -169,6 +171,9 @@
   - type: PressureProtection
     highPressureMultiplier: 0.3
     lowPressureMultiplier: 1000
+  - type: PointLight
+    radius: 7
+    energy: 3
   - type: Armor
     modifiers:
       coefficients:
@@ -377,7 +382,7 @@
   - type: PointLight
     enabled: true
     color: "#A60000"
-    soft: true
+    energy: 5
     castShadows: false
   - type: Armor
     modifiers:

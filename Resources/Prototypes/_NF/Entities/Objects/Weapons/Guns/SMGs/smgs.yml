@@ -1,7 +1,7 @@
 #region WizDen
 - type: entity
   id: NFWeaponSubMachineGunAtreides
-  parent: [ BaseC2Contraband, NFBaseWeaponSubMachineGunChamber35, NFBaseWeaponFrameSubMachineGunGorlex ]
+  parent: [ NFBaseWeaponSubMachineGunChamber35, NFBaseWeaponFrameSubMachineGunGorlex ]
   name: Atreides
   description: |-
     Pla-ket-ket-ket-ket! An illegal firearm often used by Syndicate agents.
@@ -16,7 +16,7 @@
 
 - type: entity # Coyote: Converted to .40 caliber
   id: NFWeaponSubMachineGunC20r
-  parent: [ BaseC2Contraband, CSBaseWeaponHeavySubMachineGunChamber40, CSBaseWeaponFrameHeavySubMachineGunCybersun ]
+  parent: [ CSBaseWeaponHeavySubMachineGunChamber40, CSBaseWeaponFrameHeavySubMachineGunCybersun ]
   name: C-20r
   description: |-
     An illegal firearm that is often used by the infamous nuclear operatives.

@@ -11,14 +11,15 @@
   maleFirstNames: NamesChitinidFirstMale
   femaleFirstNames: NamesChitinidFirstFemale
   naming: First
+  kind:
+  - BasicHumanlike
+  - BasicFurry
 
 - type: speciesBaseSprites
   id: MobChitinidSprites
   sprites:
     Head: MobChitinidHead
     Snout: MobHumanoidAnyMarking
-#    Underwear: MobHumanoidAnyMarking
-#    Undershirt: MobHumanoidAnyMarking
     Chest: MobChitinidTorso
     HeadTop: MobHumanoidAnyMarking
     HeadSide: MobHumanoidAnyMarking
@@ -32,6 +33,20 @@
     RLeg: MobChitinidRLeg
     LFoot: MobChitinidLFoot
     RFoot: MobChitinidRFoot
+    Hair: MobHumanoidAnyMarking
+    FacialHair: MobHumanoidAnyMarking
+    NeckFluff: MobHumanoidAnyMarking
+    UndergarmentTop: MobHumanoidAnyMarking
+    UndergarmentBottom: MobHumanoidAnyMarking
+    Genital: MobHumanoidAnyMarking
+    LLegBehind: MobHumanoidAnyMarking
+    RLegBehind: MobHumanoidAnyMarking
+    LFootBehind: MobHumanoidAnyMarking
+    RFootBehind: MobHumanoidAnyMarking
+    TailBehind: MobHumanoidAnyMarking
+    TailOversuit: MobHumanoidAnyMarking
+    UndershirtUnderclothes: MobHumanoidAnyMarking
+    UndershirtOverclothes: MobHumanoidAnyMarking
 
 - type: humanoidBaseSprite
   id: MobChitinidEyes
@@ -44,43 +59,78 @@
   onlyWhitelisted: true
   points:
     Hair:
-      points: 0
+      points: 35
       required: false
     FacialHair:
-      points: 0
+      points: 35
       required: false
     Tail:
-      points: 1
+      points: 35
       required: true
       defaultMarkings: [ ChitinidWingsDefault ]
     Snout:
-      points: 1
+      points: 35
       required: false
     HeadTop:
-      points: 1
+      points: 35
       required: true
       defaultMarkings: [ ChitinidAntennasDefault ]
     HeadSide:
-      points: 1
+      points: 35
       required: false
     Head:
-      points: 1
+      points: 35
       required: false
     Chest:
-      points: 1
+      points: 35
       required: false
-#    Underwear:
-#      points: 1
-#      required: false
-#    Undershirt:
-#      points: 1
-#      required: false
-    Legs:
-      points: 6
+    NeckFluff:
+      points: 35
       required: false
-    Arms:
-      points: 6
+    UndergarmentTop:
+      points: 35
       required: false
+    UndergarmentBottom:
+      points: 35
+      required: false
+    # Copypaste these into every species I HATE THIS CODE
+    BaseChest:
+      points: 35
+      required: false
+    BaseHead:
+      points: 35
+      required: false
+    BaseLArm:
+      points: 35
+      required: false
+    BaseLFoot:
+      points: 35
+      required: false
+    BaseLHand:
+      points: 35
+      required: false
+    BaseLLeg:
+      points: 35
+      required: false
+    BaseRArm:
+      points: 35
+      required: false
+    BaseRFoot:
+      points: 35
+      required: false
+    BaseRHand:
+      points: 35
+      required: false
+    BaseRLeg:
+      points: 35
+      required: false
+    Overlay:
+      points: 35
+      required: false
+    Special:
+      points: 35
+      required: false
+
 
 - type: humanoidBaseSprite
   id: MobChitinidHead

@@ -2,7 +2,7 @@
   parent: ClothingShoesBase
   id: ClothingShoesFootProtectors
   name: foot protectors
-  description: A pair of protectors, for your feed! Allows you to walk around (basically) barefoot, and not accidentally step on something!
+  description: A pair of protectors, for your feet! Allows you to walk around (basically) barefoot, and not accidentally step on something!
   components:
   - type: Item
     size: Small

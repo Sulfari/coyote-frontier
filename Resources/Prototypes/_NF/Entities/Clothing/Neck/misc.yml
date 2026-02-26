@@ -34,10 +34,7 @@
       collection: FootstepJester
 
 - type: entity
-  parent:
-  - BaseC4Contraband
-  - ClothingNeckBase
-  - ContrabandClothing
+  parent: [ BaseC4Contraband, ClothingNeckBase, ContrabandClothing ] # Coyote: BaseC3CultContraband < BaseC4Contraband
   id: ClothingNeckAmuletBloodCult
   name: ascended cultist amulet
   description: "Every time you gaze upon it, you feel as if it is gazing back at you. Summons a drained one that follows the user for a brief period of time. Has a cooldown."

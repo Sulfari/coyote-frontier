@@ -1063,6 +1063,7 @@
   cost: 2500
   recipeUnlocks:
   - PlantBagOfHolding
+  - BluespaceTrashBag # Coyote
   prerequisiteLineType: Diagonal
   technologyPrerequisites:
   - NFAdvancedHydroponicsEquipment
