@@ -281,6 +281,11 @@
   id: SeedExtractorMachineCircuitboard
   result: SeedExtractorMachineCircuitboard
 
+- type: latheRecipe
+  parent: [BaseCircuitboardRecipe]
+  id: SmartFridgeCircuitboard
+  result: SmartFridgeCircuitboard
+
 # Kitchen
 - type: latheRecipe
   parent: [ BaseCircuitboardRecipe, BaseServiceMachineRecipeCategory ]
