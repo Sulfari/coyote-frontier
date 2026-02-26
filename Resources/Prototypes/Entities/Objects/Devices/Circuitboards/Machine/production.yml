@@ -1064,6 +1064,31 @@
       Glass: 2
       Cable: 5
 
+
+- type: entity
+  parent: BaseMachineCircuitboard
+  id: SmartFridgeCircuitboard
+  name: SmartFridge machine board
+  description: A machine printed circuit board for a SmartFridge.
+  components:
+  - type: Sprite
+    state: service
+  - type: MachineBoard
+    prototype: SmartFridge
+    Requirements:
+      Manipulator: 1
+      Capacitor: 3
+      MatterBin: 1
+    stackRequirements:
+      Glass: 5
+      Bluespace: 2 # Coyote Sector
+      Plasma: 20
+      Diamond: 1 # Coyote Sector
+    tagRequirements:
+      GlassBeaker:
+        amount: 2
+        defaultPrototype: Beaker
+
 - type: entity
   id: StasisBedMachineCircuitboard
   parent: BaseMachineCircuitboard
