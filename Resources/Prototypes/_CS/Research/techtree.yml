@@ -2,8 +2,8 @@
 
 
 - type: technology
-  id: CSSmartFoodStorage
-  name: Smart Food Storage
+  id: CSSmartStorageRefrigeration
+  name: Smart Storage Refrigeration
   entityIcon: SmartFridge
   discipline: NFService
   tier: 1

@@ -151,7 +151,7 @@
   recipes:
   # MeatManipulation
   - BiomassReclaimerMachineCircuitboard
-  # SmartFoodStorage
+  # SmartStorageRefrigeration
   - SmartFridgeCircuitboard #Coyote sector
   # BiochemicalStasis
   - StasisBedMachineCircuitboard
@@ -369,7 +369,7 @@
   # MeatManipulation
   - FatExtractorMachineCircuitboard
   - BiogeneratorMachineCircuitboard
-  # SmartFoodStorage
+  # SmartStorageRefrigeration
   - SmartFridgeCircuitboard
   # IndustrialCutter
   - CutterMachineCircuitboard

@@ -1,5 +1,5 @@
 - type: entity
-  parent: [BaseStructureDynamic, ConstructibleMachine]
+  parent: BaseStructureDynamic
   id: SmartFridge
   name: SmartFridge
   description: A refrigerated storage unit for keeping items cold and fresh.
@@ -19,8 +19,6 @@
     - state: smartfridge_door
       map: ["enum.StorageVisualLayers.Door"]
       shader: unshaded
-    - state: panel
-      map: ["enum.WiresVisualLayers.MaintenancePanel"]
   - type: EntityStorageVisuals
     stateBaseClosed: smartfridge
     stateDoorOpen: smartfridge_open
@@ -29,8 +27,6 @@
     radius: 1.2
     energy: 3.0
     color: "#9dc5c9"
-  - type: Machine
-    board: SmartFridgeCircuitboard
   - type: EntityStorage
     isCollidableWhenOpen: true
     closeSound:
@@ -44,15 +40,6 @@
   - type: ContainerContainer
     containers:
       entity_storage: !type:Container
-      machine_board: !type:Container
-      machine_parts: !type:Container
-  - type: Construction
-    graph: Machine
-    node: machine
-    containers:
-    - machine_parts
-    - machine_board
-    - entity_storage
   - type: UseDelay
     delay: 1
   - type: AntiRottingContainer
@@ -75,8 +62,6 @@
         density: 200
   - type: Anchorable
     delay: 2
-  - type: WiresPanel
-  - type: WiresVisuals
   - type: InteractionOutline
   - type: Destructible
     thresholds:
@@ -87,10 +72,28 @@
       - !type:PlaySoundBehavior
         sound:
           collection: MetalBreak
-      - !type:ChangeConstructionNodeBehavior
-        node: machineFrame
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: ["Breakage"]
+    - trigger:
+        !type:DamageTrigger
+        damage: 200
+      behaviors:
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          SheetSteel1:
+            min: 1
+            max: 1
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MetalBreak
   - type: Damageable
     damageContainer: StructuralInorganic
     damageModifierSet: Metallic
