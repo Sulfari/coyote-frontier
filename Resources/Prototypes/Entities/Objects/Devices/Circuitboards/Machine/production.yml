@@ -1083,7 +1083,7 @@
       Glass: 5
       Bluespace: 2 # Coyote Sector
       Plasma: 20
-      Diamond: 1 # Coyote Sector
+      Diamond: 1
     tagRequirements:
       GlassBeaker:
         amount: 2
