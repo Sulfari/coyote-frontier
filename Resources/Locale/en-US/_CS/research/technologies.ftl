@@ -1,1 +1,1 @@
-cs-research-technology-smart-storage-refrigeration = Smart Storage Refrigeration # Coyote Sector
+cs-research-technology-smart-storage-refrigeration = Smart Storage Refrigeration
