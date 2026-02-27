@@ -200,8 +200,7 @@
   - type: MobThresholds # Coyote: Five less hitpoints, so you can Hristov them. [
     thresholds:
       0: Alive
-      95: Critical
-      100: Dead # Coyote end ]
+      95: Critical # Coyote end ]
   - type: Sprite
     drawdepth: Mobs
     layers:
@@ -673,8 +672,7 @@
   - type: MobThresholds # Coyote: Five less hitpoints, so you can Hristov them. [
     thresholds:
       0: Alive
-      95: Critical
-      100: Dead # Coyote end ]
+      95: Critical # Coyote end ]
   - type: Sprite
     drawdepth: Mobs
     layers:
@@ -886,8 +884,7 @@
   - type: MobThresholds # Coyote: Five less hitpoints, so you can Hristov them. [
     thresholds:
       0: Alive
-      95: Critical
-      100: Dead # Coyote end ]
+      95: Critical # Coyote end ]
   - type: Sprite
     drawdepth: Mobs
     layers:
@@ -1047,8 +1044,7 @@
   - type: MobThresholds # Coyote: Five less hitpoints, so you can Hristov them. [
     thresholds:
       0: Alive
-      95: Critical
-      100: Dead # Coyote end ]
+      95: Critical # Coyote end ]
   - type: Sprite
     drawdepth: Mobs
     layers:
@@ -1389,7 +1385,7 @@
     thresholds:
       0: Alive
       95: Critical
-      100: Dead # Coyote end ]
+      200: Dead # Coyote end ]
   - type: CombatMode
   - type: Inventory
     templateId: monkey
@@ -3613,8 +3609,7 @@
   - type: MobThresholds # Coyote: Five less hitpoints, so you can Hristov them. [
     thresholds:
       0: Alive
-      95: Critical
-      100: Dead # Coyote end ]
+      95: Critical # Coyote end ]
   - type: Sprite
     drawdepth: Mobs
     layers:
