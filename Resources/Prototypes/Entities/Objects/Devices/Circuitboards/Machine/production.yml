@@ -1081,7 +1081,6 @@
       MatterBin: 1
     stackRequirements:
       Glass: 5
-      Bluespace: 2 # Coyote Sector
       Plasma: 20
       Diamond: 1
     tagRequirements:
