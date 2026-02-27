@@ -3,7 +3,7 @@
 
 - type: technology
   id: CSSmartStorageRefrigeration
-  name: cs-research-technology-smart-storage-refrigeration
+  name: Smart Storage Refrigeration
   entityIcon: SmartFridge
   discipline: NFService
   tier: 1
