@@ -200,7 +200,8 @@
   - type: MobThresholds # Coyote: Five less hitpoints, so you can Hristov them. [
     thresholds:
       0: Alive
-      95: Critical # Coyote end ]
+      95: Critical
+      200: Dead # Coyote end ]
   - type: Sprite
     drawdepth: Mobs
     layers:
@@ -672,7 +673,8 @@
   - type: MobThresholds # Coyote: Five less hitpoints, so you can Hristov them. [
     thresholds:
       0: Alive
-      95: Critical # Coyote end ]
+      95: Critical
+      200: Dead # Coyote end ]
   - type: Sprite
     drawdepth: Mobs
     layers:
@@ -884,7 +886,8 @@
   - type: MobThresholds # Coyote: Five less hitpoints, so you can Hristov them. [
     thresholds:
       0: Alive
-      95: Critical # Coyote end ]
+      95: Critical
+      200: Dead # Coyote end ]
   - type: Sprite
     drawdepth: Mobs
     layers:
@@ -1044,7 +1047,8 @@
   - type: MobThresholds # Coyote: Five less hitpoints, so you can Hristov them. [
     thresholds:
       0: Alive
-      95: Critical # Coyote end ]
+      95: Critical
+      200: Dead # Coyote end ]
   - type: Sprite
     drawdepth: Mobs
     layers:
@@ -3609,7 +3613,8 @@
   - type: MobThresholds # Coyote: Five less hitpoints, so you can Hristov them. [
     thresholds:
       0: Alive
-      95: Critical # Coyote end ]
+      95: Critical
+      200: Dead # Coyote end ]
   - type: Sprite
     drawdepth: Mobs
     layers:
