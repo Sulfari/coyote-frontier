@@ -205,7 +205,7 @@
 
 #Security Hardsuit
 - type: entity
-  parent: [ClothingOuterHardsuitBase, BaseC1ContrabandUnredeemable] # Removed BaseSecurityContraband<BaseC2ContrabandUnredeemable
+  parent: [ClothingOuterHardsuitBase, BaseC2ContrabandUnredeemable] # Removed BaseSecurityContraband<BaseC2ContrabandUnredeemable
   id: ClothingOuterHardsuitSecurity
   name: security hardsuit
   description: A special suit that protects against hazardous, low pressure environments. Has an additional layer of armor.
@@ -236,7 +236,7 @@
 
 #Brigmedic Hardsuit
 - type: entity
-  parent: [ClothingOuterHardsuitBase, BaseC4ContrabandUnredeemable] # Removed BaseSecurityContraband<BaseC2ContrabandUnredeemable
+  parent: [ClothingOuterHardsuitBase, BaseC4ContrabandUnredeemable] # Removed BaseSecurityContraband<BaseC2ContrabandUnredeemable # Coyote: BaseC2ContrabandUnredeemable < BaseC4ContrabandUnredeemable
   id: ClothingOuterHardsuitBrigmedic
   name: brigmedic hardsuit
   description: Special hardsuit of the guardian angel of the brig. It is the medical version of the security hardsuit.
@@ -263,7 +263,7 @@
 
 #Warden's Hardsuit
 - type: entity
-  parent: [ClothingOuterHardsuitBase, BaseC1ContrabandUnredeemable] # BaseSecurityContraband<BaseC2ContrabandUnredeemable
+  parent: [ClothingOuterHardsuitBase, BaseC2ContrabandUnredeemable] # BaseSecurityContraband<BaseC2ContrabandUnredeemable
   id: ClothingOuterHardsuitWarden
   name: warden's hardsuit
   description: A specialized riot suit geared to combat low pressure environments.
@@ -294,7 +294,7 @@
 
 #Captain's Hardsuit
 - type: entity
-  parent: ClothingOuterHardsuitBase # Removed BaseC4Contraband
+  parent: ClothingOuterHardsuitBase # Removed BaseCommandContraband
   id: ClothingOuterHardsuitCap
   name: captain's armored spacesuit
   description: A formal armored spacesuit, made for the station's captain.
@@ -326,7 +326,7 @@
 
 #Chief Engineer's Hardsuit
 - type: entity
-  parent: ClothingOuterHardsuitBase # Removed BaseC4Contraband
+  parent: ClothingOuterHardsuitBase # Removed BaseCommandContraband
   id: ClothingOuterHardsuitEngineeringWhite
   name: chief engineer's hardsuit
   description: A special hardsuit that protects against hazardous, low pressure environments, made for the chief engineer of the station.
@@ -360,7 +360,7 @@
 
 #Chief Medical Officer's Hardsuit
 - type: entity
-  parent: ClothingOuterHardsuitBase # Removed BaseC4Contraband
+  parent: ClothingOuterHardsuitBase # Removed BaseCommandContraband
   id: ClothingOuterHardsuitMedical
   name: chief medical officer's hardsuit
   description: A special suit that protects against hazardous, low pressure environments. Built with lightweight materials for easier movement.
@@ -379,7 +379,7 @@
   - type: ZombificationResistance
     zombificationResistanceCoefficient: 0.4
   - type: ClothingSpeedModifier
-    walkModifier: 0.9
+    walkModifier: 0.95
     sprintModifier: 0.95
   - type: HeldSpeedModifier
   - type: ToggleableClothing
@@ -387,7 +387,7 @@
 
 #Research Director's Hardsuit
 - type: entity
-  parent: ClothingOuterHardsuitBase # Removed BaseC4Contraband
+  parent: ClothingOuterHardsuitBase # Removed BaseCommandContraband
   id: ClothingOuterHardsuitRd
   name: experimental research hardsuit
   description: A special suit that protects against hazardous, low pressure environments. Has an additional layer of armor.
@@ -432,7 +432,7 @@
 
 #Head of Security's Hardsuit
 - type: entity
-  parent: [ClothingOuterHardsuitBase, BaseC1ContrabandUnredeemable] # BaseC4Contraband<BaseC2ContrabandUnredeemable
+  parent: [ClothingOuterHardsuitBase, BaseC2ContrabandUnredeemable] # BaseCommandContraband<BaseC2ContrabandUnredeemable
   id: ClothingOuterHardsuitSecurityRed
   name: head of security's hardsuit
   description: A special suit that protects against hazardous, low pressure environments. Has an additional layer of armor.
@@ -489,7 +489,7 @@
         Radiation: 0.5
         Caustic: 0.8
   - type: ClothingSpeedModifier
-    walkModifier: 0.85
+    walkModifier: 0.9
     sprintModifier: 0.9
   - type: HeldSpeedModifier
   - type: ToggleableClothing
@@ -498,7 +498,7 @@
 #ANTAG HARDSUITS
 #Blood-red Hardsuit
 - type: entity
-  parent: [ClothingOuterHardsuitBase, BaseC3Contraband, ContrabandClothing] # Frontier: BaseSyndicateContraband<BaseC4Contraband, added ContrabandClothing as parent
+  parent: [ClothingOuterHardsuitBase, BaseC3SyndicateContraband, ContrabandClothing] # Frontier: BaseSyndicateContraband<BaseC3SyndicateContraband, added ContrabandClothing as parent
   id: ClothingOuterHardsuitSyndie
   name: blood-red hardsuit
   description: A heavily armored hardsuit designed for work in special operations. Property of Gorlex Marauders.
@@ -514,15 +514,15 @@
     lowPressureMultiplier: 1000
   - type: ExplosionResistance
     damageCoefficient: 0.5
-  #- type: StaminaResistance
+  #- type: StaminaResistance # do not add these to other equipment or mobs, we don't want to microbalance these everywhere # Coyote: we removed stam resistance from most hardsuits.
   #  damageCoefficient: 0.75
   - type: Armor
     modifiers:
       coefficients:
-        Blunt: 0.65
-        Slash: 0.65
-        Piercing: 0.6
-        Heat: 0.6
+        Blunt: 0.55 # Coyote: 0.5 < 0.55
+        Slash: 0.55 # Coyote: 0.5 < 0.55
+        Piercing: 0.55 # Coyote: 0.5 < 0.55
+        Heat: 0.55 # Coyote: 0.5 < 0.55
         Radiation: 0.5
         Caustic: 0.5
   - type: ClothingSpeedModifier
@@ -536,10 +536,12 @@
     - MonkeyWearable
     - Hardsuit
     - WhitelistChameleon
+  - type: StaticPrice
+    price: 5000
 
 # Syndicate Medic Hardsuit
 - type: entity
-  parent: [ClothingOuterHardsuitSyndie, BaseC3Contraband, ContrabandClothing] # Frontier: BaseSyndicateContraband<BaseC4Contraband, added ContrabandClothing as parent
+  parent: [ClothingOuterHardsuitSyndie, BaseC3SyndicateContraband, ContrabandClothing] # Frontier: BaseSyndicateContraband<BaseC3SyndicateContraband, added ContrabandClothing as parent
   id: ClothingOuterHardsuitSyndieMedic
   name: blood-red medic hardsuit
   description: A heavily armored and agile advanced hardsuit specifically designed for field medic operations.
@@ -557,7 +559,7 @@
 
 #Syndicate Elite Hardsuit
 - type: entity
-  parent: [ClothingOuterHardsuitBase, BaseC3Contraband, ContrabandClothing] # Frontier: BaseSyndicateContraband<BaseC4Contraband, added ContrabandClothing as parent
+  parent: [ClothingOuterHardsuitBase, BaseC3SyndicateContraband, ContrabandClothing] # Frontier: BaseSyndicateContraband<BaseC3SyndicateContraband, added ContrabandClothing as parent
   id: ClothingOuterHardsuitSyndieElite
   name: syndicate elite hardsuit
   description: An elite version of the blood-red hardsuit, with improved radiation resistance and fireproofing. Property of Gorlex Marauders.
@@ -576,7 +578,7 @@
     damageCoefficient: 0.2
   - type: FireProtection
     reduction: 0.8
-  #- type: StaminaResistance
+  #- type: StaminaResistance # do not add these to other equipment or mobs, we don't want to microbalance these everywhere # Coyote: we removed stam resistance from most hardsuits.
   #  damageCoefficient: 0.6
   - type: Armor
     modifiers:
@@ -590,7 +592,7 @@
   - type: Item
     size: Huge
   - type: ClothingSpeedModifier
-    walkModifier: 1.0
+    walkModifier: 0.9
     sprintModifier: 0.9
   - type: HeldSpeedModifier
   - type: ToggleableClothing
@@ -598,7 +600,7 @@
 
 #Syndicate Commander Hardsuit
 - type: entity
-  parent: [ClothingOuterHardsuitBase, BaseC4Contraband, ContrabandClothing] # Frontier: BaseSyndicateContraband<BaseC4Contraband, added ContrabandClothing as parent
+  parent: [ClothingOuterHardsuitBase, BaseC4Contraband, ContrabandClothing] # Frontier: BaseSyndicateContraband<BaseC3SyndicateContraband, added ContrabandClothing as parent # Coyote: BaseC3SyndicateContraband < BaseC4Contraband
   id: ClothingOuterHardsuitSyndieCommander
   name: syndicate commander hardsuit
   description: A bulked up version of the blood-red hardsuit, purpose-built for the commander of a syndicate operative squad. Has significantly improved armor for those deadly front-lines firefights.
@@ -612,7 +614,7 @@
     lowPressureMultiplier: 1000
   - type: ExplosionResistance
     damageCoefficient: 0.5
-  #- type: StaminaResistance
+  #- type: StaminaResistance # do not add these to other equipment or mobs, we don't want to microbalance these everywhere # Coyote: we removed stam resistance from most hardsuits.
   #  damageCoefficient: 0.6
   - type: Armor
     modifiers:
@@ -632,7 +634,7 @@
 
 #Cybersun Juggernaut Hardsuit
 - type: entity
-  parent: [ClothingOuterHardsuitBase, BaseC4Contraband, ContrabandClothing] # Frontier: added BaseSyndicateContraband<BaseC4Contraband, ContrabandClothing as parent
+  parent: [ClothingOuterHardsuitBase, BaseC4Contraband, ContrabandClothing] # Frontier: added BaseSyndicateContraband<BaseC3SyndicateContraband, ContrabandClothing as parent # Coyote: BaseC3SyndicateContraband < BaseC4Contraband
   id: ClothingOuterHardsuitJuggernaut
   name: cybersun juggernaut suit
   description: A suit made by the cutting edge R&D department at cybersun to be hyper resilient.
@@ -646,8 +648,7 @@
     lowPressureMultiplier: 1000
   - type: ExplosionResistance
     damageCoefficient: 0.3
-  #- type: StaminaResistance # Should not have stamina resistance, this is purely so people know it was not forgotten.
-  #  damageCoefficient: 0.99
+  # - type: StaminaResistance # Should not have stamina resistance, this is purely so people know it was not forgotten.
   - type: Armor
     modifiers:
       coefficients:
@@ -658,7 +659,7 @@
         Radiation: 0.2
         Caustic: 0.2
   - type: ClothingSpeedModifier
-    walkModifier: 0.9
+    walkModifier: 0.65
     sprintModifier: 0.65
   - type: HeldSpeedModifier
   - type: ToggleableClothing
@@ -670,7 +671,7 @@
 
 #Wizard Hardsuit
 - type: entity
-  parent: [ClothingOuterHardsuitBase, NotContraband, ContrabandClothing] # Frontier: BaseMagicalContraband<NotContraband, ContrabandClothing as parent
+  parent: [ClothingOuterHardsuitBase, BaseC2WizardContraband] # Frontier: BaseMagicalContraband<BaseC3WizardContraband, ContrabandClothing as parent # Coyote: BaseC3WizardContraband < BaseC2WizardContraband, removed contraband clothing
   id: ClothingOuterHardsuitWizard
   name: wizard hardsuit
   description: A bizarre gem-encrusted suit that radiates magical energies.
@@ -702,7 +703,7 @@
 
 #Ling Space Suit
 - type: entity
-  parent: [ClothingOuterHardsuitBase, BaseC1Contraband, ContrabandClothing] # Frontier: added BaseC3Contraband, ContrabandClothing as parent
+  parent: [ClothingOuterHardsuitBase, BaseC1Contraband] # Frontier: added BaseC3Contraband, ContrabandClothing as parent # Coyote: C3 to C1, removed contrabandclothing component.
   id: ClothingOuterHardsuitLing
   name: organic space suit
   description: A spaceworthy biomass of pressure and temperature resistant tissue.
@@ -733,7 +734,7 @@
 #Pirate EVA Suit (Deep Space EVA Suit)
 #Despite visually appearing like a softsuit, it functions exactly like a hardsuit would (parents off of base hardsuit, has resistances and toggleable clothing, etc.) so it goes here.
 - type: entity
-  parent: [ClothingOuterHardsuitBase, NotContraband, ContrabandClothing] # Frontier: BaseMajorContraband<BaseC3Contraband, added ContrabandClothing as parent
+  parent: ClothingOuterHardsuitBase # Frontier: BaseMajorContraband<BaseC3PirateContraband, added ContrabandClothing as parent # Coyote: Removed contrabandclothing and contraband level
   id:  ClothingOuterHardsuitPirateEVA
   name: deep space EVA suit
   suffix: Pirate
@@ -766,10 +767,10 @@
 
 #Pirate Captain Hardsuit
 - type: entity
-  parent: [ClothingOuterHardsuitBase, BaseC3Contraband, ContrabandClothing] # Frontier: BaseMajorContraband<BaseC3Contraband, added ContrabandClothing as parent # COYOTE: BaseC3Contraband -> BaseC3MetaPirate
+  parent: [ClothingOuterHardsuitBase, BaseC3Contraband, ContrabandClothing] # Frontier: BaseMajorContraband<BaseC3PirateContraband, added ContrabandClothing as parent # Coyote: BaseC3PirateContraband < BaseC3Contraband
   id: ClothingOuterHardsuitPirateCap
-  name: pirate hardsuit
-  description: An armored hardsuit, perfect for defending against space scurvy and toolbox-wielding scallywags.
+  name: pirate hardsuit # Coyote: Name changed
+  description: An armored hardsuit, perfect for defending against space scurvy and toolbox-wielding scallywags. # Coyote: Desc changed
   components:
   - type: Sprite
     sprite: Clothing/OuterClothing/Hardsuits/piratecaptain.rsi
@@ -802,7 +803,7 @@
 #CENTCOMM / ERT HARDSUITS
 #ERT Leader Hardsuit
 - type: entity
-  parent: [ BaseC4Contraband, ClothingOuterHardsuitSyndieCommander ]
+  parent: [ BaseC4Contraband, ClothingOuterHardsuitSyndieCommander ] # Coyote: BaseCentcommContraband < BaseC4Contraband
   id: ClothingOuterHardsuitERTLeader
   name: ERT leader's hardsuit
   description: A protective hardsuit worn by the leader of an emergency response team.
@@ -816,7 +817,7 @@
 
 #ERT Chaplain Hardsuit
 - type: entity
-  parent: [ BaseC4Contraband, ClothingOuterHardsuitJuggernaut ]
+  parent: [ BaseC4Contraband, ClothingOuterHardsuitJuggernaut ] # Coyote: BaseCentcommContraband < BaseC4Contraband
   id: ClothingOuterHardsuitERTChaplain
   name: ERT chaplain's hardsuit
   description: A protective hardsuit worn by the chaplains of an Emergency Response Team.
@@ -846,7 +847,7 @@
 
 #ERT Medic Hardsuit
 - type: entity
-  parent: [ BaseC4Contraband, ClothingOuterHardsuitSyndieMedic ]
+  parent: [ BaseC4Contraband, ClothingOuterHardsuitSyndieMedic ] # Coyote: BaseCentcommContraband < BaseC4Contraband
   id: ClothingOuterHardsuitERTMedical
   name: ERT medic's hardsuit
   description: A protective hardsuit worn by the medics of an emergency response team.
@@ -860,7 +861,7 @@
 
 #ERT Security Hardsuit
 - type: entity
-  parent: [ BaseC4Contraband, ClothingOuterHardsuitSyndie ]
+  parent: [ BaseC4Contraband, ClothingOuterHardsuitSyndie ] # Coyote: BaseCentcommContraband < BaseC4Contraband
   id: ClothingOuterHardsuitERTSecurity
   name: ERT security's hardsuit
   description: A protective hardsuit worn by the security officers of an emergency response team.
@@ -892,7 +893,7 @@
 
 #Deathsquad
 - type: entity
-  parent: [ BaseC4Contraband, ClothingOuterHardsuitBase ]
+  parent: [ BaseC4Contraband, ClothingOuterHardsuitBase ] # Coyote: BaseCentcommContraband < BaseC4Contraband
   id: ClothingOuterHardsuitDeathsquad
   name: death squad hardsuit
   description: An advanced hardsuit favored by commandos for use in special operations.
@@ -931,7 +932,7 @@
 
 #CBURN Hardsuit
 - type: entity
-  parent: [ BaseC4Contraband, ClothingOuterHardsuitBase ]
+  parent: [ BaseC4Contraband, ClothingOuterHardsuitBase ] # Coyote: BaseCentcommContraband < BaseC4Contraband
   id: ClothingOuterHardsuitCBURN
   name: CBURN exosuit
   description: A lightweight yet strong exosuit used for special cleanup operations.

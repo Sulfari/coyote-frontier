@@ -86,7 +86,7 @@ horny-bodytype-widehipped-brief                = wide-hipped
 horny-bodytype-longtorsoed-descriptive         = {CAPITALIZE(POSS-ADJ($them))} torso is longer than their legs
 horny-bodytype-longtorsoed-brief               = long-torsoed
 
-horny-bodytype-longlegged-descriptive          = {CAPITALIZE(POSS-ADJ($them))} legs are noticably long
+horny-bodytype-longlegged-descriptive          = {CAPITALIZE(POSS-ADJ($them))} legs are noticeably long
 horny-bodytype-longlegged-brief                = long-legged
 
 horny-bodytype-shortlimbed-descriptive         = {CAPITALIZE(POSS-ADJ($them))} arms and legs are shorter in proportion
@@ -113,7 +113,7 @@ horny-bodytype-invertedtriangle-brief          = inverted-triangle
 horny-bodytype-thickthighed-descriptive        = {CAPITALIZE(POSS-ADJ($them))} thighs are strong and full
 horny-bodytype-thickthighed-brief              = thick-thighed
 
-horny-bodytype-narrowwaisted-descriptive       = {CAPITALIZE(POSS-ADJ($them))} waist is noticceably slim
+horny-bodytype-narrowwaisted-descriptive       = {CAPITALIZE(POSS-ADJ($them))} waist is noticeably slim
 horny-bodytype-narrowwaisted-brief             = narrow-waisted
 
 horny-bodytype-densebuilt-descriptive          = {CAPITALIZE(POSS-ADJ($them))} skeletal structure seems dense
@@ -155,13 +155,13 @@ horny-bodytype-morphable-brief                  = morphable
 horny-bodytype-swimmer-descriptive              = {CAPITALIZE(SUBJECT($them))} {CONJUGATE-BASIC($them, "have", "has")} a long, swimmer's body.
 horny-bodytype-swimmer-brief                    = swimmer
 
-horny-bodytype-androgynous-descriptive          = {CAPITALIZE(SUBJECT($them))} {CONJUGATE-BASIC($them, "seem", "seemss")} rather androgynous.
+horny-bodytype-androgynous-descriptive          = {CAPITALIZE(SUBJECT($them))} {CONJUGATE-BASIC($them, "seem", "seems")} rather androgynous.
 horny-bodytype-androgynous-brief                = androgynous
 
-horny-bodytype-masculinepresenting-descriptive  = {CAPITALIZE(SUBJECT($them))} {CONJUGATE-BASIC($them, "seem", "seemss")} to be rather masculine-presenting.
+horny-bodytype-masculinepresenting-descriptive  = {CAPITALIZE(SUBJECT($them))} {CONJUGATE-BASIC($them, "seem", "seems")} to be rather masculine-presenting.
 horny-bodytype-masculinepresenting-brief        = masculine presenting
 
-horny-bodytype-femininepresenting-descriptive   = {CAPITALIZE(SUBJECT($them))} {CONJUGATE-BASIC($them, "seem", "seemss")} to be rather feminine-presenting.
+horny-bodytype-femininepresenting-descriptive   = {CAPITALIZE(SUBJECT($them))} {CONJUGATE-BASIC($them, "seem", "seems")} to be rather feminine-presenting.
 horny-bodytype-femininepresenting-brief         = feminine presenting
 
 horny-bodytype-fluffy-descriptive               = {CAPITALIZE(SUBJECT($them))} {CONJUGATE-BASIC($them, "look", "looks")} soft and fluffy!
@@ -173,17 +173,17 @@ horny-bodytype-extremelyfluffy-brief            = extremely fluffy
 horny-bodytype-jacked-descriptive               = {CAPITALIZE(SUBJECT($them))} {CONJUGATE-BASIC($them, "are", "is")} absolutely RIPPED!
 horny-bodytype-jacked-brief                     = jacked
 
-horny-bodytype-shortstack-descriptive           = {CAPITALIZE(SUBJECT($them))} are short and well filled out!
+horny-bodytype-shortstack-descriptive           = {CAPITALIZE(SUBJECT($them))} is short and well filled out!
 horny-bodytype-shortstack-brief                 = shortstack
 
 horny-bodytype-buttsum-descriptive              = {CAPITALIZE(SUBJECT($them))} got a butt built like a brick house!
 horny-bodytype-buttsum-brief                    = buttsum
 
-horny-bodytype-extremelybuttsum-descriptive     = {CAPITALIZE(SUBJECT($them))} have a rear end that might have its own gravity well!
+horny-bodytype-extremelybuttsum-descriptive     = {CAPITALIZE(SUBJECT($them))} has a rear end that might have its own gravity well!
 horny-bodytype-extremelybuttsum-brief           = extremely buttsum
 
-horny-bodytype-flatchested-descriptive          = {CAPITALIZE(SUBJECT($them))} are pretty flat chested!
+horny-bodytype-flatchested-descriptive          = {CAPITALIZE(SUBJECT($them))} is pretty flat chested!
 horny-bodytype-flatchested-brief                = flatchested
 
-horny-bodytype-flatassed-descriptive            = {CAPITALIZE(SUBJECT($them))} have a flat rear end!
+horny-bodytype-flatassed-descriptive            = {CAPITALIZE(SUBJECT($them))} has a flat rear end!
 horny-bodytype-flatassed-brief                  = flatassed

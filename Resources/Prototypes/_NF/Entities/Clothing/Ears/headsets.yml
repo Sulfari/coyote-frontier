@@ -113,9 +113,7 @@
   - type: ContainerFill
     containers:
       key_slots:
-      - EncryptionKeySecurity
       - EncryptionKeyCommon
-      - EncryptionKeyNfsd
 
 - type: entity
   parent: [ClothingHeadsetCommon, ClothingHeadsetBrigmedic]

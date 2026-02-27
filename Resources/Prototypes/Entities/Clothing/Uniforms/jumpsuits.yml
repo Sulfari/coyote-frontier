@@ -1368,3 +1368,14 @@
     sprite: Clothing/Uniforms/Jumpsuit/familiar_garbs.rsi
   - type: Clothing
     sprite: Clothing/Uniforms/Jumpsuit/familiar_garbs.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingPirateBaddieTurtleneck
+  name: Pirate Baddie Turtleneck
+  description: The owner of that turtleneck must be such a cute little baddie.
+  components:
+  - type: Sprite
+    sprite: Clothing/Uniforms/Jumpsuit/piratebaddie.rsi
+  - type: Clothing
+    sprite: Clothing/Uniforms/Jumpsuit/piratebaddie.rsi

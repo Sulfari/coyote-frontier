@@ -23,6 +23,9 @@
     color: "#2CFA1F" # Frontier
     autoRot: true # Frontier
 
+  - type: Inventory # Allows vulps to wear properly shaped helmets
+    speciesId: vulpkanin
+
   - type: Carriable
 
   - type: Icon
@@ -110,6 +113,7 @@
     noRot: true
     drawdepth: Mobs
     layers:
+      - map: [ "enum.HumanoidVisualLayers.TailBehind" ]
       - map: [ "enum.HumanoidVisualLayers.Chest" ]
       - map: [ "enum.HumanoidVisualLayers.Head" ]
       - map: [ "enum.HumanoidVisualLayers.Snout" ]
@@ -120,8 +124,10 @@
       - map: [ "enum.HumanoidVisualLayers.LLegBehind" ]
       - map: [ "enum.HumanoidVisualLayers.RLeg" ]
       - map: [ "enum.HumanoidVisualLayers.LLeg" ]
-#      - map: [ "enum.HumanoidVisualLayers.Underwear" ] # DeltaV
-#      - map: [ "enum.HumanoidVisualLayers.Undershirt" ] # DeltaV
+      - map: [ "enum.HumanoidVisualLayers.UndergarmentBottom" ]
+      - map: [ "enum.HumanoidVisualLayers.Genital" ]
+      - map: [ "enum.HumanoidVisualLayers.UndergarmentTop" ]
+      - map: [ "enum.HumanoidVisualLayers.UndershirtUnderclothes" ]
       - map: [ "jumpsuit" ]
       - map: ["enum.HumanoidVisualLayers.LFootBehind"]
       - map: ["enum.HumanoidVisualLayers.RFootBehind"]
@@ -143,6 +149,8 @@
       - map: [ "id" ]
       - map: [ "back" ]
       - map: [ "neck" ]
+      - map: [ "enum.HumanoidVisualLayers.UndershirtOverclothes" ]
+      - map: [ "enum.HumanoidVisualLayers.TailOversuit" ]
       - map: [ "enum.HumanoidVisualLayers.Tail" ] #in the utopian future we should probably have a wings enum inserted here so everyhting doesn't break
       - map: [ "enum.HumanoidVisualLayers.FacialHair" ]
       - map: [ "enum.HumanoidVisualLayers.Hair" ]

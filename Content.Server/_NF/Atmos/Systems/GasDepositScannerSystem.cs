@@ -197,11 +197,11 @@ public sealed class GasDepositScannerSystem : EntitySystem
             ApproximateGasDepositSize depositSize;
             if (mixture[i] < 500.0)
                 depositSize = ApproximateGasDepositSize.Trace;
-            else if (mixture[i] < 3000.0)
+            else if (mixture[i] < 5000.0)
                 depositSize = ApproximateGasDepositSize.Small;
-            else if (mixture[i] < 10000.0)
+            else if (mixture[i] < 20000.0)
                 depositSize = ApproximateGasDepositSize.Medium;
-            else if (mixture[i] < 30000.0)
+            else if (mixture[i] < 50000.0)
                 depositSize = ApproximateGasDepositSize.Large;
             else
                 depositSize = ApproximateGasDepositSize.Enormous;

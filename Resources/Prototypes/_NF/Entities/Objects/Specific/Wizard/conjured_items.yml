@@ -1,12 +1,44 @@
-# Limited life times
+#region Limited life times
 - type: entity
+  abstract: true
   id: ConjuredObject10
   suffix: Conjured
-  abstract: true
   description: A magically created entity, that'll vanish from existence eventually.
   components:
   - type: TimedDespawn
     lifetime: 10
+
+- type: entity
+  abstract: true
+  parent: ConjuredObject10
+  id: ConjuredObject30
+  components:
+  - type: TimedDespawn
+    lifetime: 30
+
+- type: entity
+  abstract: true
+  parent: ConjuredObject10
+  id: ConjuredObject60
+  components:
+  - type: TimedDespawn
+    lifetime: 60
+
+- type: entity
+  abstract: true
+  parent: ConjuredObject10
+  id: ConjuredObject180
+  components:
+  - type: TimedDespawn
+    lifetime: 180
+
+- type: entity
+  abstract: true
+  parent: ConjuredObject10
+  id: ConjuredObject300
+  components:
+  - type: TimedDespawn
+    lifetime: 300
 
 # From BBBullet
 - type: entity
@@ -44,9 +76,7 @@
     lifetime: 10
   - type: SpaceGarbage
 
-
-
-# Conjured objects
+#region Objects
 - type: entity
   name: soap
   id: SoapConjured
@@ -93,10 +123,10 @@
         Blunt: 9 # 12 hits to crit unarmored target
   - type: StaminaDamageOnCollide
     damage: 10 # 6 hits to slow, 10 hits to stun
-  - type: PointLight
-    color: MediumPurple
-    radius: 1.5
-    softness: 1
+  #- type: PointLight # Coyote: Removed over performance concerns
+  #  color: MediumPurple
+  #  radius: 1.5
+  #  softness: 1
 
 # Blood Cult Soaps
 - type: entity
@@ -138,10 +168,10 @@
         Slash: 1
   - type: StaminaDamageOnCollide
     damage: 1
-  - type: PointLight
-    color: red
-    radius: 1.2
-    softness: 1
+  #- type: PointLight # Coyote: Performance concerns.
+  #  color: red
+  #  radius: 1.2
+  #  softness: 1
 
 - type: entity
   name: soap
@@ -195,10 +225,10 @@
     damage:
       types:
         Slash: 5
-  - type: PointLight
-    color: red
-    radius: 1.2
-    softness: 1
+  #- type: PointLight # Coyote: Performance concerns.
+  #  color: red
+  #  radius: 1.2
+  #  softness: 1
 
 - type: entity
   id: ShellSoapConjuredBloodCultCluster

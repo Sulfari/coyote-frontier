@@ -42,9 +42,9 @@
     manufacturer: weapon-details-manufacturer-nanotrasen-munitions
 
 - type: entity
-  id: NFBaseWeaponFrameSubMachineGunCybersun
-  parent: [ BaseC4Contraband, NFBaseWeaponFrameSubMachineGun ]
   abstract: true
+  parent: [ BaseC2Contraband, NFBaseWeaponFrameSubMachineGun ] # Coyote: BaseC3SyndicateContraband < BaseC2Contraband
+  id: NFBaseWeaponFrameSubMachineGunCybersun
   components:
   - type: Gun
     angleIncrease: 1.1
@@ -54,9 +54,9 @@
     manufacturer: weapon-details-manufacturer-cybersun-industries
 
 - type: entity
-  id: NFBaseWeaponFrameSubMachineGunGorlex
-  parent: [ BaseC4Contraband, NFBaseWeaponFrameSubMachineGun ]
   abstract: true
+  parent: [ BaseC2Contraband, NFBaseWeaponFrameSubMachineGun ] # Coyote: BaseC3SyndicateContraband < BaseC2Contraband
+  id: NFBaseWeaponFrameSubMachineGunGorlex
   components:
   - type: Gun
     minAngle: 4.1

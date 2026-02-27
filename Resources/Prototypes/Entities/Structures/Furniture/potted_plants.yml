@@ -57,6 +57,8 @@
     partRatingTransferRateModifier: 2.0
     filterGases:
     - CarbonDioxide
+    - Ammonia
+    - NitrousOxide
     gasMixture:
       volume: 125000
     passive: true

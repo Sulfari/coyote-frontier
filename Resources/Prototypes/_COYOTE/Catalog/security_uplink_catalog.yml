@@ -13,3 +13,24 @@
     whitelist:
       tags:
       - SecurityUplink
+
+- type: listing
+  id: UplinkAdvancedRadar
+  name:  uplink-advanced-radar-name
+  description: uplink-advanced-radar-desc
+  productEntity: AdvancedRadarConsoleCircuitboard
+  icon: { sprite: _NF/Objects/Misc/module.rsi, state: cpu_nfsd }
+  cost:
+    FrontierUplinkCoin: 10
+  categories:
+  - UplinkSecurityUtility
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - SecurityUplink
+    - !type:BuyerJobCondition
+      whitelist:
+        - Sheriff
+        - Bailiff
+        - NFDetective

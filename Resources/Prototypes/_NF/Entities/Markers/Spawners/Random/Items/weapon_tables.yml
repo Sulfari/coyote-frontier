@@ -127,7 +127,7 @@
   table: !type:GroupSelector
     children:
     - !type:GroupSelector
-      weight: 0.95
+      weight: 0.99
       children:
       - id: WeaponCaseShortEnergyDaggerExpedition
       - id: WeaponCaseShortEnergySwordExpedition
@@ -140,8 +140,9 @@
       - id: MiningDrillDiamond
       - id: EnergyKatana
       - id: Truncheon
+      - id: Sledgehammer #Coyote Who doesn't love trash items in your RNG
     - !type:NestedSelector
-      weight: 0.05
+      weight: 0.01
       tableId: TableDungeonLootWeaponsMeleeUnique
 
 # region melee unique
@@ -149,7 +150,6 @@
   id: TableDungeonLootWeaponsMeleeUnique
   table: !type:GroupSelector
     children:
-    - id: HyperEutacticBlade
     - id: ClothingHandsKnuckleBoneCrushers
     - id: ArmBlade
     - id: Kanabou
@@ -241,7 +241,7 @@
       - id: WeaponCaseLongHristovExpedition
       - id: WeaponCaseLongMusketExpedition
     - !type:NestedSelector
-      weight: 0.05
+      weight: 0.03 #Coyote further reduction to lower the amount of high tier weapons
       tableId: TableDungeonLootWeaponsRangedTier4
 
 # region ranged T4
@@ -250,7 +250,7 @@
   table: !type:GroupSelector
     children:
     - !type:GroupSelector
-      weight: 0.95
+      weight: 0.99
       children:
       - id: WeaponCaseLongSm
       - id: WeaponCaseLongVulcanExpedition
@@ -262,7 +262,7 @@
       - id: WeaponCaseLongXrayCannonExpedition
       - id: WeaponCaseLongTemperatureGunExpedition
     - !type:NestedSelector
-      weight: 0.05
+      weight: 0.01
       tableId: TableDungeonLootWeaponsRangedTier5
 
 # region ranged T5
@@ -279,6 +279,7 @@
       - id: WeaponCaseLongEnergyGunExpedition
       - id: WeaponCaseLongLaserCannonExpedition
       - id: WeaponCaseHeavyAsmgtExpeditions
+      - id: WeaponCaseLongHristovExpedition #Coyote extra trash drop.
 
 # region explosives
 - type: entityTable

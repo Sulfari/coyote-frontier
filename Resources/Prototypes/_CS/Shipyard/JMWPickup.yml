@@ -17,7 +17,7 @@
   category: Small
   group: Shipyard
   shuttlePath: /Maps/_CS/Shuttles/JMWPickup.yml
-  guidebookPage: null
+  guidebookPage: Null
   class:
   - Civilian
   engine:
@@ -29,7 +29,7 @@
   mapPath: /Maps/_CS/Shuttles/JMWPickup.yml
   minPlayers: 0
   stations:
-    DonknGo:
+    JMWPickup:
       stationProto: StandardFrontierVessel
       components:
         - type: StationNameSetup

@@ -13,7 +13,7 @@ public sealed partial class PoweredLightVariationPassComponent : Component
     ///     Chance that a light will be replaced with a broken variant.
     /// </summary>
     [DataField]
-    public float LightBreakChance = 0.15f;
+    public float LightBreakChance = 0.05f; // Coyote: 0.15f to 0.05f
 
     /// <summary>
     ///     Chance that a light will be replaced with an aged variant.
