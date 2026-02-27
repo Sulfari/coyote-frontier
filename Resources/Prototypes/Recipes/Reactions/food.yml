@@ -5,7 +5,7 @@
   conserveEnergy: false
   reactants:
     Milk:
-      amount: 40
+      amount: 20 # Coyote: Halve the cost.
     Enzyme:
       amount: 5
       catalyst: true

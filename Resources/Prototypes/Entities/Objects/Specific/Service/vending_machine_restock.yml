@@ -491,6 +491,7 @@
   - type: VendingMachineRestock
     canRestock:
     - ChemVendInventory
+    - ChemVendInventorySyndicate # Coyote: Lets it restock syndie juice.
   - type: Sprite
     layers:
     - state: base

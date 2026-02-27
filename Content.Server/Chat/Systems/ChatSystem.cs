@@ -26,6 +26,7 @@ using Content.Shared.Mobs.Systems;
 using Content.Shared.Players;
 using Content.Shared.Players.RateLimiting;
 using Content.Shared.Radio;
+using Content.Shared.Silicons.StationAi; //Required for supermatter yelling
 using Content.Shared.Whitelist;
 using Robust.Server.Player;
 using Robust.Shared.Audio;
@@ -64,7 +65,7 @@ public sealed partial class ChatSystem : SharedChatSystem
     [Dependency] private readonly ReplacementAccentSystem _wordreplacement = default!;
     [Dependency] private readonly EntityWhitelistSystem _whitelistSystem = default!;
     [Dependency] private readonly ExamineSystemShared _examineSystem = default!;
-
+    [Dependency] private readonly IConsoleHost _conHost = default!; // Imp: supermatter yelling
     public const float VoiceRange = 12f; // how far voice goes in world units
     public const float ShoutRange = 30f; // how far Shout goes in world units
     public const float EmoteRange = 12f; // how far Emote goes in world units
