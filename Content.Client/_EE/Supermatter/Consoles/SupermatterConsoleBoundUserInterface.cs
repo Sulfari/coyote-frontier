@@ -15,6 +15,7 @@ public sealed class SupermatterConsoleBoundUserInterface(EntityUid owner, Enum u
 
     protected override void Open()
     {
+        base.Open();
         _menu = new SupermatterConsoleWindow(this, Owner);
         _menu.OpenCentered();
         _menu.OnClose += Close;
@@ -24,8 +25,10 @@ public sealed class SupermatterConsoleBoundUserInterface(EntityUid owner, Enum u
     {
         base.UpdateState(state);
 
-        var castState = (SupermatterConsoleBoundInterfaceState)state;
-        _menu?.UpdateUI(castState.Supermatters, castState.FocusData);
+        if (_menu == null || state is not SupermatterConsoleBoundInterfaceState msg)
+            return;
+
+        _menu?.UpdateUI(msg.Supermatters, msg.FocusData);
     }
 
     public void SendFocusChangeMessage(NetEntity? netEntity)
