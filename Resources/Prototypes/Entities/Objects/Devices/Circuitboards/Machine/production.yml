@@ -1075,7 +1075,7 @@
     state: service
   - type: MachineBoard
     prototype: SmartFridge
-    Requirements:
+    requirements:
       Manipulator: 1
       Capacitor: 3
       MatterBin: 1
