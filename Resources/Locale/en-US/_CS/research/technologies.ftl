@@ -1,1 +1,1 @@
-cs-research-technology-smart-food-storage = Smart Food Storage # Coyote Sector
+cs-research-technology-smart-food-storage = Smart Storage Refrigeration # Coyote Sector
