@@ -1075,14 +1075,18 @@
     state: service
   - type: MachineBoard
     prototype: SmartFridge
+    materials: #Coyote Sector
+      Steel: 100
+      Glass: 500
+      Plasma: 2000
+      Bluespace: 200
+      Diamond: 100
     requirements:
       Manipulator: 1
       Capacitor: 3
       MatterBin: 1
     stackRequirements:
       Glass: 5
-      Plasma: 20
-      Diamond: 1
     tagRequirements:
       GlassBeaker:
         amount: 2
