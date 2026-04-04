@@ -18,6 +18,7 @@
   - type: Anchorable
     delay: 3
     snap: false # The first ever entity to set this field to false! However, this doesn't seem to work :c
+  - type: Engraveable
 
 - type: entity
   id: LeashBasic

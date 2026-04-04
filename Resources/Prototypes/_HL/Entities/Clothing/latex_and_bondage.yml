@@ -54,6 +54,7 @@
     equipDelay: 3
     unequipDelay: 3
   - type: SelfUnremovableClothing
+  - type: Engraveable
 
 - type: entity
   parent: ClothingShoesBase
@@ -68,6 +69,7 @@
     equipDelay: 3
     unequipDelay: 3
   - type: SelfUnremovableClothing
+  - type: Engraveable
 
 - type: entity
   parent: ClothingHandsBase
@@ -82,6 +84,7 @@
     equipDelay: 3
     unequipDelay: 3
   - type: SelfUnremovableClothing
+  - type: Engraveable
 
 - type: entity
   parent: ClothingHandsBase
@@ -96,6 +99,7 @@
     equipDelay: 3
     unequipDelay: 3
   - type: SelfUnremovableClothing
+  - type: Engraveable
 
 - type: entity
   parent: ClothingShoesBase
@@ -110,6 +114,7 @@
     equipDelay: 3
     unequipDelay: 3
   - type: SelfUnremovableClothing
+  - type: Engraveable
 
 - type: entity
   parent: ClothingOuterBase

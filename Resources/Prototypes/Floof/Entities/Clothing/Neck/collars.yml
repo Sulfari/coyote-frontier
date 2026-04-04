@@ -6,6 +6,7 @@
   - type: Clothing
   - type: LeashAnchor
     offset: 0, 0.22
+  - type: Engraveable
 
 - type: entity
   parent: ClothingNeckCollarBase
