@@ -1,8 +1,8 @@
 - type: cargoProduct
   id: EngineAmeShielding
   icon:
-    sprite: Objects/Power/AME/ame_jar.rsi
-    state: jar
+    sprite: Structures/Power/Generation/ame.rsi
+    state: shield_0
   product: CrateEngineeringAMEShielding
   cost: 15000 # Frontier - Up the price
   category: Engineering
